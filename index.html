@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>PMP · Temario Prueba de Acceso CNTG</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F8FAFC;--w:#FFF;--g1:#F1F5F9;--g2:#E2E8F0;--g3:#CBD5E1;--ink:#0F172A;--ink2:#334155;--ink3:#64748B;--ink4:#94A3B8;--blue:#2563EB;--blue-l:#DBEAFE;--blue-d:#1D4ED8;--blue-bg:#EFF6FF;--teal:#0D9488;--teal-l:#CCFBF1;--teal-d:#0F766E;--teal-bg:#F0FDFA;--amber:#D97706;--amber-l:#FEF3C7;--amber-d:#B45309;--amber-bg:#FFFBEB;--red:#DC2626;--red-l:#FEE2E2;--red-d:#B91C1C;--red-bg:#FEF2F2;--purple:#7C3AED;--purple-l:#EDE9FE;--purple-d:#6D28D9;--purple-bg:#F5F3FF;--pink:#DB2777;--pink-l:#FCE7F3;--pink-bg:#FDF2F8;--green:#16A34A;--green-l:#DCFCE7;--cyan:#0891B2;--cyan-l:#CFFAFE;--cyan-bg:#ECFEFF;--r:14px;--rs:10px;--sh:0 4px 16px rgba(15,23,42,0.08);}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+.hero{background:linear-gradient(135deg,#1E3A8A,#2563EB 50%,#0891B2);padding:28px 18px 22px;text-align:center;color:#fff;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:260px;height:260px;background:radial-gradient(circle,rgba(255,255,255,0.12),transparent 70%);}
+.h1{font-family:'Merriweather',serif;font-size:clamp(1.6rem,5vw,2.2rem);font-weight:900;line-height:1.1;margin-bottom:6px;position:relative;}
+.h2{font-size:0.82rem;opacity:0.9;font-weight:500;position:relative;}
+.nav{background:#fff;box-shadow:0 2px 12px rgba(15,23,42,0.08);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:0;z-index:200;border-bottom:1px solid var(--g2);}
+.nav::-webkit-scrollbar{display:none;}
+.nb{flex-shrink:0;padding:13px 12px;font-size:0.72rem;font-weight:700;cursor:pointer;border:none;background:none;color:var(--ink3);border-bottom:3px solid transparent;white-space:nowrap;font-family:inherit;}
+.nb.on{color:var(--blue);border-bottom-color:var(--blue);background:var(--blue-bg);}
+.pg{display:none;padding:16px;max-width:800px;margin:0 auto;}
+.pg.on{display:block;}
+.hb{border-radius:var(--r);padding:16px 18px;margin-bottom:14px;color:#fff;box-shadow:var(--sh);position:relative;overflow:hidden;}
+.hb::before{content:attr(data-i);position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:3rem;opacity:0.15;}
+.hb h2{font-family:'Merriweather',serif;font-size:1.1rem;font-weight:900;margin-bottom:2px;}
+.hb p{font-size:0.8rem;opacity:0.9;}
+.c{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:14px 16px;margin-bottom:11px;box-shadow:0 1px 3px rgba(15,23,42,0.04);}
+.c h3{font-family:'Merriweather',serif;font-size:0.95rem;font-weight:700;margin-bottom:5px;}
+.c p,.c li{font-size:0.86rem;color:var(--ink2);line-height:1.65;}
+.c ul{padding-left:16px;margin-top:4px;}
+.c ul li{margin-bottom:3px;}
+.ib{border-radius:var(--rs);padding:12px 14px;margin-bottom:10px;font-size:0.84rem;line-height:1.6;}
+.ib strong{display:block;margin-bottom:2px;}
+.ib-b{background:var(--blue-bg);border-left:4px solid var(--blue);color:var(--blue-d);}
+.ib-t{background:var(--teal-bg);border-left:4px solid var(--teal);color:var(--teal-d);}
+.ib-a{background:var(--amber-bg);border-left:4px solid var(--amber);color:var(--amber-d);}
+.ib-p{background:var(--purple-bg);border-left:4px solid var(--purple);color:var(--purple-d);}
+.ib-r{background:var(--red-bg);border-left:4px solid var(--red);color:var(--red-d);}
+.ib-pk{background:var(--pink-bg);border-left:4px solid var(--pink);color:#9D174D;}
+.mn{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border:2px solid #F59E0B;border-radius:var(--r);padding:12px 14px 12px 44px;margin:9px 0;position:relative;}
+.mn::before{content:'🧠';position:absolute;top:10px;left:12px;font-size:1.2rem;}
+.mn b{display:block;font-family:'Merriweather',serif;font-size:0.82rem;color:#92400E;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;}
+.mn span{font-size:0.84rem;color:#78350F;line-height:1.6;display:block;}
+.fm{background:linear-gradient(135deg,#EFF6FF,#DBEAFE);border:2px solid var(--blue);border-radius:var(--r);padding:12px 14px 12px 44px;margin:9px 0;position:relative;}
+.fm::before{content:'📐';position:absolute;top:10px;left:12px;font-size:1.2rem;}
+.fm b{display:block;font-family:'Merriweather',serif;font-size:0.82rem;color:var(--blue-d);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;}
+.fm code{display:block;font-family:'JetBrains Mono',monospace;background:#fff;border:1px solid var(--blue-l);border-radius:var(--rs);padding:8px 12px;font-size:0.92rem;font-weight:700;color:var(--blue-d);text-align:center;margin:6px 0;}
+.fm span{font-size:0.82rem;color:var(--ink2);display:block;margin:3px 0;padding-left:12px;}
+.fm span::before{content:'›';position:relative;left:-6px;color:var(--blue);font-weight:900;}
+.fm .eg{background:#fff;border:1px solid var(--blue-l);border-radius:var(--rs);padding:8px 10px;margin-top:6px;font-size:0.8rem;color:var(--ink2);}
+.sg{background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:1.5px solid var(--amber);border-radius:var(--rs);padding:10px 12px 10px 34px;margin-top:8px;font-size:0.8rem;color:var(--amber-d);line-height:1.55;position:relative;}
+.sg::before{content:'🔧';position:absolute;top:8px;left:8px;font-size:0.9rem;}
+.tw{overflow-x:auto;border-radius:var(--rs);border:1px solid var(--g2);margin:8px 0;background:#fff;}
+table{width:100%;border-collapse:collapse;font-size:0.82rem;}
+th{background:var(--g1);color:var(--ink);padding:9px 10px;text-align:left;font-weight:700;border-bottom:2px solid var(--g2);font-size:0.76rem;text-transform:uppercase;letter-spacing:0.03em;}
+td{padding:9px 10px;border-bottom:1px solid var(--g2);color:var(--ink2);vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+.tk{display:flex;overflow-x:auto;gap:2px;scrollbar-width:none;margin:8px 0;padding:4px;}
+.tk::-webkit-scrollbar{display:none;}
+.ts{flex-shrink:0;width:100px;text-align:center;padding:10px 6px;background:#fff;border:1px solid var(--g2);border-radius:var(--rs);position:relative;}
+.ts::after{content:'›';position:absolute;right:-6px;top:50%;transform:translateY(-50%);color:var(--ink3);font-size:1.3rem;font-weight:900;z-index:1;}
+.ts:last-child::after{display:none;}
+.ts .ic{width:42px;height:42px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+.ts .nm{font-size:0.7rem;font-weight:800;text-transform:uppercase;}
+.ts .ds{font-size:0.62rem;color:var(--ink3);margin-top:2px;}
+.g2x{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+@media(max-width:500px){.g2x{grid-template-columns:1fr;}}
+.lbl{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink3);margin:12px 0 6px;}
+.bl{border-left:4px solid var(--blue);}
+.tl{border-left:4px solid var(--teal);}
+.al{border-left:4px solid var(--amber);}
+.pl{border-left:4px solid var(--purple);}
+.cl{border-left:4px solid var(--cyan);}
+.pkl{border-left:4px solid var(--pink);}
+.btn{display:inline-block;padding:10px 18px;border-radius:var(--rs);border:none;cursor:pointer;font-size:0.85rem;font-weight:700;font-family:inherit;text-decoration:none;text-align:center;}
+.btn-p{background:var(--blue);color:#fff;}
+.search-w{position:relative;margin-bottom:12px;}
+.search-w input{width:100%;background:#fff;border:1.5px solid var(--g3);border-radius:var(--rs);padding:11px 12px 11px 38px;font-size:0.88rem;color:var(--ink);font-family:inherit;outline:none;}
+.search-w input:focus{border-color:var(--blue);}
+.search-i{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--ink4);}
+.fc-w{perspective:1200px;margin-bottom:10px;}
+.fc{width:100%;min-height:220px;background:transparent;cursor:pointer;border:none;padding:0;font-family:inherit;}
+.fc-in{width:100%;min-height:220px;position:relative;transform-style:preserve-3d;transition:transform 0.6s;}
+.fc.fl .fc-in{transform:rotateY(180deg);}
+.fc-f,.fc-b{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.fc-f{background:linear-gradient(135deg,#fff,var(--g1));border:2px solid var(--g3);box-shadow:var(--sh);}
+.fc-b{background:linear-gradient(135deg,var(--teal-bg),var(--teal-l));border:2px solid var(--teal);transform:rotateY(180deg);box-shadow:var(--sh);}
+.fc-en{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:700;color:var(--blue-d);margin-bottom:4px;}
+.fc-es{font-family:'Merriweather',serif;font-size:0.95rem;font-weight:700;color:var(--ink);}
+.fc-dom{font-size:0.68rem;color:var(--ink3);margin-top:8px;font-weight:600;}
+.fc-def{font-size:0.88rem;color:var(--teal-d);font-weight:600;margin-bottom:8px;line-height:1.55;}
+.fc-eg{font-size:0.76rem;color:var(--ink2);font-style:italic;border-top:1px solid rgba(13,148,136,0.3);padding-top:8px;line-height:1.5;}
+.fc-nav{display:flex;gap:8px;margin-top:10px;}
+.fc-btn{flex:1;background:#fff;border:1.5px solid var(--g3);color:var(--ink);border-radius:var(--rs);padding:10px;font-size:0.82rem;font-weight:700;cursor:pointer;font-family:inherit;}
+.fc-prog{text-align:center;font-size:0.76rem;color:var(--ink3);margin-bottom:6px;font-weight:600;}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+@media(max-width:500px){.qs{grid-template-columns:1fr;}}
+.qs-c{background:#fff;border:1.5px solid var(--g2);border-radius:var(--r);padding:14px;cursor:pointer;font-family:inherit;text-align:left;display:flex;flex-direction:column;gap:4px;}
+.qs-c:hover{border-color:var(--blue);box-shadow:var(--sh);}
+.qs-t{font-family:'Merriweather',serif;font-size:0.92rem;font-weight:700;}
+.qs-m{font-size:0.73rem;color:var(--ink3);}
+.qs-b{display:inline-block;font-size:0.66rem;font-weight:700;padding:3px 8px;border-radius:12px;width:fit-content;margin-top:3px;}
+.qbox{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:18px;box-shadow:var(--sh);}
+.qpb{height:6px;background:var(--g1);border-radius:3px;margin-bottom:12px;overflow:hidden;}
+.qpf{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width 0.4s;}
+.qn{font-size:0.72rem;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3px;}
+.qsc{background:var(--g1);border-left:4px solid var(--blue);border-radius:0 var(--rs) var(--rs) 0;padding:10px 12px;font-size:0.84rem;color:var(--ink2);line-height:1.6;margin-bottom:10px;font-style:italic;}
+.qt{font-size:0.95rem;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:12px;font-family:'Merriweather',serif;}
+.op{width:100%;padding:12px 13px;border:1.5px solid var(--g2);border-radius:var(--rs);cursor:pointer;font-size:0.85rem;line-height:1.5;background:#fff;text-align:left;font-family:inherit;color:var(--ink2);margin-bottom:7px;display:block;}
+.op:hover:not(:disabled){border-color:var(--blue);background:var(--blue-bg);color:var(--ink);}
+.op.ok{border-color:var(--teal);background:var(--teal-bg);color:var(--teal-d);font-weight:700;}
+.op.ko{border-color:var(--red);background:var(--red-bg);color:var(--red-d);}
+.op.rv{border-color:var(--teal);background:var(--teal-bg);color:var(--teal-d);opacity:0.7;}
+.qe{border-radius:var(--rs);padding:12px 14px;font-size:0.84rem;line-height:1.6;display:none;margin-top:5px;}
+.qe.on{display:block;}
+.qe-ok{background:var(--teal-bg);border:1.5px solid var(--teal);color:var(--teal-d);}
+.qe-ko{background:var(--red-bg);border:1.5px solid var(--red);color:var(--red-d);}
+.sr{width:110px;height:110px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-family:'Merriweather',serif;font-size:1.8rem;font-weight:900;box-shadow:var(--sh);}
+.stat-r{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;}
+.stat{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:14px 8px;text-align:center;}
+.stat-n{font-family:'Merriweather',serif;font-size:1.6rem;font-weight:900;line-height:1;}
+.stat-l{font-size:0.66rem;font-weight:700;text-transform:uppercase;color:var(--ink3);margin-top:3px;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="h1">Temario PMP · Prueba de Acceso</div>
+  <div class="h2">CNTG Santiago · 23 abril 2026 · 16:30h · Fran Paredes</div>
+</div>
+
+<nav class="nav">
+  <button class="nb on" onclick="go('home')">🏠</button>
+  <button class="nb" onclick="go('l1')">1·Entorno</button>
+  <button class="nb" onclick="go('l2')">2·Iniciar</button>
+  <button class="nb" onclick="go('l3')">3·Planificar</button>
+  <button class="nb" onclick="go('l4')">4·Liderar</button>
+  <button class="nb" onclick="go('l5')">5·Rendimiento</button>
+  <button class="nb" onclick="go('l6')">6·Cerrar</button>
+  <button class="nb" onclick="go('agil')">🔄Ágil</button>
+  <button class="nb" onclick="go('form')">📐Fórmulas</button>
+  <button class="nb" onclick="go('mnem')">🧠Mnemo</button>
+  <button class="nb" onclick="go('glos')">🔤Glosario</button>
+  <button class="nb" onclick="go('flash')">🃏Flash</button>
+  <button class="nb" onclick="go('quiz')">🎯Exámenes</button>
+</nav>
+
+<!-- HOME -->
+<div id="p-home" class="pg on">
+  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="📚"><h2>Tu libro de estudio para la prueba</h2><p>6 lecciones del temario CNTG · Lee esto ANTES de hacer los simulacros</p></div>
+  <div class="ib ib-a"><strong>🎯 ¿Qué es la prueba del 23 abril?</strong>Es una prueba técnica presencial en el CNTG Santiago para seleccionar a los 20 alumnos del curso PMP. Evalúan que entiendes conceptos básicos de gestión de proyectos y que tienes experiencia real.</div>
+  <div class="ib ib-t"><strong>📖 Cómo usar este temario</strong>1. Lee cada lección en orden (1→6 + Ágil)<br>2. Repasa las fórmulas y mnemotecnias<br>3. Luego abre el Simulador de Prueba de Acceso para practicar con los exámenes</div>
+  <div class="lbl">Las 6 lecciones — toca cada una</div>
+  <div class="g2x">
+    <div class="c bl" onclick="go('l1')" style="cursor:pointer"><h3>1️⃣ Entorno Empresarial</h3><p>Fundamentos, estrategia, Business Case, gobernanza, cumplimiento.</p></div>
+    <div class="c tl" onclick="go('l2')" style="cursor:pointer"><h3>2️⃣ Iniciar el Proyecto</h3><p>Stakeholders, Charter, Tuckman, enfoque predictivo/ágil/híbrido.</p></div>
+    <div class="c al" onclick="go('l3')" style="cursor:pointer"><h3>3️⃣ Planificar</h3><p>WBS, EVM, ruta crítica, PERT, riesgos (EMV), calidad.</p></div>
+    <div class="c pl" onclick="go('l4')" style="cursor:pointer"><h3>4️⃣ Liderar el Equipo</h3><p>Servant Leadership, RACI, conflictos, comunicaciones, Tuckman.</p></div>
+    <div class="c cl" onclick="go('l5')" style="cursor:pointer"><h3>5️⃣ Rendimiento</h3><p>PDCA, control de cambios, issues vs riesgos, mejora continua.</p></div>
+    <div class="c pkl" onclick="go('l6')" style="cursor:pointer"><h3>6️⃣ Cerrar</h3><p>Cierre formal, beneficios, lecciones aprendidas, transferencia.</p></div>
+  </div>
+  <div class="mn"><b>Mnemotecnia — 6 lecciones</b><span><strong>"En Inicio Planifico Liderando Rindiendo y Cerrando"</strong><br>Entorno → Iniciar → Planificar → Liderar → Rendimiento → Cerrar</span></div>
+  <div class="ib ib-b"><strong>💬 Tu frase para la prueba oral</strong>"Gestiono un departamento técnico nacional desde 2020: equipos remotos, SLAs corporativos, dashboards en Power BI y reporting directo al CEO. El PMP me dará el marco para sistematizar lo que ya hago."</div>
+</div>
+
+<!-- L1 -->
+<div id="p-l1" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="🏢"><h2>Lección 1 · Entorno Empresarial</h2><p>Fundamentos · Alineamiento · Beneficios · Gobernanza · Cumplimiento</p></div>
+  <div class="c bl"><h3>Proyecto vs Operación</h3><p><strong>Proyecto</strong> = esfuerzo temporal para crear un resultado único. Tiene principio y fin.</p><p><strong>Operación</strong> = trabajo continuo y repetitivo. NO es un proyecto.</p>
+    <div class="mn"><b>Mnemotecnia "TUC"</b><span><strong>T</strong>emporal · <strong>U</strong>nico · <strong>C</strong>ambiante — las 3 características de un proyecto</span></div>
+    <div class="sg">Instalar CCTV en 15 sedes = PROYECTO. Dar soporte 24/7 a esos sistemas = OPERACIÓN.</div>
+  </div>
+  <div class="c bl"><h3>Programa vs Portafolio</h3><p><strong>Programa</strong> = grupo de proyectos relacionados (ej: todos los proyectos de un cliente).</p><p><strong>Portafolio</strong> = todos los programas y proyectos de la organización alineados con la estrategia.</p></div>
+  <div class="c bl"><h3>Alineamiento estratégico</h3><p>Todo proyecto debe alinearse con la estrategia de la organización. Si no aporta valor estratégico, no debería existir.</p>
+    <div class="tw"><table><tr><th>Nivel</th><th>Define</th><th>Horizonte</th></tr><tr><td><strong>Estratégico</strong></td><td>Visión, misión, objetivos</td><td>3-5 años</td></tr><tr><td><strong>Táctico</strong></td><td>Portafolios, programas</td><td>1 año</td></tr><tr><td><strong>Operativo</strong></td><td>Proyectos y tareas</td><td>Meses</td></tr></table></div>
+  </div>
+  <div class="c bl"><h3>Business Case y valor</h3><p>El <strong>Business Case</strong> justifica la inversión ("¿por qué hacer este proyecto?").</p><p>El <strong>Benefits Management Plan</strong> define cómo se realizarán los beneficios.</p>
+    <div class="fm"><b>Fórmula ROI</b><code>ROI = (Beneficio - Inversión) / Inversión × 100</code><div class="eg"><strong>Ejemplo:</strong> Inviertes 50k€, genera 80k€ → ROI = (80-50)/50×100 = <strong>60%</strong></div></div>
+    <div class="fm"><b>NPV, IRR, Payback — reglas rápidas para el examen</b><span><strong>NPV</strong> más alto = mejor proyecto (positivo=viable, negativo=pérdidas)</span><span><strong>IRR</strong> más alto = mejor proyecto (debe superar la tasa de descuento)</span><span><strong>Payback</strong> más corto = mejor (cuánto tarda en recuperarse la inversión)</span></div>
+  </div>
+  <div class="c bl"><h3>Tipos de organización</h3>
+    <div class="tw"><table><tr><th>Tipo</th><th>Poder del PM</th><th>Ejemplo</th></tr><tr><td><strong>Funcional</strong></td><td>Poco — los recursos reportan a jefes de departamento</td><td>Ministerio público</td></tr><tr><td><strong>Matricial</strong></td><td>Medio — comparte autoridad con jefes funcionales</td><td>Segurma (tú coordinas técnicos que reportan a operaciones)</td></tr><tr><td><strong>Por proyectos</strong></td><td>Máximo — equipo dedicado</td><td>Empresa de construcción</td></tr></table></div>
+  </div>
+  <div class="c bl"><h3>Gestión del cambio organizacional</h3><p>Los proyectos generan cambios. Las personas se resisten al cambio. El PM lo gestiona.</p>
+    <div class="mn"><b>Modelo ADKAR de Prosci</b><span><strong>A</strong>wareness (consciencia) → <strong>D</strong>esire (deseo) → <strong>K</strong>nowledge (conocimiento) → <strong>A</strong>bility (habilidad) → <strong>R</strong>einforcement (refuerzo)</span></div>
+  </div>
+  <div class="c bl"><h3>Gobernanza</h3><p>Estructura de decisión: ¿quién aprueba cambios? ¿qué decide el PM solo? ¿cuándo escalar al sponsor?</p>
+    <div class="sg">Tu estructura L2/L3 en Segurma = gobernanza de proyecto PMP.</div>
+  </div>
+  <div class="c bl"><h3>Cumplimiento (Compliance)</h3><p>Identificar y cumplir requisitos legales y normativos DESDE EL INICIO, nunca sobre la marcha.</p>
+    <div class="mn"><b>"LRSI" — 4 tipos de cumplimiento</b><span><strong>L</strong>egal · <strong>R</strong>egulatorio · <strong>S</strong>eguridad · <strong>I</strong>nterno</span></div>
+    <div class="sg">Antes de instalar alarmas Grado 2/3 verificas la normativa de seguridad privada. Eso es cumplimiento regulatorio.</div>
+  </div>
+  <div class="c bl"><h3>Reservas presupuestarias</h3>
+    <div class="tw"><table><tr><th>Tipo</th><th>Para qué</th><th>Quién la usa</th></tr><tr><td><strong>Contingency Reserve</strong></td><td>Riesgos CONOCIDOS y planificados</td><td>El PM</td></tr><tr><td><strong>Management Reserve</strong></td><td>Riesgos DESCONOCIDOS</td><td>Solo el Sponsor</td></tr></table></div>
+  </div>
+</div>
+
+<!-- L2 -->
+<div id="p-l2" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🚀"><h2>Lección 2 · Iniciar el Proyecto</h2><p>Stakeholders · Equipo · Charter · Enfoque</p></div>
+  <div class="c tl"><h3>Identificar stakeholders</h3><p><strong>Stakeholder</strong> = cualquier persona afectada por el proyecto. El PRIMER paso es identificarlos TODOS.</p>
+    <div class="mn"><b>Matriz Poder/Interés "GMMM"</b><span><strong>G</strong>estionar de cerca (Alto Poder + Alto Interés)<br><strong>M</strong>antener Satisfecho (Alto Poder + Bajo Interés)<br><strong>M</strong>antener Informado (Bajo Poder + Alto Interés)<br><strong>M</strong>onitorizar (Bajo Poder + Bajo Interés)</span></div>
+    <div class="tw"><table><tr><th>Nivel engagement</th><th>Significado</th></tr><tr><td><strong>Unaware</strong> (Desconocedor)</td><td>No conoce el proyecto</td></tr><tr><td><strong>Resistant</strong> (Resistente)</td><td>Conoce y se opone</td></tr><tr><td><strong>Neutral</strong></td><td>Ni a favor ni en contra</td></tr><tr><td><strong>Supportive</strong> (Favorable)</td><td>Apoya el proyecto</td></tr><tr><td><strong>Leading</strong> (Líder)</td><td>Activamente comprometido</td></tr></table></div>
+  </div>
+  <div class="c tl"><h3>Formar el equipo — Modelo Tuckman</h3>
+    <div class="tk">
+      <div class="ts"><div class="ic" style="background:var(--blue-l)">🤝</div><div class="nm" style="color:var(--blue-d)">Forming</div><div class="ds">Se conocen</div></div>
+      <div class="ts"><div class="ic" style="background:var(--amber-l)">🌩</div><div class="nm" style="color:var(--amber-d)">Storming</div><div class="ds">Conflictos</div></div>
+      <div class="ts"><div class="ic" style="background:var(--purple-l)">📋</div><div class="nm" style="color:var(--purple-d)">Norming</div><div class="ds">Normas</div></div>
+      <div class="ts"><div class="ic" style="background:var(--teal-l)">🚀</div><div class="nm" style="color:var(--teal-d)">Performing</div><div class="ds">Alto rend ✅</div></div>
+      <div class="ts"><div class="ic" style="background:var(--g1)">🎓</div><div class="nm" style="color:var(--ink3)">Adjourning</div><div class="ds">Cierre</div></div>
+    </div>
+    <div class="mn"><b>Mnemotecnia Tuckman "FSNPA"</b><span>Forming · Storming · Norming · Performing · Adjourning<br><br>Cuando incorporas a alguien nuevo → el equipo vuelve parcialmente a Storming. Es NORMAL.</span></div>
+    <div class="sg">Técnico nuevo + veteranos cuestionándole = Storming. Facilita la integración, no evites el conflicto.</div>
+  </div>
+  <div class="c tl"><h3>Project Charter</h3><p>Documento que autoriza formalmente el proyecto y da poder al PM. Lo firma el Sponsor.</p>
+    <div class="mn"><b>Contenido del Charter "ROCAS"</b><span><strong>R</strong>ol del PM y autoridad<br><strong>O</strong>bjetivos del proyecto<br><strong>C</strong>riterios de éxito<br><strong>A</strong>lcance general (high-level)<br><strong>S</strong>ponsor firmante</span></div>
+    <div class="ib ib-r"><strong>⚠️ Regla clave:</strong>Sin Project Charter el proyecto NO existe oficialmente y TÚ no tienes autoridad como PM.</div>
+  </div>
+  <div class="c tl"><h3>Determinar el enfoque</h3>
+    <div class="tw"><table><tr><th></th><th>Predictivo</th><th>Ágil</th><th>Híbrido</th></tr><tr><td><strong>Requisitos</strong></td><td>Estables y claros</td><td>Cambiantes</td><td>Mezcla</td></tr><tr><td><strong>Cambios</strong></td><td>Costosos, formales</td><td>Bienvenidos</td><td>Según fase</td></tr><tr><td><strong>Entregas</strong></td><td>Una al final</td><td>Incrementales (2-4 sem)</td><td>Ambas</td></tr><tr><td><strong>Ejemplo Segurma</strong></td><td>CCTV con planos fijos</td><td>App de monitorización</td><td>Modernizar sistema en cliente operando</td></tr></table></div>
+  </div>
+</div>
+
+<!-- L3 -->
+<div id="p-l3" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#92400E,#F59E0B);" data-i="📋"><h2>Lección 3 · Planificar</h2><p>Alcance · Cronograma · Presupuesto · Riesgos · Calidad</p></div>
+  <div class="ib ib-a"><strong>⚡ La lección más densa</strong>Aquí están las fórmulas EVM, ruta crítica, WBS y riesgos. Dedica más tiempo a esta lección. Consulta la pestaña 📐 Fórmulas para ver todas las fórmulas paso a paso.</div>
+  <div class="c al"><h3>WBS — Work Breakdown Structure</h3><p>Descomposición jerárquica de TODO el trabajo del proyecto. La WBS debe representar el <strong>100% del trabajo</strong> (Regla del 100%).</p>
+    <div class="tw"><table><tr><th>Concepto</th><th>Quién lo genera</th><th>Cómo evitarlo</th></tr><tr><td><strong>Scope Creep</strong></td><td>CLIENTE pide cosas pequeñas</td><td>Control de cambios formal</td></tr><tr><td><strong>Gold Plating</strong></td><td>EQUIPO añade extras</td><td>Disciplina, seguir el alcance</td></tr></table></div>
+    <div class="sg">Un técnico instala cámaras extra "para que quede mejor" sin que se las pidieran = Gold Plating. Mala práctica.</div>
+  </div>
+  <div class="c al"><h3>Ruta Crítica y cronograma</h3><p><strong>Ruta Crítica (CPM)</strong> = secuencia de tareas más larga. Determina la duración MÍNIMA del proyecto. Float = 0 en tareas críticas.</p>
+    <div class="fm"><b>Fórmula PERT (3 puntos)</b><code>PERT = (O + 4M + P) / 6</code><span>O = Optimista, M = Más probable, P = Pesimista</span><div class="eg"><strong>Ejemplo:</strong> O=3d, M=5d, P=10d → PERT = (3+20+10)/6 = <strong>5,5 días</strong></div></div>
+    <div class="mn"><b>Compresión del cronograma</b><span><strong>Fast Tracking</strong> → tareas en PARALELO (gratis pero frágil, ↑riesgo)<br><strong>Crashing</strong> → más RECURSOS (cuesta más dinero, ↓riesgo)<br><br>"Fast es Free pero Frágil, Crashing Cuesta pero es seguro"</span></div>
+  </div>
+  <div class="c al"><h3>EVM — Earned Value Management</h3>
+    <div class="mn"><b>"Pedro Vende · El Valor · Actual Cuesta"</b><span><strong>PV</strong> (Planned Value) = lo que DEBÍAS tener<br><strong>EV</strong> (Earned Value) = lo que TIENES<br><strong>AC</strong> (Actual Cost) = lo que GASTASTE</span></div>
+    <div class="fm"><b>Varianzas — ¿Cuánto me desvío?</b><code>CV = EV - AC    ·    SV = EV - PV</code><span>Positivo = bien · Negativo = mal</span></div>
+    <div class="fm"><b>Índices — ¿Qué tal voy?</b><code>CPI = EV / AC    ·    SPI = EV / PV</code><span><strong>&gt;1 = BUENO</strong> (bajo presupuesto / adelantado)</span><span><strong>&lt;1 = MALO</strong> (sobre presupuesto / retrasado)</span><div class="eg"><strong>Ejemplo 20 sedes:</strong> PV=70k, EV=60k, AC=80k<br>CPI = 60/80 = <strong>0,75</strong> → sobre presupuesto ❌<br>SPI = 60/70 = <strong>0,86</strong> → retrasado ❌</div></div>
+    <div class="fm"><b>EAC — ¿Cuánto costará al final?</b><code>EAC = BAC / CPI</code><span>BAC = presupuesto original total</span><div class="eg">BAC=200k, CPI=0,75 → EAC = 200.000/0,75 = <strong>266.666€</strong> (66k más caro)</div></div>
+    <div class="mn"><b>Regla de oro CPI/SPI</b><span><strong>"Mayor que 1 es Bueno, Menor que 1 es Malo"</strong><br>Aplica igual a CPI (coste) y SPI (tiempo). =1 = en plan exacto.</span></div>
+  </div>
+  <div class="c al"><h3>Gestión de Riesgos</h3>
+    <div class="tw"><table><tr><th>Concepto</th><th>Cuándo</th><th>Registro</th></tr><tr><td><strong>Riesgo</strong></td><td>Evento FUTURO posible</td><td>Risk Register</td></tr><tr><td><strong>Issue</strong></td><td>Ya ha OCURRIDO</td><td>Issue Log</td></tr></table></div>
+    <div class="fm"><b>Fórmula EMV (Expected Monetary Value)</b><code>EMV = Probabilidad × Impacto monetario</code><div class="eg">35% × 12.000€ = EMV <strong>4.200€</strong> → invierte hasta 4.200€ en mitigación</div></div>
+    <div class="mn"><b>Riesgos negativos "META"</b><span><strong>M</strong>itigar (reducir prob/impacto) · <strong>E</strong>vitar (cambiar plan) · <strong>T</strong>ransferir (seguro/contrato) · <strong>A</strong>ceptar</span></div>
+    <div class="mn"><b>Riesgos positivos "EMCA"</b><span><strong>E</strong>xplotar (hacer que ocurra) · <strong>M</strong>ejorar (↑prob/impacto) · <strong>C</strong>ompartir (aliarse) · <strong>A</strong>ceptar</span></div>
+  </div>
+  <div class="c al"><h3>Calidad: QA vs QC</h3>
+    <div class="tw"><table><tr><th></th><th>QA (Quality Assurance)</th><th>QC (Quality Control)</th></tr><tr><td><strong>Qué es</strong></td><td>Auditar PROCESOS</td><td>Inspeccionar PRODUCTO</td></tr><tr><td><strong>Cuándo</strong></td><td>ANTES de producir (previene)</td><td>DESPUÉS de producir (detecta)</td></tr><tr><td><strong>Segurma</strong></td><td>El proceso estándar de instalación</td><td>El checklist antes de entregar</td></tr></table></div>
+  </div>
+  <div class="c al"><h3>Tipos de contrato</h3>
+    <div class="tw"><table><tr><th>Tipo</th><th>Cómo funciona</th><th>Riesgo en...</th></tr><tr><td><strong>Precio Fijo (FP)</strong></td><td>Precio cerrado</td><td>VENDEDOR</td></tr><tr><td><strong>Coste + Honorarios (CR)</strong></td><td>Coste real + margen</td><td>COMPRADOR</td></tr><tr><td><strong>Tiempo y Material (T&M)</strong></td><td>Pago por horas y materiales</td><td>Compartido</td></tr></table></div>
+  </div>
+</div>
+
+<!-- L4 -->
+<div id="p-l4" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#5B21B6,#8B5CF6);" data-i="👥"><h2>Lección 4 · Liderar el Equipo</h2><p>Liderazgo · RACI · Comunicación · Conflictos</p></div>
+  <div class="ib ib-p"><strong>🫶 El corazón del PMP Ed.7</strong>El PM es un servant leader: facilita, no ordena. Cuando hay conflicto → escucha primero. Cuando el equipo falla → pregunta por qué.</div>
+  <div class="c pl"><h3>Servant Leadership</h3><p>El PM sirve al equipo: elimina obstáculos, da autonomía, facilita recursos. No microgestiona.</p>
+    <div class="mn"><b>"SERVE"</b><span><strong>S</strong>upport (apoyar) · <strong>E</strong>mpower (empoderar) · <strong>R</strong>emove obstacles · <strong>V</strong>ision · <strong>E</strong>ncourage</span></div>
+    <div class="tw"><table><tr><th>Estilo</th><th>Cuándo usar</th></tr><tr><td><strong>Servant Leader ✅</strong></td><td>PMP Ed.7 lo prefiere. Equipos ágiles y maduros.</td></tr><tr><td><strong>Transformacional</strong></td><td>Proyectos de cambio, innovación</td></tr><tr><td><strong>Transaccional</strong></td><td>Operativos, premios/castigos</td></tr><tr><td><strong>Laissez-faire</strong></td><td>Equipos muy senior</td></tr></table></div>
+    <div class="sg">Cuando un técnico no puede entrar al edificio y TÚ llamas al cliente para desbloquearlo → eso es Servant Leadership.</div>
+  </div>
+  <div class="c pl"><h3>Matriz RACI</h3>
+    <div class="mn"><b>"Rápido Alguien Consulta Informa"</b><span><strong>R</strong>esponsible → quien EJECUTA (varios posibles)<br><strong>A</strong>ccountable → quien APRUEBA (<strong>SOLO 1</strong> por tarea)<br><strong>C</strong>onsulted → a quien se PREGUNTA antes<br><strong>I</strong>nformed → a quien se AVISA después<br><br>Regla de oro: <em>"Si hay 2 Accountable, no hay ninguno"</em></span></div>
+  </div>
+  <div class="c pl"><h3>Canales de Comunicación</h3>
+    <div class="fm"><b>Fórmula Canales</b><code>Canales = n × (n-1) / 2</code><div class="eg">Con 5 personas: 10 canales<br>Con 8 personas: <strong>28 canales</strong><br>Con 10 personas: 45 canales<br>¡Cada persona aumenta EXPONENCIALMENTE la complejidad!</div></div>
+  </div>
+  <div class="c pl"><h3>Resolución de conflictos</h3>
+    <div class="mn"><b>"CNSFE" — de mejor a peor</b><span>✅ <strong>C</strong>olaborar/Resolver (win-win — SIEMPRE primero)<br>✅ <strong>N</strong>egociar/Comprometer (ambos ceden)<br>⚠️ <strong>S</strong>uavizar (minimizar diferencias)<br>❌ <strong>F</strong>orzar (imponer)<br>❌ <strong>E</strong>vitar (ignorar)</span></div>
+    <div class="sg">Dos técnicos en conflicto: 1) Hablas con cada uno por separado 2) Buscas solución win-win conjunta 3) Documentas acuerdo como norma de equipo.</div>
+  </div>
+  <div class="c pl"><h3>Teorías de motivación</h3>
+    <div class="tw"><table><tr><th>Teoría</th><th>Concepto clave</th></tr><tr><td><strong>Maslow</strong></td><td>5 niveles: fisiológicas → seguridad → social → reconocimiento → autorrealización. No puedes motivar con reconocimiento si el sueldo es malo.</td></tr><tr><td><strong>Herzberg</strong></td><td>Factores higiénicos (sueldo, condiciones) evitan insatisfacción. Factores motivadores (logro, responsabilidad) generan satisfacción.</td></tr><tr><td><strong>McGregor X/Y</strong></td><td>X: personas perezosas, necesitan control. Y: personas auto-motivadas. <strong>PMP promueve Teoría Y.</strong></td></tr></table></div>
+  </div>
+</div>
+
+<!-- L5 -->
+<div id="p-l5" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#164E63,#06B6D4);" data-i="📊"><h2>Lección 5 · Apoyar el Rendimiento</h2><p>Mejora continua · Evaluar progreso · Problemas · Cambios</p></div>
+  <div class="c cl"><h3>Mejora continua — PDCA</h3>
+    <div class="mn"><b>Ciclo PDCA de Deming</b><span><strong>P</strong>lan (planificar mejora) → <strong>D</strong>o (ejecutar en pequeño) → <strong>C</strong>heck (comprobar) → <strong>A</strong>ct (estandarizar o corregir)<br><br>Se repite cíclicamente. Nunca termina.</span></div>
+  </div>
+  <div class="c cl"><h3>Mentoring vs Coaching</h3>
+    <div class="mn"><b>"Mentor da mapa, Coach da brújula"</b><span><strong>Mentoring</strong> = enseñar desde mi experiencia (doy respuestas)<br><strong>Coaching</strong> = ayudar a descubrir (hago preguntas)</span></div>
+  </div>
+  <div class="c cl"><h3>Evaluar progreso con EVM</h3><p>Usar CPI y SPI continuamente. Reportar siempre con: <strong>DATOS + CAUSA + OPCIONES</strong>, nunca solo el problema.</p>
+    <div class="sg">Tus dashboards Power BI = EVM visual. Cuando un proyecto va mal, reportas al CEO con los números, la causa y las opciones.</div>
+  </div>
+  <div class="c cl"><h3>Riesgo vs Issue vs Impediment</h3>
+    <div class="tw"><table><tr><th>Concepto</th><th>Cuándo</th><th>Registro</th></tr><tr><td><strong>Riesgo</strong></td><td>Evento FUTURO posible</td><td>Risk Register</td></tr><tr><td><strong>Issue</strong></td><td>Ya ha OCURRIDO</td><td>Issue Log</td></tr><tr><td><strong>Impediment</strong></td><td>Bloquea al equipo AHORA (ágil)</td><td>Impediment Backlog</td></tr></table></div>
+  </div>
+  <div class="c cl"><h3>Control de cambios</h3>
+    <div class="mn"><b>"REACCI" — 6 pasos</b><span><strong>R</strong>ecibir solicitud<br><strong>E</strong>valuar impacto (alcance/tiempo/coste/riesgos)<br><strong>A</strong>probar o rechazar (CCB decide)<br><strong>C</strong>ambiar el plan si se aprueba<br><strong>C</strong>omunicar a todos los afectados<br><strong>I</strong>nscribir en el Change Log</span></div>
+    <div class="ib ib-r"><strong>⚠️ Regla sagrada:</strong>El PM NUNCA implementa un cambio sin aprobación del CCB. Y NUNCA dice sí ni no sin evaluar el impacto primero.</div>
+  </div>
+</div>
+
+<!-- L6 -->
+<div id="p-l6" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#9D174D,#EC4899);" data-i="🎓"><h2>Lección 6 · Cerrar el Proyecto</h2><p>Cierre formal · Beneficios · Transferencia de conocimiento</p></div>
+  <div class="ib ib-pk"><strong>⚠️ Lo más importante:</strong>El proyecto NO está terminado hasta que el cliente lo acepta formalmente POR ESCRITO. Sin firma, sigue abierto.</div>
+  <div class="c pkl"><h3>Proceso de cierre</h3>
+    <div class="mn"><b>"VACARE" — 6 pasos del cierre</b><span><strong>V</strong>alidar entregables completados<br><strong>A</strong>ceptación firmada del cliente<br><strong>C</strong>ontratos con proveedores cerrados<br><strong>A</strong>rchivar documentación<br><strong>R</strong>ecursos del equipo liberados<br><strong>E</strong>lencia — lecciones aprendidas documentadas</span></div>
+  </div>
+  <div class="c pkl"><h3>Realización de beneficios</h3><p>No basta con entregar. Hay que VERIFICAR que los beneficios prometidos se materializan.</p><p><strong>Benefits Realization Review</strong> — revisiones periódicas post-proyecto.</p>
+    <div class="sg">Si prometiste "reducir incidencias 40%", a los 6 meses verificas si ocurrió. Si no, investigas por qué.</div>
+  </div>
+  <div class="c pkl"><h3>Transferencia de conocimiento</h3><p>Asegurar que el conocimiento no se pierde: documentación técnica, formación al cliente, Lessons Learned Register.</p>
+    <div class="mn"><b>Lecciones aprendidas "PSE"</b><span><strong>P</strong>roblema (qué ocurrió)<br><strong>S</strong>olución (qué hicimos)<br><strong>E</strong>scenarios futuros (cuándo aplicar esto)<br><br>⚠️ Documentar DURANTE todo el proyecto, no solo al final.</span></div>
+    <div class="sg">Técnico clave que se va: ANTES de irse, documenta todos los procedimientos que solo él sabe. Eso es transferencia de conocimiento PMP.</div>
+  </div>
+</div>
+
+<!-- ÁGIL -->
+<div id="p-agil" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🔄"><h2>Metodología Ágil / Scrum</h2><p>50% del examen PMP es ágil</p></div>
+  <div class="ib ib-t"><strong>Dato crucial:</strong>El examen PMP mezcla 50% preguntas predictivas + 50% ágiles. Sin Scrum pierdes la mitad.</div>
+  <div class="c tl"><h3>Pilares de Scrum</h3>
+    <div class="mn"><b>"TIA"</b><span><strong>T</strong>ransparencia (todos ven lo mismo) · <strong>I</strong>nspección (revisar frecuentemente) · <strong>A</strong>daptación (cambiar si necesario)</span></div>
+  </div>
+  <div class="g2x">
+    <div class="c tl"><h3>👤 Roles Scrum</h3><p><strong>Product Owner</strong> — define QUÉ hacer. Gestiona el Backlog.</p><p><strong>Scrum Master</strong> — facilita el proceso. Elimina impedimentos. Es el Servant Leader.</p><p><strong>Dev Team</strong> — decide CÓMO hacer el trabajo. 3-9 personas.</p></div>
+    <div class="c tl"><h3>📦 Artefactos</h3><p><strong>Product Backlog</strong> — TODO el trabajo pendiente. Propiedad del PO.</p><p><strong>Sprint Backlog</strong> — lo que el equipo se compromete en este sprint.</p><p><strong>Incremento</strong> — entregable funcional al final del sprint.</p></div>
+  </div>
+  <div class="c tl"><h3>📅 Eventos Scrum</h3>
+    <div class="tw"><table><tr><th>Evento</th><th>Duración máx</th><th>Propósito</th></tr><tr><td><strong>Sprint Planning</strong></td><td>8 horas</td><td>Seleccionar qué se hará</td></tr><tr><td><strong>Daily Standup</strong></td><td>15 minutos</td><td>Sincronización diaria</td></tr><tr><td><strong>Sprint Review</strong></td><td>4 horas</td><td>Mostrar incremento al cliente</td></tr><tr><td><strong>Retrospectiva</strong></td><td>3 horas</td><td>Mejorar el proceso (lecciones del sprint)</td></tr></table></div>
+    <div class="mn"><b>Daily "AHM"</b><span>¿Qué hice <strong>A</strong>yer? · ¿Qué haré <strong>H</strong>oy? · ¿Qué <strong>M</strong>e bloquea?</span></div>
+  </div>
+  <div class="c tl"><h3>Conceptos Scrum clave</h3><p><strong>Definition of Done</strong> — criterio acordado de cuándo una tarea está REALMENTE terminada.</p><p><strong>Velocity</strong> — story points completados por sprint.</p><p><strong>WIP Limit</strong> (Kanban) — máximo de tareas simultáneas.</p>
+    <div class="mn"><b>User Story "INVEST"</b><span><strong>I</strong>ndependiente · <strong>N</strong>egociable · <strong>V</strong>aliosa · <strong>E</strong>stimable · <strong>S</strong>mall · <strong>T</strong>esteable</span></div>
+  </div>
+</div>
+
+<!-- FÓRMULAS -->
+<div id="p-form" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="📐"><h2>Todas las Fórmulas PMP</h2><p>Explicadas paso a paso</p></div>
+  <div class="fm"><b>1. Canales de comunicación</b><code>n × (n-1) / 2</code><div class="eg">6 personas → 6×5/2 = <strong>15 canales</strong></div></div>
+  <div class="fm"><b>2. PERT</b><code>(O + 4M + P) / 6</code><div class="eg">O=3, M=5, P=10 → (3+20+10)/6 = <strong>5,5 días</strong></div></div>
+  <div class="fm"><b>3. Desviación estándar PERT</b><code>σ = (P - O) / 6</code><div class="eg">(10-3)/6 = <strong>1,17 días</strong> de incertidumbre</div></div>
+  <div class="fm"><b>4. EVM — Variables base</b><code>PV (planificado) · EV (completado) · AC (gastado)</code></div>
+  <div class="fm"><b>5. Varianzas</b><code>CV = EV - AC · SV = EV - PV</code><span>Positivo = bien · Negativo = mal</span></div>
+  <div class="fm"><b>6. Índices</b><code>CPI = EV/AC · SPI = EV/PV</code><span>&gt;1 = bien ✅ · &lt;1 = mal ❌</span></div>
+  <div class="fm"><b>7. EAC</b><code>EAC = BAC / CPI</code><span>Proyección del coste final</span></div>
+  <div class="fm"><b>8. ETC</b><code>ETC = EAC - AC</code><span>Cuánto queda por gastar</span></div>
+  <div class="fm"><b>9. VAC</b><code>VAC = BAC - EAC</code><span>Desviación final del presupuesto (negativo = más caro)</span></div>
+  <div class="fm"><b>10. TCPI</b><code>TCPI = (BAC - EV) / (BAC - AC)</code><span>Eficiencia necesaria a partir de ahora para terminar en presupuesto</span></div>
+  <div class="fm"><b>11. EMV</b><code>Probabilidad × Impacto</code></div>
+  <div class="fm"><b>12. ROI</b><code>(Beneficio - Inversión) / Inversión × 100</code></div>
+</div>
+
+<!-- MNEMOTECNIAS -->
+<div id="p-mnem" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#92400E,#F59E0B);" data-i="🧠"><h2>Todas las Mnemotecnias</h2><p>Repasa una cada día antes de la prueba</p></div>
+  <div class="mn"><b>6 Lecciones</b><span>"En Inicio Planifico Liderando Rindiendo y Cerrando"</span></div>
+  <div class="mn"><b>Proyecto "TUC"</b><span>Temporal · Único · Cambiante</span></div>
+  <div class="mn"><b>Charter "ROCAS"</b><span>Rol PM · Objetivos · Criterios éxito · Alcance · Sponsor</span></div>
+  <div class="mn"><b>Tuckman "FSNPA"</b><span>Forming · Storming · Norming · Performing · Adjourning</span></div>
+  <div class="mn"><b>Stakeholders "GMMM"</b><span>Gestionar · Mantener Satisfecho · Mantener Informado · Monitorizar</span></div>
+  <div class="mn"><b>RACI</b><span>"Rápido Alguien Consulta Informa" — solo 1 Accountable</span></div>
+  <div class="mn"><b>Conflictos "CNSFE"</b><span>Colaborar ✅ · Negociar · Suavizar · Forzar ❌ · Evitar ❌</span></div>
+  <div class="mn"><b>Riesgos - "META"</b><span>Mitigar · Evitar · Transferir · Aceptar</span></div>
+  <div class="mn"><b>Riesgos + "EMCA"</b><span>Explotar · Mejorar · Compartir · Aceptar</span></div>
+  <div class="mn"><b>EVM "Pedro Vende El Valor Actual Cuesta"</b><span>PV = lo que debías · EV = lo que tienes · AC = lo que gastaste</span></div>
+  <div class="mn"><b>CPI/SPI</b><span>"Mayor que 1 es Bueno, Menor que 1 es Malo"</span></div>
+  <div class="mn"><b>Servant Leader "SERVE"</b><span>Support · Empower · Remove obstacles · Vision · Encourage</span></div>
+  <div class="mn"><b>PDCA Deming</b><span>Plan · Do · Check · Act</span></div>
+  <div class="mn"><b>Cambios "REACCI"</b><span>Recibir · Evaluar · Aprobar · Cambiar · Comunicar · Inscribir</span></div>
+  <div class="mn"><b>Cierre "VACARE"</b><span>Validar · Aceptación · Contratos · Archivar · Recursos · Elencia</span></div>
+  <div class="mn"><b>User Story "INVEST"</b><span>Independiente · Negociable · Valiosa · Estimable · Small · Testeable</span></div>
+  <div class="mn"><b>Scrum "TIA"</b><span>Transparencia · Inspección · Adaptación</span></div>
+  <div class="mn"><b>Daily "AHM"</b><span>Ayer · Hoy · Me bloquea</span></div>
+  <div class="mn"><b>ADKAR (cambio)</b><span>Awareness · Desire · Knowledge · Ability · Reinforcement</span></div>
+  <div class="mn"><b>Cumplimiento "LRSI"</b><span>Legal · Regulatorio · Seguridad · Interno</span></div>
+  <div class="mn"><b>Lecciones "PSE"</b><span>Problema · Solución · Escenarios futuros</span></div>
+</div>
+
+<!-- GLOSARIO -->
+<div id="p-glos" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#0F172A,#334155);" data-i="🔤"><h2>Glosario PMP</h2><p>Términos inglés ↔ español con definición</p></div>
+  <div class="search-w"><span class="search-i">🔍</span><input type="text" id="si" placeholder="Buscar término..." oninput="filt()"></div>
+  <div id="gl"></div>
+</div>
+
+<!-- FLASHCARDS -->
+<div id="p-flash" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🃏"><h2>Flashcards</h2><p>Inglés arriba · Español abajo · Toca para girar</p></div>
+  <div class="fc-prog" id="fp"></div>
+  <div class="fc-w"><button class="fc" id="fcc" onclick="flip()"><div class="fc-in" id="fci"><div class="fc-f" id="fcf"></div><div class="fc-b" id="fcb"></div></div></button></div>
+  <div style="font-size:0.72rem;color:var(--ink4);text-align:center;margin:6px 0;">👆 Toca para ver la respuesta</div>
+  <div class="fc-nav"><button class="fc-btn" onclick="prev()">← Anterior</button><button class="fc-btn" onclick="shuf()" style="flex:0.5;">🔀</button><button class="fc-btn" onclick="next()">Siguiente →</button></div>
+</div>
+
+<!-- QUIZ -->
+<div id="p-quiz" class="pg">
+  <div class="hb" style="background:linear-gradient(135deg,#991B1B,#EF4444);" data-i="🎯"><h2>Exámenes de práctica</h2><p>120 preguntas · 6 por lección + 2 simulacros generales · Se barajan cada vez</p></div>
+  <div class="ib ib-a"><strong>🎯 Modo examen</strong>Las preguntas se barajan aleatoriamente cada vez que repites. Cuando falles, vuelve a la lección correspondiente del temario para repasar.</div>
+  <div id="qsel">
+    <div class="lbl">Por lección del temario</div>
+    <div class="qs">
+      <button class="qs-c" onclick="startQ('l1')"><div class="qs-t">L1 · Entorno</div><div class="qs-m">Fundamentos, estrategia, gobernanza</div><span class="qs-b" style="background:var(--blue-l);color:var(--blue-d);">10 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('l2')"><div class="qs-t">L2 · Iniciar</div><div class="qs-m">Stakeholders, Charter, Tuckman</div><span class="qs-b" style="background:var(--teal-l);color:var(--teal-d);">10 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('l3')"><div class="qs-t">L3 · Planificar</div><div class="qs-m">EVM, riesgos, WBS, PERT</div><span class="qs-b" style="background:var(--amber-l);color:var(--amber-d);">10 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('l4')"><div class="qs-t">L4 · Liderar</div><div class="qs-m">Servant leadership, RACI, conflictos</div><span class="qs-b" style="background:var(--purple-l);color:var(--purple-d);">10 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('l5')"><div class="qs-t">L5 · Rendimiento</div><div class="qs-m">PDCA, cambios, issues</div><span class="qs-b" style="background:var(--cyan-l);color:#0E7490;">10 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('l6')"><div class="qs-t">L6 · Cerrar</div><div class="qs-m">Cierre, beneficios, conocimiento</div><span class="qs-b" style="background:var(--pink-l);color:#9D174D;">10 preguntas</span></button>
+    </div>
+    <div class="lbl">Simulacros completos tipo prueba de acceso</div>
+    <div class="qs">
+      <button class="qs-c" onclick="startQ('sim1')"><div class="qs-t">Simulacro 1</div><div class="qs-m">20 preguntas mezcladas de todas las lecciones</div><span class="qs-b" style="background:var(--red-l);color:var(--red-d);">20 preguntas</span></button>
+      <button class="qs-c" onclick="startQ('sim2')"><div class="qs-t">Simulacro 2</div><div class="qs-m">20 preguntas diferentes, nivel prueba real</div><span class="qs-b" style="background:var(--red-l);color:var(--red-d);">20 preguntas</span></button>
+    </div>
+    <div class="lbl">Tu historial</div>
+    <div class="stat-r" id="hstats"></div>
+    <div id="hlist"></div>
+  </div>
+  <div id="qa" style="display:none;"></div>
+  <div style="text-align:center;margin-top:8px;"><button class="btn btn-p" id="bbk" onclick="bkQ()" style="display:none;">← Volver a exámenes</button></div>
+</div>
+
+<script>
+const T=[
+  {en:'Project Charter',es:'Acta de Constitución',d:'Autoriza formalmente el proyecto y da poder al PM. Lo firma el Sponsor.',dm:'Proceso'},
+  {en:'Sponsor',es:'Patrocinador',d:'Ejecutivo que autoriza el proyecto, aporta recursos y resuelve escalaciones.',dm:'Proceso'},
+  {en:'Stakeholder',es:'Parte Interesada',d:'Cualquier persona o grupo afectado por el proyecto.',dm:'Personas'},
+  {en:'WBS',es:'Estructura de Desglose',d:'Descomposición jerárquica de todo el trabajo del proyecto.',dm:'Proceso'},
+  {en:'Scope Creep',es:'Expansión del alcance',d:'El CLIENTE va pidiendo cosas pequeñas sin control de cambios.',dm:'Proceso'},
+  {en:'Gold Plating',es:'Dorado / Extras no pedidos',d:'El EQUIPO añade extras no pedidos. Mala práctica.',dm:'Proceso'},
+  {en:'Triple Constraint',es:'Triple Restricción',d:'Alcance + Tiempo + Coste. Cambiar uno afecta a los otros.',dm:'Proceso'},
+  {en:'Critical Path',es:'Ruta Crítica',d:'Secuencia de tareas más larga. Duración mínima del proyecto. Float = 0.',dm:'Proceso'},
+  {en:'Float / Slack',es:'Holgura',d:'Tiempo que puede retrasarse una tarea sin retrasar el proyecto.',dm:'Proceso'},
+  {en:'Earned Value (EV)',es:'Valor Ganado',d:'Valor del trabajo realmente completado.',dm:'Proceso'},
+  {en:'Planned Value (PV)',es:'Valor Planificado',d:'Valor del trabajo que debería estar hecho según el plan.',dm:'Proceso'},
+  {en:'Actual Cost (AC)',es:'Coste Real',d:'Dinero realmente gastado.',dm:'Proceso'},
+  {en:'CPI',es:'Índice Rendimiento Coste',d:'EV/AC. >1 bajo presupuesto, <1 sobre presupuesto.',dm:'Proceso'},
+  {en:'SPI',es:'Índice Rendimiento Cronograma',d:'EV/PV. >1 adelantado, <1 retrasado.',dm:'Proceso'},
+  {en:'EAC',es:'Estimación al Completar',d:'BAC/CPI. Proyección del coste final.',dm:'Proceso'},
+  {en:'EMV',es:'Valor Monetario Esperado',d:'Probabilidad × Impacto. Cuantifica riesgos.',dm:'Proceso'},
+  {en:'Risk Register',es:'Registro de Riesgos',d:'Documento con todos los riesgos identificados y respuestas.',dm:'Proceso'},
+  {en:'Issue Log',es:'Registro de Problemas',d:'Problemas YA ocurridos. Cada uno con responsable y deadline.',dm:'Proceso'},
+  {en:'CCB',es:'Comité Control de Cambios',d:'Aprueba o rechaza cambios. El PM nunca cambia sin su OK.',dm:'Proceso'},
+  {en:'RACI Matrix',es:'Matriz RACI',d:'R=ejecuta, A=aprueba (solo 1), C=consulta, I=informa.',dm:'Personas'},
+  {en:'Servant Leadership',es:'Liderazgo de Servicio',d:'El PM sirve al equipo: facilita, elimina obstáculos.',dm:'Personas'},
+  {en:'Tuckman Model',es:'Modelo de Tuckman',d:'Forming → Storming → Norming → Performing → Adjourning.',dm:'Personas'},
+  {en:'Conflict Resolution',es:'Resolución de Conflictos',d:'Colaborar ✅ > Negociar > Suavizar > Forzar ❌ > Evitar ❌.',dm:'Personas'},
+  {en:'BATNA',es:'Mejor Alternativa Negociada',d:'Tu mejor opción si la negociación fracasa.',dm:'Personas'},
+  {en:'Lessons Learned',es:'Lecciones Aprendidas',d:'Documentar DURANTE todo el proyecto, no solo al final.',dm:'Proceso'},
+  {en:'Sprint',es:'Iteración',d:'Periodo fijo de 2-4 semanas con entregable funcional.',dm:'Ágil'},
+  {en:'Product Owner',es:'Dueño del Producto',d:'Define QUÉ hacer. Gestiona el Product Backlog.',dm:'Ágil'},
+  {en:'Scrum Master',es:'Maestro Scrum',d:'Facilita el proceso. Elimina impedimentos. Servant Leader.',dm:'Ágil'},
+  {en:'Product Backlog',es:'Lista de Producto',d:'TODO el trabajo pendiente priorizado. Propiedad del PO.',dm:'Ágil'},
+  {en:'Daily Standup',es:'Reunión Diaria',d:'15 min: ¿qué hice ayer?, ¿qué haré hoy?, ¿qué me bloquea?',dm:'Ágil'},
+  {en:'Sprint Review',es:'Revisión del Sprint',d:'Mostrar el incremento al cliente para obtener feedback.',dm:'Ágil'},
+  {en:'Retrospective',es:'Retrospectiva',d:'Reunión interna: ¿qué hicimos bien? ¿qué mejorar?',dm:'Ágil'},
+  {en:'Definition of Done',es:'Definición de Terminado',d:'Criterio acordado de cuándo una tarea está completa.',dm:'Ágil'},
+  {en:'Velocity',es:'Velocidad del Equipo',d:'Story points completados por sprint.',dm:'Ágil'},
+  {en:'User Story',es:'Historia de Usuario',d:'"Como [usuario] quiero [función] para [beneficio]".',dm:'Ágil'},
+  {en:'Business Case',es:'Caso de Negocio',d:'Justifica la inversión en el proyecto.',dm:'Negocio'},
+  {en:'Benefits Realization',es:'Realización de Beneficios',d:'Verificar post-proyecto que los beneficios se materializan.',dm:'Negocio'},
+  {en:'Compliance',es:'Cumplimiento',d:'Cumplir leyes, normativas y estándares aplicables.',dm:'Negocio'},
+  {en:'Governance',es:'Gobernanza',d:'Estructura de decisiones y escalado del proyecto.',dm:'Proceso'},
+  {en:'QA (Quality Assurance)',es:'Aseguramiento Calidad',d:'Auditar PROCESOS para prevenir defectos (antes).',dm:'Proceso'},
+  {en:'QC (Quality Control)',es:'Control de Calidad',d:'Inspeccionar PRODUCTO para detectar defectos (después).',dm:'Proceso'},
+  {en:'Fast Tracking',es:'Compresión por Superposición',d:'Tareas en paralelo. Gratis pero frágil.',dm:'Proceso'},
+  {en:'Crashing',es:'Compresión por Recursos',d:'Más recursos en tareas críticas. Cuesta más.',dm:'Proceso'},
+  {en:'Fixed Price (FP)',es:'Precio Fijo',d:'Precio cerrado. Riesgo en el VENDEDOR.',dm:'Proceso'},
+  {en:'Cost Reimbursable',es:'Coste Reembolsable',d:'Coste real + margen. Riesgo en el COMPRADOR.',dm:'Proceso'},
+  {en:'T&M',es:'Tiempo y Material',d:'Pago por horas. Riesgo compartido.',dm:'Proceso'},
+  {en:'Maslow Hierarchy',es:'Jerarquía de Maslow',d:'Fisiológicas → Seguridad → Social → Reconocimiento → Autorrealización.',dm:'Personas'},
+  {en:'Herzberg Theory',es:'Teoría de Herzberg',d:'Higiénicos (evitan insatisfacción) vs Motivadores (generan satisfacción).',dm:'Personas'},
+  {en:'PDCA Cycle',es:'Ciclo PDCA Deming',d:'Plan → Do → Check → Act. Mejora continua.',dm:'Proceso'},
+  {en:'ADKAR Model',es:'Modelo ADKAR',d:'Awareness → Desire → Knowledge → Ability → Reinforcement. Gestión del cambio.',dm:'Negocio'},
+];
+
+// NAVIGATION
+const PAGES=['home','l1','l2','l3','l4','l5','l6','agil','form','mnem','glos','flash','quiz'];
+function go(id){
+  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
+  document.getElementById('p-'+id).classList.add('on');
+  const i=PAGES.indexOf(id);
+  if(i>=0&&document.querySelectorAll('.nb')[i]) document.querySelectorAll('.nb')[i].classList.add('on');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='glos'&&!gB) buildGl();
+  if(id==='flash'&&!fB) buildFl();
+}
+
+// MODAL
+function openM(t,b){document.getElementById('mh').textContent=t;document.getElementById('mb').innerHTML=b;document.getElementById('modal').classList.add('on');}
+function closeM(){document.getElementById('modal').classList.remove('on');}
+function closeMbg(e){if(e.target===document.getElementById('modal'))closeM();}
+
+// GLOSSARY
+let gB=false;
+function buildGl(){gB=true;renderGl(T);}
+function renderGl(items){
+  const c={Proceso:'var(--blue-d)',Personas:'var(--teal-d)',Ágil:'var(--purple-d)',Negocio:'var(--amber-d)'};
+  document.getElementById('gl').innerHTML=`<div class="tw"><table><thead><tr><th>🇬🇧 English</th><th>🇪🇸 Español</th><th>Definición</th></tr></thead><tbody>${
+    items.map(i=>`<tr><td><strong style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--blue-d);">${i.en}</strong></td><td style="color:var(--teal-d);font-weight:700;font-size:0.8rem;">${i.es}</td><td style="font-size:0.78rem;">${i.d} <span style="display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:8px;background:var(--g1);color:${c[i.dm]||'var(--ink3)'};">${i.dm}</span></td></tr>`).join('')
+  }</tbody></table></div>`;
+}
+function filt(){
+  const q=document.getElementById('si').value.toLowerCase();
+  renderGl(T.filter(i=>i.en.toLowerCase().includes(q)||i.es.toLowerCase().includes(q)||i.d.toLowerCase().includes(q)));
+}
+
+// FLASHCARDS
+let fB=false,fI=0,fF=false,fD=[];
+function buildFl(){fB=true;fD=[...T];renderFc();}
+function renderFc(){
+  const t=fD[fI];
+  document.getElementById('fp').textContent=`${fI+1} / ${fD.length}`;
+  document.getElementById('fcf').innerHTML=`<div class="fc-en">${t.en}</div><div class="fc-es">${t.es}</div><div class="fc-dom">${t.dm}</div>`;
+  document.getElementById('fcb').innerHTML=`<div class="fc-def">${t.d}</div>`;
+  document.getElementById('fcc').classList.remove('fl');
+  fF=false;
+}
+function flip(){fF=!fF;document.getElementById('fcc').classList.toggle('fl',fF);}
+function next(){fI=(fI+1)%fD.length;renderFc();}
+function prev(){fI=(fI-1+fD.length)%fD.length;renderFc();}
+function shuf(){fD=[...T].sort(()=>Math.random()-0.5);fI=0;renderFc();}
+
+// ═══════════════════════════════════════
+// QUIZ ENGINE — 120 QUESTIONS
+// ═══════════════════════════════════════
+function sh(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+
+const Q={
+l1:[
+{sc:"Tu empresa evalúa 3 proyectos. Solo puede financiar uno.",q:"¿Qué criterio aplica primero?",o:["El más barato","El mejor alineado con la estrategia de la organización","El que prefiera el equipo","El más rápido"],ok:1,e:"El alineamiento estratégico es siempre lo primero."},
+{sc:"Necesitas justificar 200.000€ de inversión ante dirección.",q:"¿Qué documento preparas?",o:["Project Charter","Business Case","Risk Register","Project Management Plan"],ok:1,e:"El Business Case justifica la inversión. El Charter viene después."},
+{sc:"Inviertes 80.000€ y genera 120.000€.",q:"¿Cuál es el ROI?",o:["50%","40%","60%","150%"],ok:0,e:"ROI = (120k-80k)/80k×100 = 50%."},
+{sc:"Proyecto en empresa financiera regulada.",q:"¿Cuándo consideras los requisitos regulatorios?",o:["Al final","Sobre la marcha","Desde el inicio, integrándolos en la planificación","Es responsabilidad del cliente"],ok:2,e:"Cumplimiento desde el inicio. Corregir tarde es costoso."},
+{sc:"Tu proyecto genera cambios en la forma de trabajar del cliente.",q:"¿Qué modelo aplicas?",o:["Tuckman","PDCA","ADKAR de Prosci","RACI"],ok:2,e:"ADKAR es específicamente un modelo de gestión del cambio."},
+{sc:"CEO te pide arrancar inmediatamente por 'oportunidad única'.",q:"¿Qué haces primero?",o:["Arrancar ya","Crear Business Case para validar valor","Buscar financiación","Crear la WBS"],ok:1,e:"Business Case primero — valida si merece la inversión."},
+{sc:"Proyecto A: NPV 50k€. Proyecto B: NPV 80k€.",q:"¿Cuál eliges?",o:["A","B — mayor NPV","El más barato","Análisis más profundo"],ok:1,e:"NPV más alto = mejor proyecto."},
+{sc:"El PM comparte autoridad con jefes de departamento.",q:"¿Qué tipo de organización es?",o:["Funcional","Por proyectos","Matricial","Híbrida"],ok:2,e:"Matricial: PM comparte autoridad con jefes funcionales."},
+{sc:"Mantenimiento mensual continuo de sistemas.",q:"¿Es un proyecto?",o:["Sí, genera valor","No, es una operación (trabajo continuo y repetitivo)","Depende del tamaño","Solo con presupuesto separado"],ok:1,e:"Proyecto = TUC (Temporal, Único, Cambiante). El mantenimiento es operación."},
+{sc:"Hay riesgos desconocidos que necesitan presupuesto adicional.",q:"¿De dónde sale ese dinero?",o:["Contingency Reserve","Management Reserve (solo el sponsor la usa)","Presupuesto del PM","BAC"],ok:1,e:"Management Reserve es para riesgos desconocidos. Solo el sponsor puede usarla."},
+],
+l2:[
+{sc:"Acabas de ganar un contrato grande con muchos stakeholders.",q:"¿Cuál es el PRIMER paso?",o:["Crear el Charter","Identificar TODOS los stakeholders","Kick-off meeting","Crear la WBS"],ok:1,e:"Identificar stakeholders es lo primero."},
+{sc:"CEO del cliente: alto interés y alto poder.",q:"¿Estrategia correcta?",o:["Monitorizar","Mantener Informado","Mantener Satisfecho","Gestionar de Cerca"],ok:3,e:"Alto poder + alto interés = Gestionar de Cerca."},
+{sc:"Técnico nuevo incorporado. Tensión en reuniones.",q:"¿Etapa de Tuckman?",o:["Forming","Storming","Norming","Performing"],ok:1,e:"Roces con incorporación = Storming. Normal y necesario."},
+{sc:"Redactas el Project Charter.",q:"¿Qué NO puede faltar?",o:["WBS detallada","Análisis cuantitativo de riesgos","Autoridad del PM y sponsor firmante","Cronograma con Gantt"],ok:2,e:"El Charter contiene ROCAS: Rol, Objetivos, Criterios, Alcance, Sponsor."},
+{sc:"Requisitos del cliente bien definidos y estables.",q:"¿Qué enfoque?",o:["Ágil siempre","Predictivo — requisitos estables","Kanban","Siempre híbrido"],ok:1,e:"Requisitos estables → predictivo."},
+{sc:"Sponsor quiere arrancar sin Charter.",q:"¿Qué haces?",o:["Arrancar sin Charter","Insistir en firmar el Charter — sin él no hay autoridad","Crearlo al final","Delegarlo al equipo"],ok:1,e:"Sin Charter no hay proyecto ni autoridad del PM."},
+{sc:"Stakeholder con bajo poder y alto interés pide reuniones semanales.",q:"¿Estrategia?",o:["Gestionar de Cerca","Mantener Satisfecho","Mantener Informado","Monitorizar"],ok:2,e:"Bajo poder + alto interés = Mantener Informado."},
+{sc:"En el kick-off, el equipo no entiende qué se espera.",q:"¿Qué concepto PMP falta?",o:["Risk Register","Entendimiento compartido","WBS","RACI"],ok:1,e:"Construir entendimiento compartido es clave en la Lección 2."},
+{sc:"Stakeholder que era neutral ahora muestra resistencia.",q:"¿Tu acción?",o:["Ignorar","Investigar la causa y desarrollar estrategia de engagement","Escalar al sponsor","Excluirlo"],ok:1,e:"El PM gestiona activamente los niveles de engagement."},
+{sc:"Modernizar sistema mientras el cliente sigue operando.",q:"¿Qué enfoque metodológico?",o:["Predictivo puro","Ágil puro","Híbrido","Kanban"],ok:2,e:"Parte predictiva (infraestructura) + parte ágil (software) = híbrido."},
+],
+l3:[
+{sc:"EV=60k, AC=80k, PV=70k.",q:"¿Cómo está el proyecto?",o:["Adelantado y bajo presupuesto","Retrasado pero bajo presupuesto","Retrasado y sobre presupuesto","En plazo"],ok:2,e:"CPI=60/80=0.75 (<1 = sobre presupuesto). SPI=60/70=0.86 (<1 = retrasado)."},
+{sc:"Estimas: O=2d, M=4d, P=10d.",q:"¿PERT?",o:["4 días","4,67 días","5,33 días","5 días"],ok:1,e:"PERT = (2+16+10)/6 = 4,67 días."},
+{sc:"30% probabilidad de retraso con 20k€ de impacto.",q:"¿EMV?",o:["20.000€","6.000€","14.000€","60.000€"],ok:1,e:"EMV = 0,30 × 20.000 = 6.000€."},
+{sc:"Cliente pide acortar 3 semanas. Presupuesto disponible.",q:"¿Técnica de compresión?",o:["Fast Tracking","Crashing — añadir recursos","Reducir alcance","Rechazar"],ok:1,e:"Con presupuesto → Crashing (más recursos)."},
+{sc:"BAC=500k. CPI=0,80.",q:"¿EAC?",o:["400.000€","625.000€","500.000€","580.000€"],ok:1,e:"EAC = BAC/CPI = 500k/0,80 = 625.000€."},
+{sc:"Técnico instala cámaras extra sin pedirlas.",q:"¿Cómo se llama?",o:["Scope Creep","Gold Plating","Mejora de servicio","Cambio autorizado"],ok:1,e:"Gold Plating: extras no pedidos por el equipo."},
+{sc:"En la WBS aparece tarea no necesaria.",q:"¿Qué haces?",o:["La dejas","Regla 100%: la eliminas","Marcar opcional","Consultar equipo"],ok:1,e:"La WBS solo contiene el 100% del trabajo necesario."},
+{sc:"EV=120k, AC=100k, PV=130k.",q:"CPI y SPI:",o:["CPI=1,20 · SPI=0,92","CPI=0,83 · SPI=1,08","CPI=1,08 · SPI=0,83","CPI=0,92 · SPI=1,20"],ok:0,e:"CPI=120/100=1,20 (bien). SPI=120/130=0,92 (retrasado)."},
+{sc:"El proceso estándar que siguen todos los técnicos es...",q:"¿QA o QC?",o:["QC","QA — aseguramiento de calidad de procesos","Ambos","Ninguno"],ok:1,e:"QA = procesos (prevenir). QC = producto (inspeccionar)."},
+{sc:"35% prob × 12k€. Proveedor alternativo cuesta 1.500€.",q:"¿Merece la pena?",o:["No","Sí — EMV=4.200€ y mitigar cuesta solo 1.500€","Depende del sponsor","Solo si se materializa"],ok:1,e:"EMV=4.200€. Pagar 1.500€ para evitar un riesgo de 4.200€ es inteligente."},
+],
+l4:[
+{sc:"Dos técnicos en conflicto por cliente compartido.",q:"¿Tu PRIMERA acción?",o:["Imponer decisión","Hablar con cada uno por separado para entender la causa raíz","Que lo resuelvan solos","Escalar al director"],ok:1,e:"Escuchar primero. Colaborar/resolver = estilo preferido PMP."},
+{sc:"Equipo de 5 crece a 8.",q:"¿Canales de comunicación?",o:["10 → 16","10 → 28","5 → 8","15 → 24"],ok:1,e:"n(n-1)/2. Con 5: 10. Con 8: 28."},
+{sc:"Director pide supervisar cada tarea diaria del equipo ágil.",q:"¿Qué hace un Servant Leader?",o:["Implementar supervisión","Explicar impacto en autonomía y proponer alternativa (dashboard)","Ignorar al director","Escalar"],ok:1,e:"Proteger la autonomía del equipo ofreciendo alternativas."},
+{sc:"3 personas como 'Accountable' en una tarea RACI.",q:"¿Qué está mal?",o:["Está bien","Solo 1 Accountable por tarea — si hay más, nadie rinde cuentas","Deberían ser más","Da igual"],ok:1,e:"Regla RACI: solo 1 Accountable."},
+{sc:"Técnico senior cuestiona tus decisiones delante del equipo.",q:"¿PRIMERA acción?",o:["Reprenderle público","Hablar en privado para entender causa","Trasladar a otro equipo","Ignorar"],ok:1,e:"Siempre escuchar primero en privado."},
+{sc:"Equipo 4 meses con alto rendimiento y autonomía.",q:"Según Tuckman, ¿qué haces?",o:["Más dirección","Gestionar conflictos","Establecer normas","Facilitar e intervenir mínimo"],ok:3,e:"Performing = intervenir lo mínimo. Microgestionar reduciría rendimiento."},
+{sc:"Técnico llega tarde a instalación importante.",q:"¿Respuesta PMP Ed.7?",o:["Amonestar inmediatamente","Preguntar qué pasó y escuchar — inteligencia emocional","Reasignar a otro","Informe formal"],ok:1,e:"Inteligencia emocional: preguntar primero."},
+{sc:"Equipo en Performing recibe nuevo miembro muy diferente.",q:"¿Qué pasa en Tuckman?",o:["Sigue Performing","Vuelve a Forming/Storming parcialmente","Adjourning","Norming directamente"],ok:1,e:"Cambio en el equipo → reinicio parcial del ciclo Tuckman."},
+{sc:"Stakeholder de alto poder contacta al equipo directamente.",q:"¿Qué haces?",o:["Bloquear comunicación","Reunirte con él para acordar canal de comunicación formal","Ignorar","Escalar"],ok:1,e:"No bloqueas — canalizas. Entender necesidades y dar canal formal."},
+{sc:"En negociación con proveedor, ¿qué es BATNA?",q:"¿Qué es BATNA?",o:["Plan de respaldo genérico","Tu mejor alternativa si la negociación fracasa","Tipo de contrato","Técnica de conflictos"],ok:1,e:"BATNA = Best Alternative To a Negotiated Agreement."},
+],
+l5:[
+{sc:"Quieres mejorar el proceso sin arriesgar todo.",q:"¿Qué ciclo aplicas?",o:["Tuckman","PDCA de Deming","ADKAR","Poder/Interés"],ok:1,e:"PDCA: Plan → Do → Check → Act. Mejora continua cíclica."},
+{sc:"El sistema del cliente está caído 2 horas.",q:"¿Dónde registras?",o:["Risk Register","Issue Log","Change Log","Lessons Learned"],ok:1,e:"Issue Log — un issue YA ha ocurrido."},
+{sc:"Cliente pide funcionalidad nueva durante ejecución.",q:"¿Proceso correcto?",o:["Aceptar si es razonable","Rechazar si no está en contrato","REACCI: Recibir → Evaluar → Aprobar (CCB) → Cambiar → Comunicar → Inscribir","Delegar al equipo"],ok:2,e:"Proceso formal de control de cambios."},
+{sc:"Técnico junior no sabe usar herramienta necesaria.",q:"¿Qué enfoque?",o:["Mentoring: enseñar directamente","Coaching: hacer preguntas","Dar tarea a otro","Documentar como problema"],ok:0,e:"Mentoring cuando necesita aprendizaje técnico concreto."},
+{sc:"Dashboard muestra CPI=0,70.",q:"¿Qué haces?",o:["Va adelantado","Sobre presupuesto — datos, causa y opciones a dirección","Retrasado — crashing","No hay problema"],ok:1,e:"CPI=0,70 = muy sobre presupuesto. Reportar con datos + causa + opciones."},
+{sc:"PO no quiere mostrar incremento al final del sprint.",q:"¿Qué recomiendas?",o:["Acatar al PO","Mostrar — el feedback real es más valioso","Otro sprint para mejorarlo","Solo la parte perfecta"],ok:1,e:"En ágil, feedback real lo antes posible."},
+{sc:"Daily Standup se alarga a 45 minutos.",q:"¿Qué hace el Scrum Master?",o:["Reducir frecuencia","Recordar timebox 15 min, derivar temas complejos","Cancelar Dailies","Que dure lo necesario"],ok:1,e:"Daily = 15 minutos máximo. Temas profundos → otra reunión."},
+{sc:"Sponsor presiona para saltarse pruebas finales.",q:"¿Qué haces?",o:["Acatar — más autoridad","Saltar documentando que no recomiendas","Presentar riesgos concretos para que decida informado","Hacer pruebas sin decirle"],ok:2,e:"El PM da información completa para que el sponsor decida con datos."},
+{sc:"En Scrum, ¿quién elimina impedimentos?",q:"¿De quién es la responsabilidad?",o:["Product Owner","Scrum Master","Development Team","Cliente"],ok:1,e:"Scrum Master elimina impedimentos. Su función clave."},
+{sc:"PO quiere añadir funcionalidad urgente al sprint iniciado hace 3 días.",q:"¿Qué hace el equipo?",o:["Añadirla inmediatamente","Incluirla en el Backlog para el siguiente sprint","Cancelar sprint actual","El equipo vota"],ok:1,e:"SM protege el sprint. Cambios van al backlog para el siguiente sprint."},
+],
+l6:[
+{sc:"Entregado todo. Cliente contento verbalmente pero sin firma.",q:"¿Está cerrado?",o:["Sí, está contento","No, falta aceptación firmada formal","Sí, al liberar equipo","Depende de facturas"],ok:1,e:"Sin firma formal, no hay cierre."},
+{sc:"En el cierre formal, ¿qué NO es obligatorio?",q:"¿Qué NO es parte del cierre?",o:["Archivar documentación","Liberar recursos","Contratar al equipo para el siguiente proyecto","Documentar lecciones aprendidas"],ok:2,e:"Contratar para otro proyecto NO es parte del cierre. Lo obligatorio: VACARE."},
+{sc:"Técnico clave se va en 2 semanas. Solo él sabe configurar sistemas críticos.",q:"¿Tu PRIMERA prioridad?",o:["Buscar sustituto","Contraoferta","Transferencia de conocimiento formal antes de que se vaya","Reasignar tareas"],ok:2,e:"Transferencia de conocimiento primero. Sin capturar lo que sabe, todo se pierde."},
+{sc:"Business Case decía 'reducir incidencias 40%'. 6 meses después...",q:"¿Qué debe hacer el PM?",o:["Nada — cerró","Benefits Realization Review para verificar","Preguntar si está satisfecho","Pedir ampliación"],ok:1,e:"Verificar post-proyecto que los beneficios se materializan."},
+{sc:"¿Cuándo documentar lecciones aprendidas?",q:"¿Práctica correcta?",o:["Solo al final","Durante todo el proyecto, continuamente","Solo si hubo problemas","Antes del proyecto"],ok:1,e:"Continuamente. Al final habrás olvidado muchas."},
+{sc:"Cliente firma el acta de aceptación.",q:"¿Proyecto cerrado?",o:["Sí, con la firma","No — falta: lecciones, liberar recursos, contratos, archivar","Sí, si equipo liberado","Depende de facturas"],ok:1,e:"La firma es 1 de 6 acciones (VACARE)."},
+{sc:"A mitad del proyecto, el mercado cambió y los beneficios no se alcanzarán.",q:"¿Qué hace el PM?",o:["Continuar — ya invertimos mucho","Acelerar","Presentar datos a stakeholders para que decidan","Modificar objetivos"],ok:2,e:"El PM comunica la realidad. La falacia del coste hundido no justifica seguir."},
+{sc:"Proveedor descubre factura pendiente tras el cierre.",q:"¿Qué indica?",o:["Normal","Los contratos no se cerraron correctamente","Es de finanzas","No es del PM"],ok:1,e:"VACARE incluye cerrar todos los contratos con proveedores."},
+{sc:"El equipo termina y nadie documenta lo aprendido.",q:"¿Qué se pierde?",o:["Nada","Conocimiento organizacional que evitaría repetir errores","Solo documentos","Tiempo"],ok:1,e:"Lessons Learned son conocimiento organizacional. Sin ellas, se repiten errores."},
+{sc:"¿Qué incluye la transferencia de conocimiento?",q:"¿Qué incluye?",o:["Solo entregar documentos","Documentación + formación + lecciones aprendidas + repositorio","Solo informe final","Archivar emails"],ok:1,e:"Transferencia completa: documentación + formación + lecciones + repositorio."},
+]};
+
+Q.sim1=sh([...Q.l1.slice(0,4),...Q.l2.slice(0,3),...Q.l3.slice(0,4),...Q.l4.slice(0,3),...Q.l5.slice(0,3),...Q.l6.slice(0,3)]);
+Q.sim2=sh([...Q.l1.slice(5),...Q.l2.slice(5),...Q.l3.slice(5),...Q.l4.slice(5),...Q.l5.slice(5),...Q.l6.slice(5)]);
+
+let qC=0,qS=0,qA=false,qK='',qQ=[];
+function startQ(k){
+  qK=k;qQ=sh([...(Q[k]||[])]);qC=0;qS=0;qA=false;
+  document.getElementById('qa').style.display='block';
+  document.getElementById('bbk').style.display='inline-block';
+  document.getElementById('qsel').style.display='none';
+  renderQQ();
+}
+function bkQ(){
+  document.getElementById('qa').style.display='none';
+  document.getElementById('bbk').style.display='none';
+  document.getElementById('qsel').style.display='block';
+  renderH();
+}
+function renderQQ(){
+  const a=document.getElementById('qa');
+  if(qC>=qQ.length){renderRes(a);return;}
+  const q=qQ[qC];const p=Math.round(qC/qQ.length*100);
+  a.innerHTML=`<div class="qbox"><div class="qn">Pregunta ${qC+1} de ${qQ.length}</div><div class="qpb"><div class="qpf" style="width:${p}%"></div></div><div class="qsc">${q.sc}</div><div class="qt">${q.q}</div><div id="qo">${q.o.map((o,i)=>`<button class="op" id="qo${i}" onclick="ans(${i})">${String.fromCharCode(65+i)}) ${o}</button>`).join('')}</div><div class="qe" id="qe"></div><div style="display:flex;justify-content:flex-end;margin-top:10px;"><button class="btn btn-p" id="qnx" style="display:none;" onclick="nxQ()">Siguiente →</button></div></div>`;
+}
+function ans(i){
+  if(qA)return;qA=true;const q=qQ[qC];const ok=i===q.ok;if(ok)qS++;
+  for(let j=0;j<q.o.length;j++){const b=document.getElementById('qo'+j);b.disabled=true;if(j===q.ok)b.classList.add(ok&&j===i?'ok':'rv');else if(j===i&&!ok)b.classList.add('ko');}
+  if(ok){document.getElementById('qo'+i).classList.remove('rv');document.getElementById('qo'+i).classList.add('ok');}
+  const e=document.getElementById('qe');e.className='qe on '+(ok?'qe-ok':'qe-ko');e.innerHTML=(ok?'✅ ':'❌ ')+q.e;
+  document.getElementById('qnx').style.display='inline-block';
+}
+function nxQ(){qA=false;qC++;renderQQ();}
+function renderRes(a){
+  const p=Math.round(qS/qQ.length*100);const pass=p>=60;
+  svH(qK,qS,qQ.length,p);
+  a.innerHTML=`<div class="qbox" style="text-align:center;"><div class="sr" style="background:${pass?'var(--teal-bg)':'var(--red-bg)'};color:${pass?'var(--teal-d)':'var(--red-d)'};">${p}%</div><div style="font-family:'Merriweather',serif;font-size:1.1rem;font-weight:700;margin-bottom:4px;">${pass?'¡Preparado!':'Hay que repasar'}</div><div style="font-size:0.85rem;color:var(--ink3);margin-bottom:14px;">${qS} de ${qQ.length} correctas</div><div class="ib ${pass?'ib-t':'ib-r'}" style="text-align:left;"><strong>${pass?'✅ Listo para la prueba':'⚠️ Repasa las lecciones'}</strong>${pass?'Cuando dudes, elige la más empática. El PM siempre escucha antes de actuar.':'Vuelve a las lecciones donde fallaste y repite el cuestionario.'}</div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;"><button class="btn" style="background:var(--teal);color:#fff;" onclick="startQ('${qK}')">🔄 Repetir</button><button class="btn btn-p" onclick="bkQ()">← Exámenes</button></div></div>`;
+}
+
+// HISTORY
+let H=[];
+function svH(l,c,t,p){H.unshift({l,c,t,p,d:new Date().toLocaleString('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})});if(H.length>30)H=H.slice(0,30);}
+function renderH(){
+  const s=document.getElementById('hstats');const li=document.getElementById('hlist');
+  if(!H.length){s.innerHTML='';li.innerHTML='<p style="font-size:0.82rem;color:var(--ink3);text-align:center;padding:16px;">Aún no has hecho ningún examen.</p>';return;}
+  const avg=Math.round(H.reduce((a,h)=>a+h.p,0)/H.length);const best=Math.max(...H.map(h=>h.p));
+  s.innerHTML=`<div class="stat"><div class="stat-n" style="color:var(--blue);">${H.length}</div><div class="stat-l">Exámenes</div></div><div class="stat"><div class="stat-n" style="color:var(--amber);">${avg}%</div><div class="stat-l">Media</div></div><div class="stat"><div class="stat-n" style="color:var(--teal);">${best}%</div><div class="stat-l">Mejor</div></div>`;
+  li.innerHTML=H.slice(0,10).map(h=>`<div style="background:#fff;border:1px solid var(--g2);border-radius:var(--rs);padding:10px 12px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;"><div><div style="font-size:0.82rem;font-weight:700;">${h.l}</div><div style="font-size:0.7rem;color:var(--ink3);">${h.d} · ${h.c}/${h.t}</div></div><div style="font-family:'JetBrains Mono',monospace;font-weight:900;padding:3px 8px;border-radius:6px;background:${h.p>=60?'var(--teal-bg)':'var(--red-bg)'};color:${h.p>=60?'var(--teal-d)':'var(--red-d)'};">${h.p}%</div></div>`).join('');
+}
