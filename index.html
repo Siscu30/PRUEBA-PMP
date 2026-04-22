@@ -651,3 +651,6 @@ function renderH(){
   s.innerHTML=`<div class="stat"><div class="stat-n" style="color:var(--blue);">${H.length}</div><div class="stat-l">Exámenes</div></div><div class="stat"><div class="stat-n" style="color:var(--amber);">${avg}%</div><div class="stat-l">Media</div></div><div class="stat"><div class="stat-n" style="color:var(--teal);">${best}%</div><div class="stat-l">Mejor</div></div>`;
   li.innerHTML=H.slice(0,10).map(h=>`<div style="background:#fff;border:1px solid var(--g2);border-radius:var(--rs);padding:10px 12px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;"><div><div style="font-size:0.82rem;font-weight:700;">${h.l}</div><div style="font-size:0.7rem;color:var(--ink3);">${h.d} · ${h.c}/${h.t}</div></div><div style="font-family:'JetBrains Mono',monospace;font-weight:900;padding:3px 8px;border-radius:6px;background:${h.p>=60?'var(--teal-bg)':'var(--red-bg)'};color:${h.p>=60?'var(--teal-d)':'var(--red-d)'};">${h.p}%</div></div>`).join('');
 }
+</script>
+</body>
+</html>
