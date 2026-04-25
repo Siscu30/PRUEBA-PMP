@@ -1,0 +1,25 @@
+{
+  "id": "mock-dummy",
+  "title": "Simulacro Diagnóstico (Datos de Prueba)",
+  "timeLimitMinutes": 230,
+  "breakMinutes": 10,
+  "blocks": [
+    {
+      "block": 1,
+      "questionIds": ["PMP-DUMMY-001", "PMP-DUMMY-002", "PMP-DUMMY-003"]
+    },
+    {
+      "block": 2,
+      "questionIds": ["PMP-DUMMY-004", "PMP-DUMMY-005"]
+    },
+    {
+      "block": 3,
+      "questionIds": ["PMP-DUMMY-006"]
+    }
+  ],
+  "coverageSummary": {
+    "People": 2,
+    "Process": 3,
+    "BusinessEnvironment": 1
+  }
+}

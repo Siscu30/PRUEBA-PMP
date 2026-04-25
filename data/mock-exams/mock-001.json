@@ -1,0 +1,16 @@
+{
+  "id": "mock-001",
+  "title": "PMP Full Mock 001",
+  "timeLimitMinutes": 230,
+  "breakMinutes": 10,
+  "blocks": [
+    { "block": 1, "questionIds": ["PMP-0001", "PMP-0002"] },
+    { "block": 2, "questionIds": [] },
+    { "block": 3, "questionIds": [] }
+  ],
+  "coverageSummary": {
+    "People": 76,
+    "Process": 90,
+    "BusinessEnvironment": 14
+  }
+}

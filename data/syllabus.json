@@ -1,0 +1,92 @@
+{
+  "domains": [
+    {
+      "id": "domain-1",
+      "name": "People",
+      "weight": "42%",
+      "tasks": [
+        {
+          "taskId": "people-01",
+          "taskTitle": "Manage conflict",
+          "topics": [
+            {
+              "topicId": "people-01-01",
+              "title": "Conflict resolution in hybrid teams",
+              "subtopics": ["facilitation", "root cause", "team ownership"],
+              "explanation": "El conflicto es natural. El rol del PM ha evolucionado de resolver el conflicto a facilitar que el equipo lo resuelva, especialmente en entornos ágiles/híbridos. Solo se debe intervenir activamente si el conflicto bloquea el proyecto o hay violación de normas éticas/laborales.",
+              "keyConcepts": ["collaborate/problem solve", "smooth/accommodate", "force/direct", "servant leadership"],
+              "examSignals": [
+                "Si la pregunta dice 'el equipo no se pone de acuerdo sobre una solución técnica', busca opciones donde el PM facilite una reunión.",
+                "Si dice 'hay gritos o acoso', busca opciones donde el PM interviene directamente y habla en privado."
+              ],
+              "commonTraps": [
+                "Escalar al sponsor inmediatamente (casi siempre es incorrecto).",
+                "Tomar la decisión técnica por el equipo en un entorno ágil."
+              ],
+              "predictiveNotes": ["El PM puede tener más autoridad para dirigir la solución en base al plan."],
+              "agileNotes": ["El equipo es autoorganizado. El scrum master facilita, no impone."],
+              "hybridNotes": ["Combinación de facilitación y gobernanza. El PM evalúa el impacto en los milestones predictivos."],
+              "relatedTopics": ["stakeholder engagement", "team performance"],
+              "linkedQuestionIds": []
+            }
+          ]
+        },
+        {
+          "taskId": "people-02",
+          "taskTitle": "Lead a team",
+          "topics": [
+            {
+              "topicId": "people-02-01",
+              "title": "Servant Leadership",
+              "subtopics": ["removing impediments", "shielding team", "coaching"],
+              "explanation": "El líder servicial prioriza las necesidades del equipo, elimina bloqueos y proporciona herramientas para el éxito. No microgestiona.",
+              "keyConcepts": ["empowerment", "shielding", "emotional intelligence"],
+              "examSignals": [
+                "Si el equipo se queja de interrupciones de negocio, el PM debe 'escudarlos'."
+              ],
+              "commonTraps": [
+                "Asignar tareas específicas a miembros individuales en ágil."
+              ],
+              "predictiveNotes": ["Sigue siendo útil, pero se balancea con la matriz de asignación de responsabilidades."],
+              "agileNotes": ["Es el estilo de liderazgo por defecto."],
+              "hybridNotes": ["Adaptar el estilo según la madurez del equipo."],
+              "relatedTopics": ["resource management", "emotional intelligence"],
+              "linkedQuestionIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-2",
+      "name": "Process",
+      "weight": "50%",
+      "tasks": [
+        {
+          "taskId": "process-01",
+          "taskTitle": "Execute project with the urgency required to deliver business value",
+          "topics": [
+            {
+              "topicId": "process-01-01",
+              "title": "Value delivery in Agile vs Predictive",
+              "subtopics": ["MVP", "incremental delivery", "business value"],
+              "explanation": "En ágil, el valor se entrega de forma temprana y continua. En predictivo, el valor mayormente se entrega al final, aunque los hitos muestran progreso.",
+              "keyConcepts": ["Minimum Viable Product", "Time-to-market", "ROI"],
+              "examSignals": [
+                "Si el cliente quiere ver retorno rápido, sugiere enfoque ágil o entregas incrementales."
+              ],
+              "commonTraps": [
+                "Esperar al final del proyecto para validar valor en entornos inciertos."
+              ],
+              "predictiveNotes": ["Valor vinculado a la aceptación final del alcance completado."],
+              "agileNotes": ["Backlog priorizado por valor de negocio (Business Value)."],
+              "hybridNotes": ["Entregar partes ágiles temprano mientras se construye la infraestructura de forma predictiva."],
+              "relatedTopics": ["business case", "benefits management"],
+              "linkedQuestionIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "lotId": "lot-001",
+  "questions": [
+    {
+      "id": "PMP-0001",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Hybrid",
+      "difficulty": "medium",
+      "topic": "Manage conflict",
+      "subtopic": "Team facilitation",
+      "learningObjective": "Select the best action to resolve conflict while preserving team ownership",
+      "scenarioType": "situational",
+      "question": "En un proyecto híbrido, dos miembros del equipo técnico discrepan fuertemente sobre la arquitectura del componente de integración. La discusión empieza a afectar el clima en las daily stand-ups y está retrasando el trabajo. ¿Qué debería hacer el director del proyecto en primer lugar?",
+      "options": [
+        {"id": "A", "text": "Tomar la decisión técnica para evitar más retrasos en el cronograma."},
+        {"id": "B", "text": "Escalar el problema al patrocinador del proyecto (sponsor) para que medie."},
+        {"id": "C", "text": "Facilitar una reunión de resolución de problemas con ambos miembros para que lleguen a un consenso."},
+        {"id": "D", "text": "Separar a los miembros asignándoles tareas en componentes distintos para evitar más fricción."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "En un entorno ágil o híbrido, el equipo es autoorganizado y responsable de las decisiones técnicas. El rol del PM/Scrum Master es facilitar la colaboración y eliminar impedimentos, no imponer soluciones ni evadir el conflicto. Facilitar una reunión ayuda al equipo a resolver el problema (collaborate/problem solve) manteniendo su empoderamiento.",
+      "whyOthersAreWrong": {
+        "A": "Imponer una decisión (Force/Direct) destruye la autoorganización del equipo técnico.",
+        "B": "Escalar es prematuro y demuestra incapacidad para gestionar el conflicto a nivel de equipo.",
+        "C": "Es la correcta porque fomenta la colaboración y la solución ganar-ganar.",
+        "D": "Evadir o retirarse (Withdraw/Avoid) no resuelve el conflicto subyacente y perjudica la integración del proyecto."
+      },
+      "keywords": ["conflict", "team", "hybrid", "facilitation"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Enfocado en autoorganización frente a directrices rígidas de arquitectura."
+    },
+    {
+      "id": "PMP-0002",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Agile",
+      "difficulty": "hard",
+      "topic": "Deliver value",
+      "subtopic": "MVP prioritization",
+      "learningObjective": "Prioritize work to deliver the highest business value first",
+      "scenarioType": "situational",
+      "question": "A mitad de un proyecto ágil, el Product Owner identifica una nueva oportunidad de mercado que requeriría añadir funcionalidades significativas al backlog. El equipo ya está trabajando a su máxima capacidad. ¿Cuál debería ser el enfoque del equipo?",
+      "options": [
+        {"id": "A", "text": "Rechazar las nuevas funcionalidades porque alteran el alcance acordado inicialmente."},
+        {"id": "B", "text": "Añadir recursos al equipo para poder abarcar las nuevas funcionalidades sin afectar la fecha final."},
+        {"id": "C", "text": "Trabajar horas extras para incluir las nuevas funcionalidades y entregar el valor esperado."},
+        {"id": "D", "text": "Ayudar al Product Owner a repriorizar el backlog basándose en el valor de negocio de las nuevas funcionalidades frente a las existentes."}
+      ],
+      "correctAnswer": "D",
+      "explanation": "En enfoques ágiles, el cambio es bienvenido incluso tarde en el desarrollo. Sin embargo, dado que la capacidad es fija, el Product Owner debe priorizar el backlog. El rol del equipo/PM es asistir al PO para estimar y repriorizar en función del mayor valor (Business Value).",
+      "whyOthersAreWrong": {
+        "A": "Rechazar cambios viola los principios ágiles de adaptación y entrega de valor continuo.",
+        "B": "Añadir recursos rompe la dinámica del equipo (Ley de Brooks) y no garantiza velocidad a corto plazo.",
+        "C": "Trabajar horas extras de forma sostenida viola el principio ágil de 'ritmo sostenible'.",
+        "D": "Es la correcta. La repriorización es el mecanismo ágil estándar para absorber cambios de alto valor."
+      },
+      "keywords": ["value", "agile", "prioritization", "product owner", "backlog"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Se centra en la mecánica de repriorización ante oportunidades de mercado, no en la resistencia al cambio."
+    }
+  ]
+}

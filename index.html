@@ -1,758 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>PMP · Temario Prueba de Acceso CNTG</title>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#F8FAFC;--w:#FFF;--g1:#F1F5F9;--g2:#E2E8F0;--g3:#CBD5E1;--ink:#0F172A;--ink2:#334155;--ink3:#64748B;--ink4:#94A3B8;--blue:#2563EB;--blue-l:#DBEAFE;--blue-d:#1D4ED8;--blue-bg:#EFF6FF;--teal:#0D9488;--teal-l:#CCFBF1;--teal-d:#0F766E;--teal-bg:#F0FDFA;--amber:#D97706;--amber-l:#FEF3C7;--amber-d:#B45309;--amber-bg:#FFFBEB;--red:#DC2626;--red-l:#FEE2E2;--red-d:#B91C1C;--red-bg:#FEF2F2;--purple:#7C3AED;--purple-l:#EDE9FE;--purple-d:#6D28D9;--purple-bg:#F5F3FF;--pink:#DB2777;--pink-l:#FCE7F3;--pink-bg:#FDF2F8;--green:#16A34A;--green-l:#DCFCE7;--cyan:#0891B2;--cyan-l:#CFFAFE;--cyan-bg:#ECFEFF;--r:14px;--rs:10px;--sh:0 4px 16px rgba(15,23,42,0.08);}
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
-html{scroll-behavior:smooth;}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;}
-.hero{background:linear-gradient(135deg,#1E3A8A,#2563EB 50%,#0891B2);padding:28px 18px 22px;text-align:center;color:#fff;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:260px;height:260px;background:radial-gradient(circle,rgba(255,255,255,0.12),transparent 70%);}
-.h1{font-family:'Merriweather',serif;font-size:clamp(1.6rem,5vw,2.2rem);font-weight:900;line-height:1.1;margin-bottom:6px;position:relative;}
-.h2{font-size:0.82rem;opacity:0.9;font-weight:500;position:relative;}
-.nav{background:#fff;box-shadow:0 2px 12px rgba(15,23,42,0.08);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:0;z-index:200;border-bottom:1px solid var(--g2);}
-.nav::-webkit-scrollbar{display:none;}
-.nb{flex-shrink:0;padding:13px 12px;font-size:0.72rem;font-weight:700;cursor:pointer;border:none;background:none;color:var(--ink3);border-bottom:3px solid transparent;white-space:nowrap;font-family:inherit;}
-.nb.on{color:var(--blue);border-bottom-color:var(--blue);background:var(--blue-bg);}
-.pg{display:none;padding:16px;max-width:800px;margin:0 auto;}
-.pg.on{display:block;}
-.hb{border-radius:var(--r);padding:16px 18px;margin-bottom:14px;color:#fff;box-shadow:var(--sh);position:relative;overflow:hidden;}
-.hb::before{content:attr(data-i);position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:3rem;opacity:0.15;}
-.hb h2{font-family:'Merriweather',serif;font-size:1.1rem;font-weight:900;margin-bottom:2px;}
-.hb p{font-size:0.8rem;opacity:0.9;}
-.c{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:14px 16px;margin-bottom:11px;box-shadow:0 1px 3px rgba(15,23,42,0.04);}
-.c h3{font-family:'Merriweather',serif;font-size:0.95rem;font-weight:700;margin-bottom:5px;}
-.c p,.c li{font-size:0.86rem;color:var(--ink2);line-height:1.65;}
-.c ul{padding-left:16px;margin-top:4px;}
-.c ul li{margin-bottom:3px;}
-.ib{border-radius:var(--rs);padding:12px 14px;margin-bottom:10px;font-size:0.84rem;line-height:1.6;}
-.ib strong{display:block;margin-bottom:2px;}
-.ib-b{background:var(--blue-bg);border-left:4px solid var(--blue);color:var(--blue-d);}
-.ib-t{background:var(--teal-bg);border-left:4px solid var(--teal);color:var(--teal-d);}
-.ib-a{background:var(--amber-bg);border-left:4px solid var(--amber);color:var(--amber-d);}
-.ib-p{background:var(--purple-bg);border-left:4px solid var(--purple);color:var(--purple-d);}
-.ib-r{background:var(--red-bg);border-left:4px solid var(--red);color:var(--red-d);}
-.ib-pk{background:var(--pink-bg);border-left:4px solid var(--pink);color:#9D174D;}
-.mn{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border:2px solid #F59E0B;border-radius:var(--r);padding:12px 14px 12px 44px;margin:9px 0;position:relative;}
-.mn::before{content:'🧠';position:absolute;top:10px;left:12px;font-size:1.2rem;}
-.mn b{display:block;font-family:'Merriweather',serif;font-size:0.82rem;color:#92400E;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;}
-.mn span{font-size:0.84rem;color:#78350F;line-height:1.6;display:block;}
-.fm{background:linear-gradient(135deg,#EFF6FF,#DBEAFE);border:2px solid var(--blue);border-radius:var(--r);padding:12px 14px 12px 44px;margin:9px 0;position:relative;}
-.fm::before{content:'📐';position:absolute;top:10px;left:12px;font-size:1.2rem;}
-.fm b{display:block;font-family:'Merriweather',serif;font-size:0.82rem;color:var(--blue-d);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;}
-.fm code{display:block;font-family:'JetBrains Mono',monospace;background:#fff;border:1px solid var(--blue-l);border-radius:var(--rs);padding:8px 12px;font-size:0.92rem;font-weight:700;color:var(--blue-d);text-align:center;margin:6px 0;}
-.fm span{font-size:0.82rem;color:var(--ink2);display:block;margin:3px 0;padding-left:12px;}
-.fm span::before{content:'›';position:relative;left:-6px;color:var(--blue);font-weight:900;}
-.fm .eg{background:#fff;border:1px solid var(--blue-l);border-radius:var(--rs);padding:8px 10px;margin-top:6px;font-size:0.8rem;color:var(--ink2);}
-.sg{background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:1.5px solid var(--amber);border-radius:var(--rs);padding:10px 12px 10px 34px;margin-top:8px;font-size:0.8rem;color:var(--amber-d);line-height:1.55;position:relative;}
-.sg::before{content:'🔧';position:absolute;top:8px;left:8px;font-size:0.9rem;}
-.tw{overflow-x:auto;border-radius:var(--rs);border:1px solid var(--g2);margin:8px 0;background:#fff;}
-table{width:100%;border-collapse:collapse;font-size:0.82rem;}
-th{background:var(--g1);color:var(--ink);padding:9px 10px;text-align:left;font-weight:700;border-bottom:2px solid var(--g2);font-size:0.76rem;text-transform:uppercase;letter-spacing:0.03em;}
-td{padding:9px 10px;border-bottom:1px solid var(--g2);color:var(--ink2);vertical-align:top;}
-tr:last-child td{border-bottom:none;}
-.tk{display:flex;overflow-x:auto;gap:2px;scrollbar-width:none;margin:8px 0;padding:4px;}
-.tk::-webkit-scrollbar{display:none;}
-.ts{flex-shrink:0;width:100px;text-align:center;padding:10px 6px;background:#fff;border:1px solid var(--g2);border-radius:var(--rs);position:relative;}
-.ts::after{content:'›';position:absolute;right:-6px;top:50%;transform:translateY(-50%);color:var(--ink3);font-size:1.3rem;font-weight:900;z-index:1;}
-.ts:last-child::after{display:none;}
-.ts .ic{width:42px;height:42px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
-.ts .nm{font-size:0.7rem;font-weight:800;text-transform:uppercase;}
-.ts .ds{font-size:0.62rem;color:var(--ink3);margin-top:2px;}
-.g2x{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-@media(max-width:500px){.g2x{grid-template-columns:1fr;}}
-.lbl{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink3);margin:12px 0 6px;}
-.bl{border-left:4px solid var(--blue);}
-.tl{border-left:4px solid var(--teal);}
-.al{border-left:4px solid var(--amber);}
-.pl{border-left:4px solid var(--purple);}
-.cl{border-left:4px solid var(--cyan);}
-.pkl{border-left:4px solid var(--pink);}
-.btn{display:inline-block;padding:10px 18px;border-radius:var(--rs);border:none;cursor:pointer;font-size:0.85rem;font-weight:700;font-family:inherit;text-decoration:none;text-align:center;}
-.btn-p{background:var(--blue);color:#fff;}
-.search-w{position:relative;margin-bottom:12px;}
-.search-w input{width:100%;background:#fff;border:1.5px solid var(--g3);border-radius:var(--rs);padding:11px 12px 11px 38px;font-size:0.88rem;color:var(--ink);font-family:inherit;outline:none;}
-.search-w input:focus{border-color:var(--blue);}
-.search-i{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--ink4);}
-.fc-w{perspective:1200px;margin-bottom:10px;}
-.fc{width:100%;min-height:220px;background:transparent;cursor:pointer;border:none;padding:0;font-family:inherit;}
-.fc-in{width:100%;min-height:220px;position:relative;transform-style:preserve-3d;transition:transform 0.6s;}
-.fc.fl .fc-in{transform:rotateY(180deg);}
-.fc-f,.fc-b{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
-.fc-f{background:linear-gradient(135deg,#fff,var(--g1));border:2px solid var(--g3);box-shadow:var(--sh);}
-.fc-b{background:linear-gradient(135deg,var(--teal-bg),var(--teal-l));border:2px solid var(--teal);transform:rotateY(180deg);box-shadow:var(--sh);}
-.fc-en{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:700;color:var(--blue-d);margin-bottom:4px;}
-.fc-es{font-family:'Merriweather',serif;font-size:0.95rem;font-weight:700;color:var(--ink);}
-.fc-dom{font-size:0.68rem;color:var(--ink3);margin-top:8px;font-weight:600;}
-.fc-def{font-size:0.88rem;color:var(--teal-d);font-weight:600;margin-bottom:8px;line-height:1.55;}
-.fc-eg{font-size:0.76rem;color:var(--ink2);font-style:italic;border-top:1px solid rgba(13,148,136,0.3);padding-top:8px;line-height:1.5;}
-.fc-nav{display:flex;gap:8px;margin-top:10px;}
-.fc-btn{flex:1;background:#fff;border:1.5px solid var(--g3);color:var(--ink);border-radius:var(--rs);padding:10px;font-size:0.82rem;font-weight:700;cursor:pointer;font-family:inherit;}
-.fc-prog{text-align:center;font-size:0.76rem;color:var(--ink3);margin-bottom:6px;font-weight:600;}
-.qs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
-@media(max-width:500px){.qs{grid-template-columns:1fr;}}
-.qs-c{background:#fff;border:1.5px solid var(--g2);border-radius:var(--r);padding:14px;cursor:pointer;font-family:inherit;text-align:left;display:flex;flex-direction:column;gap:4px;}
-.qs-c:hover{border-color:var(--blue);box-shadow:var(--sh);}
-.qs-t{font-family:'Merriweather',serif;font-size:0.92rem;font-weight:700;}
-.qs-m{font-size:0.73rem;color:var(--ink3);}
-.qs-b{display:inline-block;font-size:0.66rem;font-weight:700;padding:3px 8px;border-radius:12px;width:fit-content;margin-top:3px;}
-.qbox{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:18px;box-shadow:var(--sh);}
-.qpb{height:6px;background:var(--g1);border-radius:3px;margin-bottom:12px;overflow:hidden;}
-.qpf{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width 0.4s;}
-.qn{font-size:0.72rem;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3px;}
-.qsc{background:var(--g1);border-left:4px solid var(--blue);border-radius:0 var(--rs) var(--rs) 0;padding:10px 12px;font-size:0.84rem;color:var(--ink2);line-height:1.6;margin-bottom:10px;font-style:italic;}
-.qt{font-size:0.95rem;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:12px;font-family:'Merriweather',serif;}
-.op{width:100%;padding:12px 13px;border:1.5px solid var(--g2);border-radius:var(--rs);cursor:pointer;font-size:0.85rem;line-height:1.5;background:#fff;text-align:left;font-family:inherit;color:var(--ink2);margin-bottom:7px;display:block;}
-.op:hover:not(:disabled){border-color:var(--blue);background:var(--blue-bg);color:var(--ink);}
-.op.ok{border-color:var(--teal);background:var(--teal-bg);color:var(--teal-d);font-weight:700;}
-.op.ko{border-color:var(--red);background:var(--red-bg);color:var(--red-d);}
-.op.rv{border-color:var(--teal);background:var(--teal-bg);color:var(--teal-d);opacity:0.7;}
-.qe{border-radius:var(--rs);padding:12px 14px;font-size:0.84rem;line-height:1.6;display:none;margin-top:5px;}
-.qe.on{display:block;}
-.qe-ok{background:var(--teal-bg);border:1.5px solid var(--teal);color:var(--teal-d);}
-.qe-ko{background:var(--red-bg);border:1.5px solid var(--red);color:var(--red-d);}
-.sr{width:110px;height:110px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-family:'Merriweather',serif;font-size:1.8rem;font-weight:900;box-shadow:var(--sh);}
-.stat-r{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;}
-.stat{background:#fff;border:1px solid var(--g2);border-radius:var(--r);padding:14px 8px;text-align:center;}
-.stat-n{font-family:'Merriweather',serif;font-size:1.6rem;font-weight:900;line-height:1;}
-.stat-l{font-size:0.66rem;font-weight:700;text-transform:uppercase;color:var(--ink3);margin-top:3px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMP Prep Pro</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">PMP Prep Pro</div>
+        <div class="nav-links">
+            <a href="#" data-route="home">Inicio</a>
+            <a href="#" data-route="syllabus">Temario PMP</a>
+            <a href="#" data-route="study">Estudio Activo</a>
+            <a href="#" data-route="exams">Simulacros</a>
+            <a href="#" data-route="results">Resultados</a>
+        </div>
+    </nav>
 
-<div class="hero">
-  <div class="h1">Temario PMP · Prueba de Acceso</div>
-  <div class="h2">CNTG Santiago · Temario Extendido y Simulador</div>
-</div>
+    <main id="app-container">
+        <!-- Views will be injected here by router -->
+    </main>
 
-<nav class="nav">
-  <button class="nb on" onclick="go('home')">🏠</button>
-  <button class="nb" onclick="go('l1')">1·Entorno</button>
-  <button class="nb" onclick="go('l2')">2·Iniciar</button>
-  <button class="nb" onclick="go('l3')">3·Planificar</button>
-  <button class="nb" onclick="go('l4')">4·Liderar</button>
-  <button class="nb" onclick="go('l5')">5·Rendimiento</button>
-  <button class="nb" onclick="go('l6')">6·Cerrar</button>
-  <button class="nb" onclick="go('agil')">🔄Ágil</button>
-  <button class="nb" onclick="go('form')">📐Fórmulas</button>
-  <button class="nb" onclick="go('mnem')">🧠Mnemo</button>
-  <button class="nb" onclick="go('glos')">🔤Glosario</button>
-  <button class="nb" onclick="go('flash')">🃏Flash</button>
-  <button class="nb" onclick="go('quiz')">🎯Exámenes</button>
-</nav>
+    <!-- Templates -->
+    <template id="tpl-home">
+        <section class="view-section">
+            <div class="hero-card">
+                <h1>Preparación PMP Real</h1>
+                <p>Simulacros situacionales, analítica y temario estructurado según el ECO.</p>
+            </div>
+            
+            <div class="dashboard-cards">
+                <div class="card" onclick="window.app.navigate('exams')">
+                    <h3>🎯 Simulacros de Examen</h3>
+                    <p>Exámenes completos de 180 preguntas en 3 bloques con temporizador oficial (230 min).</p>
+                </div>
+                <div class="card" onclick="window.app.navigate('syllabus')">
+                    <h3>📚 Temario Profundo</h3>
+                    <p>Dominio People, Process y Business Environment. Patrones ágiles, híbridos y predictivos.</p>
+                </div>
+                <div class="card" onclick="window.app.navigate('results')">
+                    <h3>📊 Resultados</h3>
+                    <p>Revisa tus simulacros anteriores, comprende tus errores y evalúa tu preparación.</p>
+                </div>
+            </div>
+        </section>
+    </template>
 
-<div id="p-home" class="pg on">
-  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="📚"><h2>Tu libro de estudio para la prueba</h2><p>6 lecciones ampliadas PMBOK 7 · Lee esto ANTES de hacer los simulacros</p></div>
-  <div class="ib ib-a"><strong>🎯 ¿Qué es la prueba presencial?</strong>Es una prueba técnica en el CNTG Santiago para seleccionar a los alumnos del curso PMP. Evalúan que entiendes conceptos de gestión situacional y que posees experiencia demostrable.</div>
-  <div class="ib ib-t"><strong>📖 Cómo usar este temario</strong>1. Lee cada lección ampliada.<br>2. Repasa las fórmulas y memoriza el Glosario con las Flashcards.<br>3. Ejecuta Simulacros Mixtos donde las preguntas se barajan usando Fisher-Yates real.</div>
-  <div class="lbl">Las 6 lecciones — toca cada una</div>
-  <div class="g2x">
-    <div class="c bl" onclick="go('l1')" style="cursor:pointer"><h3>1️⃣ Entorno Empresarial</h3><p>EEFs vs OPAs, Business Case, Gobernanza, Tipos de PMO.</p></div>
-    <div class="c tl" onclick="go('l2')" style="cursor:pointer"><h3>2️⃣ Iniciar el Proyecto</h3><p>Matriz de Stakeholders, Project Charter, Ciclos de Vida.</p></div>
-    <div class="c al" onclick="go('l3')" style="cursor:pointer"><h3>3️⃣ Planificar</h3><p>WBS, EVM, Ruta crítica, Riesgos (Evitar vs Mitigar).</p></div>
-    <div class="c pl" onclick="go('l4')" style="cursor:pointer"><h3>4️⃣ Liderar el Equipo</h3><p>Servant Leadership, Tuckman, Resolución de Conflictos.</p></div>
-    <div class="c cl" onclick="go('l5')" style="cursor:pointer"><h3>5️⃣ Rendimiento</h3><p>PDCA, Proceso formal de Cambios (CCB), Impedimentos.</p></div>
-    <div class="c pkl" onclick="go('l6')" style="cursor:pointer"><h3>6️⃣ Cerrar</h3><p>Cierre formal (VACARE), Handover, Lecciones Aprendidas.</p></div>
-  </div>
-</div>
+    <template id="tpl-syllabus">
+        <section class="view-section syllabus-view">
+            <h1>Temario PMP Profundo</h1>
+            <p>Selecciona un dominio para explorar sus conceptos clave, trampas y pistas para el examen.</p>
+            <div id="syllabus-container" class="syllabus-layout">
+                <!-- SyllabusLoader injects here -->
+            </div>
+        </section>
+    </template>
 
-<div id="p-l1" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="🏢"><h2>Lección 1 · Entorno Empresarial</h2><p>Alineamiento estratégico · EEF vs OPA · Tipos de PMO</p></div>
-  <div class="c bl"><h3>EEFs vs OPAs (Factores vs Activos)</h3>
-    <div class="tw"><table><tr><th>EEF (Factores Ambientales)</th><th>OPA (Activos de los Procesos)</th></tr><tr><td>Condiciones que <strong>NO controlas</strong> y restringen el proyecto.</td><td>Procesos, políticas y conocimiento que <strong>AYUDAN</strong> al proyecto.</td></tr><tr><td>Leyes, mercado, infraestructura, clima, cultura corporativa, RGPD.</td><td>Plantillas, lecciones aprendidas históricas, software de la empresa, normas internas.</td></tr></table></div>
-  </div>
-  <div class="c bl"><h3>Tipos de PMO (Project Management Office)</h3>
-    <div class="tw"><table><tr><th>Tipo</th><th>Nivel de Control</th><th>Rol Principal</th></tr><tr><td><strong>De Soporte</strong></td><td>Bajo</td><td>Provee plantillas, formación y acceso a OPAs. Consultiva.</td></tr><tr><td><strong>De Control</strong></td><td>Medio</td><td>Exige cumplimiento de marcos y metodologías (Auditorías).</td></tr><tr><td><strong>Directiva</strong></td><td>Alto</td><td>Asigna a los PMs y dirige directamente los proyectos.</td></tr></table></div>
-  </div>
-  <div class="c bl"><h3>Cumplimiento (Compliance)</h3><p>Identificar y cumplir requisitos legales DESDE EL INICIO. No es negociable.</p>
-    <div class="mn"><b>"LRSI" — 4 tipos de cumplimiento</b><span><strong>L</strong>egal (Leyes gubernamentales) · <strong>R</strong>egulatorio (Normas del sector) · <strong>S</strong>eguridad · <strong>I</strong>nterno (Políticas de RRHH/IT)</span></div>
-  </div>
-  <div class="c bl"><h3>Selección de Proyectos y Business Case</h3><p>El <strong>Business Case</strong> justifica la inversión ("¿por qué hacer este proyecto?"). Si el NPV es negativo o pierde alineamiento estratégico, se cancela el proyecto.</p>
-    <div class="fm"><b>NPV, IRR, Payback — reglas para el examen</b><span><strong>NPV</strong> (Valor Actual Neto) más alto = mejor.</span><span><strong>IRR</strong> (Tasa Interna Retorno) más alta = mejor.</span><span><strong>Payback</strong> (Retorno Inversión) más CORTO = mejor.</span></div>
-  </div>
-</div>
+    <template id="tpl-exams">
+        <section class="view-section">
+            <h1>Simulacros Oficiales</h1>
+            <div id="exam-list" class="exam-list">
+                <!-- Exam cards injected here -->
+            </div>
+        </section>
+    </template>
 
-<div id="p-l2" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🚀"><h2>Lección 2 · Iniciar el Proyecto</h2><p>Stakeholders · Charter · Ciclos de Vida</p></div>
-  <div class="c tl"><h3>Matriz de Stakeholders (Poder / Interés)</h3><p>El <strong>PRIMER</strong> paso de todo proyecto es identificar a los interesados y su nivel de impacto.</p>
-    <div class="tw"><table><tr><th>Poder</th><th>Interés</th><th>Estrategia a aplicar</th></tr><tr><td>Alto</td><td>Alto</td><td><strong>Gestionar de cerca</strong> (Sponsors, clientes clave)</td></tr><tr><td>Alto</td><td>Bajo</td><td><strong>Mantener Satisfecho</strong> (Gerentes de otros departamentos)</td></tr><tr><td>Bajo</td><td>Alto</td><td><strong>Mantener Informado</strong> (Usuarios finales)</td></tr><tr><td>Bajo</td><td>Bajo</td><td><strong>Monitorizar</strong> (Público general)</td></tr></table></div>
-  </div>
-  <div class="c tl"><h3>Project Charter (Acta de Constitución)</h3><p>Documento firmado por el Sponsor. Sin él, el PM NO tiene autoridad formal para comprometer fondos corporativos.</p>
-    <div class="mn"><b>Contenido del Charter "ROCAS"</b><span><strong>R</strong>ol del PM y nivel de autoridad<br><strong>O</strong>bjetivos de negocio de alto nivel<br><strong>C</strong>riterios de éxito y aceptación general<br><strong>A</strong>lcance y riesgos principales<br><strong>S</strong>ponsor firmante</span></div>
-  </div>
-  <div class="c tl"><h3>Selección del Ciclo de Vida</h3>
-    <div class="tw"><table><tr><th>Ciclo</th><th>Características y Cuándo usarlo</th></tr><tr><td><strong>Predictivo (Cascada)</strong></td><td>Alcance y requisitos claros desde el inicio. Baja incertidumbre. Una sola entrega final.</td></tr><tr><td><strong>Ágil (Adaptativo)</strong></td><td>Requisitos cambiantes. Alta incertidumbre (I+D, Software). Entregas iterativas cada 2-4 semanas para feedback.</td></tr><tr><td><strong>Híbrido</strong></td><td>Combinación. Ej: Hardware predictivo + Software ágil.</td></tr></table></div>
-  </div>
-</div>
+    <template id="tpl-exam-runner">
+        <section class="view-section exam-runner">
+            <div class="exam-header">
+                <div class="exam-info">
+                    <span id="exam-title">Examen</span>
+                    <span id="exam-block">Bloque 1 de 3</span>
+                    <span id="exam-progress">Pregunta 1 de 60</span>
+                </div>
+                <div class="exam-timer" id="global-timer">230:00</div>
+            </div>
+            <div class="exam-body">
+                <div class="question-container" id="question-container">
+                    <!-- Question injected here -->
+                </div>
+                <div class="exam-controls">
+                    <button id="btn-prev" class="btn secondary">Anterior</button>
+                    <button id="btn-mark" class="btn warning">Marcar para revisar</button>
+                    <button id="btn-next" class="btn primary">Siguiente</button>
+                    <button id="btn-finish-block" class="btn danger hidden">Finalizar Bloque</button>
+                </div>
+            </div>
+        </section>
+    </template>
 
-<div id="p-l3" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#92400E,#F59E0B);" data-i="📋"><h2>Lección 3 · Planificar</h2><p>Ruta crítica · WBS · EVM · Gestión de Riesgos</p></div>
-  <div class="c al"><h3>WBS (Work Breakdown Structure)</h3><p>Desglose jerárquico. La WBS debe contener el <strong>100%</strong> del trabajo, incluida la gestión. El nivel más bajo es el <em>Paquete de Trabajo</em>.</p></div>
-  <div class="c al"><h3>Aceleración de Cronograma</h3>
-    <div class="tw"><table><tr><th>Técnica</th><th>Cómo funciona</th><th>Impacto principal</th></tr><tr><td><strong>Crashing</strong></td><td>Añadir más recursos a tareas críticas.</td><td><strong>Aumenta el Coste</strong> (Horas extra).</td></tr><tr><td><strong>Fast Tracking</strong></td><td>Ejecutar tareas secuenciales en paralelo.</td><td><strong>Aumenta el Riesgo</strong> (Retrabajo).</td></tr></table></div>
-  </div>
-  <div class="c al"><h3>EVM — Variables y Estado (CPI / SPI)</h3>
-    <div class="fm"><b>Regla de Oro CPI y SPI</b><span><strong>Mayor que 1 = BUENO</strong> (ahorrando dinero / adelantado).</span><span><strong>Menor que 1 = MALO</strong> (sobre presupuesto / retrasado).</span></div>
-  </div>
-  <div class="c al"><h3>Estrategias de Riesgos (Negativos)</h3>
-    <div class="tw"><table><tr><th>Estrategia</th><th>Descripción PMP</th></tr><tr><td><strong>Evitar</strong></td><td>Eliminar la amenaza cambiando el plan o el diseño.</td></tr><tr><td><strong>Mitigar</strong></td><td>Reducir la probabilidad o el impacto (ej. hacer pruebas extra).</td></tr><tr><td><strong>Transferir</strong></td><td>Pasar el impacto financiero a un tercero (ej. Seguro, Outsourcing).</td></tr><tr><td><strong>Aceptar</strong></td><td>No actuar. Puede ser activa (reserva de dinero) o pasiva.</td></tr></table></div>
-  </div>
-  <div class="c al"><h3>Calidad: QA vs QC</h3><p><strong>QA (Aseguramiento):</strong> Audita los PROCESOS mientras se trabaja. Previene errores.<br><strong>QC (Control):</strong> Inspecciona el PRODUCTO final. Detecta defectos.</p></div>
-</div>
+    <template id="tpl-break">
+        <section class="view-section break-screen">
+            <h1>Descanso de 10 Minutos</h1>
+            <p>Has completado un bloque. Tienes 10 minutos de descanso opcional.</p>
+            <div class="timer-large" id="break-timer">10:00</div>
+            <button id="btn-resume" class="btn primary large">Reanudar Examen (Bloque Siguiente)</button>
+        </section>
+    </template>
 
-<div id="p-l4" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#5B21B6,#8B5CF6);" data-i="👥"><h2>Lección 4 · Liderar el Equipo</h2><p>Servant Leadership · Tuckman · Conflictos</p></div>
-  <div class="c pl"><h3>Inteligencia Emocional y Servant Leadership</h3><p>El PM PMP no ordena ni microgestiona. <strong>Protege al equipo, elimina impedimentos y fomenta la auto-organización.</strong> Ante cualquier fallo personal, el PM siempre escucha y busca la causa raíz antes de penalizar.</p></div>
-  <div class="c pl"><h3>Modelo de Tuckman (Evolución de equipos)</h3>
-    <div class="tk">
-      <div class="ts"><div class="ic" style="background:var(--blue-l)">🤝</div><div class="nm" style="color:var(--blue-d)">Forming</div><div class="ds">Cortesía</div></div>
-      <div class="ts"><div class="ic" style="background:var(--amber-l)">🌩</div><div class="nm" style="color:var(--amber-d)">Storming</div><div class="ds">Conflictos</div></div>
-      <div class="ts"><div class="ic" style="background:var(--purple-l)">📋</div><div class="nm" style="color:var(--purple-d)">Norming</div><div class="ds">Normas</div></div>
-      <div class="ts"><div class="ic" style="background:var(--teal-l)">🚀</div><div class="nm" style="color:var(--teal-d)">Performing</div><div class="ds">Auto-org.</div></div>
-      <div class="ts"><div class="ic" style="background:var(--g1)">🎓</div><div class="nm" style="color:var(--ink3)">Adjourning</div><div class="ds">Disolución</div></div>
-    </div>
-    <p>⚠️ <strong>Regla:</strong> Si se añade o quita alguien del equipo en fase Performing, retroceden temporalmente a Storming/Forming.</p>
-  </div>
-  <div class="c pl"><h3>Resolución de Conflictos</h3>
-    <div class="tw"><table><tr><th>Técnica</th><th>Cuándo aplica (Según PMI)</th></tr><tr><td><strong>Colaborar / Resolver</strong></td><td><strong>(Win-Win)</strong> Analizar juntos. Es SIEMPRE la opción preferida por el PMI.</td></tr><tr><td><strong>Negociar (Compromise)</strong></td><td><strong>(Lose-Lose)</strong> Ambas partes ceden algo. Segunda mejor opción.</td></tr><tr><td><strong>Suavizar (Smooth)</strong></td><td>Minimizar diferencias para mantener la paz temporal.</td></tr><tr><td><strong>Forzar / Dirigir</strong></td><td><strong>(Win-Lose)</strong> Imponer solución. Solo para emergencias.</td></tr></table></div>
-  </div>
-  <div class="c pl"><h3>Matriz RACI</h3><p><strong>R</strong>esponsible (Ejecuta), <strong>A</strong>ccountable (Aprueba/Dueño), <strong>C</strong>onsulted (Bidireccional antes), <strong>I</strong>nformed (Unidireccional después).<br>⚠️ Solo puede haber <strong>UN solo Accountable</strong> por tarea.</p></div>
-</div>
+    <template id="tpl-results">
+        <section class="view-section results-view">
+            <h1>Resultados del Simulacro</h1>
+            <div id="results-container">
+                <!-- Analytics injects here -->
+            </div>
+        </section>
+    </template>
 
-<div id="p-l5" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#164E63,#06B6D4);" data-i="📊"><h2>Lección 5 · Apoyar el Rendimiento</h2><p>PDCA · Control de Cambios · Issues</p></div>
-  <div class="c cl"><h3>Proceso Integrado de Control de Cambios</h3><p>NUNCA se implementa un cambio solo porque el cliente lo pida. El PM no es un tomador de pedidos.</p>
-    <div class="mn"><b>Flujo "REACCI"</b><span><strong>1. R</strong>ecibir petición formal<br><strong>2. E</strong>valuar impacto (Alcance, tiempo, coste, riesgos)<br><strong>3. A</strong>probar/Rechazar (El CCB o Sponsor decide)<br><strong>4. C</strong>ambiar el plan base<br><strong>5. C</strong>omunicar a stakeholders<br><strong>6. I</strong>mplementar</span></div>
-  </div>
-  <div class="c cl"><h3>Ciclo PDCA (Deming) - Mejora Continua</h3><p><strong>Plan</strong> (Identificar mejora) → <strong>Do</strong> (Probar en pequeño) → <strong>Check</strong> (Evaluar si funcionó) → <strong>Act</strong> (Estandarizar proceso en las OPAs).</p></div>
-  <div class="c cl"><h3>Riesgos vs Issues (Problemas)</h3>
-    <div class="tw"><table><tr><th>Riesgo</th><th>Problema (Issue / Impedimento)</th></tr><tr><td>Evento FUTURO (puede o no pasar).</td><td>Evento PRESENTE (ya ocurrió y bloquea).</td></tr><tr><td>Se anota en el <strong>Risk Register</strong>.</td><td>Se anota en el <strong>Issue Log</strong> o Impediment Board.</td></tr></table></div>
-  </div>
-  <div class="c cl"><h3>Scope Creep vs Gold Plating</h3><p><strong>Scope Creep:</strong> El cliente añade requerimientos invisibles sin control de cambios.<br><strong>Gold Plating:</strong> Tu equipo añade cosas no pedidas "para que quede mejor". Está prohibido en PMP.</p></div>
-</div>
-
-<div id="p-l6" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#9D174D,#EC4899);" data-i="🎓"><h2>Lección 6 · Cerrar el Proyecto</h2><p>Cierre formal · Transferencia · Lecciones</p></div>
-  <div class="ib ib-pk"><strong>⚠️ Regla Sagrada del Cierre:</strong> Un proyecto NO está cerrado solo porque el producto esté terminado. Se requiere la Aceptación Formal Firmada del cliente y el archivo documental.</div>
-  <div class="c pkl"><h3>Pasos del Cierre Administrativo</h3>
-    <div class="mn"><b>Mnemotecnia "VACARE"</b><span><strong>V</strong>alidar alcance (Inspección final)<br><strong>A</strong>ceptación formal (Firma del Acta)<br><strong>C</strong>errar contratos y pagar a proveedores<br><strong>A</strong>rchivar documentación técnica y financiera<br><strong>R</strong>ecursos liberados formalmente a RRHH<br><strong>E</strong>xcelencia: Indexar Lecciones Aprendidas</span></div>
-  </div>
-  <div class="c pkl"><h3>Transferencia (Handover) y Beneficios</h3><p>El PM debe asegurar que el equipo de <strong>Operaciones</strong> recibe formación y manuales para mantener el entregable.</p><p>Los beneficios reales de negocio se miden mediante el <strong>Benefits Realization Review</strong> meses después de cerrar el proyecto.</p></div>
-</div>
-
-<div id="p-agil" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🔄"><h2>Ágil / Scrum (50% del Examen)</h2><p>Roles, Eventos y Artefactos.</p></div>
-  <div class="c tl"><h3>Roles Ágiles</h3>
-    <ul>
-      <li><strong>Product Owner (PO):</strong> Maximiza el valor. Prioriza el Product Backlog. Decide el QUÉ.</li>
-      <li><strong>Scrum Master (SM):</strong> Servant Leader. Elimina impedimentos. Protege al equipo de interrupciones externas.</li>
-      <li><strong>Developers (Equipo):</strong> Auto-organizados. Estiman las tareas. Deciden el CÓMO y el CUÁNTO entra en el Sprint.</li>
-    </ul>
-  </div>
-  <div class="c tl"><h3>Kanban vs Scrum</h3>
-    <div class="tw"><table><tr><th>Scrum</th><th>Kanban</th></tr><tr><td>Basado en iteraciones fijas (Sprints de 2-4 sem).</td><td>Flujo continuo de entrega.</td></tr><tr><td>Mide la capacidad con <strong>Velocity</strong>.</td><td>Mide la capacidad con <strong>Cycle Time</strong> y <strong>Lead Time</strong>.</td></tr><tr><td>Se compromete lote en la Planning.</td><td>Requiere estrictos <strong>WIP Limits</strong> para evitar cuellos de botella.</td></tr></table></div>
-  </div>
-  <div class="c tl"><h3>Definition of Done (DoD) vs Criterios de Aceptación</h3><p><strong>DoD:</strong> Estándar técnico global que TODA historia debe cumplir (Ej: Testeado, Documentado, Cumple regulaciones).<br><strong>Criterios de Aceptación:</strong> Condiciones específicas de negocio de UNA sola User Story.</p></div>
-  <div class="c tl"><h3>INVEST (Historias de Usuario)</h3>
-    <div class="mn"><b>Calidad de una historia "INVEST"</b><span><strong>I</strong>ndependiente, <strong>N</strong>egociable, <strong>V</strong>aliosa, <strong>E</strong>stimable, <strong>S</strong>mall (pequeña para un sprint), <strong>T</strong>esteable.</span></div>
-  </div>
-</div>
-
-<div id="p-form" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#1E3A8A,#3B82F6);" data-i="📐"><h2>Fórmulas PMP Fundamentales</h2><p>Lo que necesitas para EVM, Riesgos y Comunicaciones.</p></div>
-  <div class="fm"><b>Canales de Comunicación</b><code>Canales = n × (n - 1) / 2</code><span>Donde 'n' es el número total de personas.</span></div>
-  <div class="fm"><b>PERT (Estimación de 3 Puntos Beta)</b><code>PERT = (Optimista + 4×Más Probable + Pesimista) / 6</code></div>
-  <div class="fm"><b>EVM (Coste Real vs Planeado)</b><code>CPI = EV / AC</code><span>CPI > 1 = Ahorrando dinero. CPI < 1 = Gastando de más.</span></div>
-  <div class="fm"><b>EVM (Cronograma)</b><code>SPI = EV / PV</code><span>SPI > 1 = Adelantado. SPI < 1 = Retrasado.</span></div>
-  <div class="fm"><b>EAC (Estimación al Completar)</b><code>EAC = BAC / CPI</code><span>¿Cuánto nos costará el proyecto al final al ritmo actual?</span></div>
-  <div class="fm"><b>EMV (Valor Monetario Esperado para Riesgos)</b><code>EMV = Probabilidad (%) × Impacto (€)</code></div>
-</div>
-
-<div id="p-mnem" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#92400E,#F59E0B);" data-i="🧠"><h2>Mnemotecnias PMP</h2><p>Acrónimos clave para retener conceptos rápidos.</p></div>
-  <div class="mn"><b>Proyecto</b><span><strong>TUC</strong> = Temporal, Único, Cambiante.</span></div>
-  <div class="mn"><b>Project Charter</b><span><strong>ROCAS</strong> = Rol PM, Objetivos, Criterios de éxito, Alcance inicial, Sponsor.</span></div>
-  <div class="mn"><b>Ciclo de Equipos (Tuckman)</b><span><strong>FSNPA</strong> = Forming, Storming, Norming, Performing, Adjourning.</span></div>
-  <div class="mn"><b>Conflictos (De mejor a peor)</b><span><strong>CNSFE</strong> = Colaborar, Negociar, Suavizar, Forzar, Evitar.</span></div>
-  <div class="mn"><b>Riesgos Negativos</b><span><strong>META</strong> = Mitigar, Evitar, Transferir, Aceptar.</span></div>
-  <div class="mn"><b>Control de Cambios</b><span><strong>REACCI</strong> = Recibir, Evaluar impacto, Aprobar (CCB), Cambiar, Comunicar, Implementar.</span></div>
-  <div class="mn"><b>Cierre</b><span><strong>VACARE</strong> = Validar, Aceptación, Contratos, Archivar, Recursos, Excelencia (Lecciones).</span></div>
-  <div class="mn"><b>Historias de Usuario</b><span><strong>INVEST</strong> = Independiente, Negociable, Valiosa, Estimable, Small, Testeable.</span></div>
-</div>
-
-<div id="p-glos" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#0F172A,#334155);" data-i="🔤"><h2>Glosario PMP y Flashcards</h2><p>Términos Inglés ↔ Español con definición. Usa las Flashcards para memorizar.</p></div>
-  <div class="search-w"><span class="search-i">🔍</span><input type="text" id="si" placeholder="Buscar término..." oninput="filt()"></div>
-  <div id="gl"></div>
-</div>
-
-<div id="p-flash" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#134E4A,#14B8A6);" data-i="🃏"><h2>Flashcards</h2><p>Glosario interactivo (Inglés → Español). Toca para girar la tarjeta.</p></div>
-  <div class="fc-prog" id="fp"></div>
-  <div class="fc-w"><button class="fc" id="fcc" onclick="flip()"><div class="fc-in" id="fci"><div class="fc-f" id="fcf"></div><div class="fc-b" id="fcb"></div></div></button></div>
-  <div class="fc-nav"><button class="fc-btn" onclick="prev()">← Anterior</button><button class="fc-btn" onclick="shuf()" style="flex:0.5;">🔀</button><button class="fc-btn" onclick="next()">Siguiente →</button></div>
-</div>
-
-<div id="p-quiz" class="pg">
-  <div class="hb" style="background:linear-gradient(135deg,#991B1B,#EF4444);" data-i="🎯"><h2>Simulador de Examen PMP</h2><p>160 preguntas situacionales (PMBOK 7) · Generador aleatorio Fisher-Yates</p></div>
-  <div class="ib ib-a"><strong>🎯 Simulacros Proporcionales Reales</strong>El motor extrae una cantidad proporcional de preguntas de cada uno de los 8 dominios, y luego las baraja completamente para que cada intento sea un examen único y realista.</div>
-  
-  <div id="qsel">
-    <div class="lbl">🔀 Simulacros Reales PMP (Mezcla de todos los temas)</div>
-    <div class="qs">
-      <button class="qs-c" onclick="startMixedQuiz(50)" style="border-color:var(--teal);background:var(--teal-bg);"><div class="qs-t" style="color:var(--teal-d);">Medio Simulacro PMP</div><div class="qs-m">Aleatorio, proporcional y situacional</div><span class="qs-b" style="background:var(--teal-l);color:var(--teal-d);">50 preguntas</span></button>
-      <button class="qs-c" onclick="startMixedQuiz(100)" style="border-color:var(--red);background:var(--red-bg);"><div class="qs-t" style="color:var(--red-d);">Simulacro Completo PMP</div><div class="qs-m">Nivel exigencia prueba de acceso CNTG</div><span class="qs-b" style="background:var(--red-l);color:var(--red-d);">100 preguntas</span></button>
-    </div>
-    
-    <div class="lbl">Entrenamiento por Dominio (20 preguntas/tema)</div>
-    <div class="qs">
-      <button class="qs-c" onclick="startQ('l1')"><div class="qs-t">L1 · Entorno</div><span class="qs-b" style="background:var(--blue-l);color:var(--blue-d);">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('l2')"><div class="qs-t">L2 · Iniciar</div><span class="qs-b" style="background:var(--teal-l);color:var(--teal-d);">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('l3')"><div class="qs-t">L3 · Planificar</div><span class="qs-b" style="background:var(--amber-l);color:var(--amber-d);">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('l4')"><div class="qs-t">L4 · Liderar</div><span class="qs-b" style="background:var(--purple-l);color:var(--purple-d);">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('l5')"><div class="qs-t">L5 · Rendimiento</div><span class="qs-b" style="background:var(--cyan-l);color:#0E7490;">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('l6')"><div class="qs-t">L6 · Cerrar</div><span class="qs-b" style="background:var(--pink-l);color:#9D174D;">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('agil')"><div class="qs-t">🔄 Ágil/Scrum</div><span class="qs-b" style="background:var(--teal-l);color:var(--teal-d);">20 preguntas</span></button>
-      <button class="qs-c" onclick="startQ('perfil')"><div class="qs-t">📋 Perfil y Ética</div><span class="qs-b" style="background:var(--amber-l);color:var(--amber-d);">20 preguntas</span></button>
-    </div>
-    <div class="lbl">Tu historial de simulacros</div>
-    <div class="stat-r" id="hstats"></div>
-    <div id="hlist"></div>
-  </div>
-  
-  <div id="qa" style="display:none;"></div>
-  <div style="text-align:center;margin-top:8px;"><button class="btn btn-p" id="bbk" onclick="bkQ()" style="display:none;">← Finalizar y Volver a exámenes</button></div>
-</div>
-
-<script>
-// GLOSARIO RESTAURADO Y COMPLETO PARA FLASHCARDS
-const T = [
-  {en:'Project Charter',es:'Acta de Constitución',d:'Documento de alto nivel que autoriza formalmente el proyecto y otorga autoridad al PM. Lo firma el Sponsor.',dm:'Inicio'},
-  {en:'Sponsor',es:'Patrocinador',d:'Ejecutivo que autoriza el proyecto, provee fondos y defiende el proyecto a nivel directivo.',dm:'Personas'},
-  {en:'WBS (Work Breakdown Structure)',es:'Estructura de Desglose',d:'Descomposición jerárquica que define el 100% del alcance del trabajo del proyecto.',dm:'Alcance'},
-  {en:'Scope Creep',es:'Corrupción del Alcance',d:'Añadir características sin pasar por el proceso formal de control de cambios. Iniciado por el cliente.',dm:'Alcance'},
-  {en:'Gold Plating',es:'Dorado / Extra no solicitado',d:'El equipo añade funcionalidades extra no pedidas para agradar al cliente. Es una mala práctica.',dm:'Alcance'},
-  {en:'Critical Path',es:'Ruta Crítica',d:'Secuencia de tareas más larga. Determina la duración mínima del proyecto. Holgura (Float) = 0.',dm:'Tiempo'},
-  {en:'EEF (Enterprise Environmental Factors)',es:'Factores Ambientales',d:'Condiciones externas que influyen o restringen el proyecto y que el equipo no puede controlar (ej. Leyes, clima).',dm:'Entorno'},
-  {en:'OPA (Organizational Process Assets)',es:'Activos de Procesos',d:'Políticas, procedimientos, plantillas y bases de conocimiento histórico (Lecciones Aprendidas) que ayudan al proyecto.',dm:'Entorno'},
-  {en:'EVM (Earned Value Management)',es:'Gestión del Valor Ganado',d:'Metodología para medir el desempeño del proyecto integrando alcance, tiempo y costes.',dm:'Costes'},
-  {en:'CPI (Cost Performance Index)',es:'Índice Rendimiento Coste',d:'EV / AC. Si es > 1, el proyecto está ahorrando dinero (bueno).',dm:'Costes'},
-  {en:'SPI (Schedule Performance Index)',es:'Índice Rendimiento Cronograma',d:'EV / PV. Si es > 1, el proyecto está adelantado (bueno).',dm:'Tiempo'},
-  {en:'Risk Register',es:'Registro de Riesgos',d:'Documento que lista todos los riesgos identificados, su probabilidad, impacto y respuesta planificada.',dm:'Riesgos'},
-  {en:'Issue Log',es:'Registro de Problemas',d:'Documento donde se registran los problemas actuales (riesgos materializados) para asignar un responsable de resolución.',dm:'Ejecución'},
-  {en:'CCB (Change Control Board)',es:'Comité Control de Cambios',d:'Grupo formalmente constituido responsable de revisar, evaluar, aprobar o rechazar solicitudes de cambio.',dm:'Integración'},
-  {en:'RACI Matrix',es:'Matriz RACI',d:'Define roles: Responsible (Ejecuta), Accountable (Responsable final, SOLO 1), Consulted, Informed.',dm:'Personas'},
-  {en:'Servant Leadership',es:'Liderazgo de Servicio',d:'Enfoque ágil donde el líder protege, empodera y elimina impedimentos del equipo en lugar de dar órdenes.',dm:'Personas'},
-  {en:'Tuckman Ladder',es:'Escalera de Tuckman',d:'Fases de desarrollo del equipo: Forming, Storming, Norming, Performing, Adjourning.',dm:'Personas'},
-  {en:'Business Case',es:'Caso de Negocio',d:'Estudio financiero y estratégico que justifica la inversión en el proyecto.',dm:'Entorno'},
-  {en:'Sprint',es:'Iteración Ágil',d:'Ciclo de trabajo con duración fija (timebox, 2-4 semanas) que genera un incremento de producto.',dm:'Ágil'},
-  {en:'Product Owner',es:'Dueño del Producto',d:'Rol ágil responsable de maximizar el valor del producto y gestionar el Product Backlog. Decide el QUÉ.',dm:'Ágil'},
-  {en:'Scrum Master',es:'Maestro Scrum',d:'Rol ágil que facilita el proceso Scrum y actúa como Servant Leader eliminando impedimentos.',dm:'Ágil'},
-  {en:'Daily Standup',es:'Reunión Diaria',d:'Reunión ágil de 15 minutos (timebox) para sincronizar al equipo e identificar bloqueos.',dm:'Ágil'},
-  {en:'Definition of Done (DoD)',es:'Definición de Terminado',d:'Criterio de calidad estándar que todo incremento debe cumplir para considerarse listo y entregable.',dm:'Ágil'},
-  {en:'Velocity',es:'Velocidad',d:'Medida de la capacidad histórica del equipo ágil, expresada en Story Points completados por Sprint.',dm:'Ágil'},
-  {en:'MVP (Minimum Viable Product)',es:'Producto Mínimo Viable',d:'Versión mínima con suficiente valor para ser usada por clientes pioneros y extraer feedback validado.',dm:'Ágil'},
-  {en:'Crashing',es:'Compresión / Intensificación',d:'Acortar el cronograma añadiendo recursos a la ruta crítica. Aumenta los costes.',dm:'Tiempo'},
-  {en:'Fast Tracking',es:'Ejecución Rápida / Paralela',d:'Ejecutar actividades secuenciales de la ruta crítica en paralelo. Aumenta el riesgo de retrabajo.',dm:'Tiempo'},
-  {en:'QA (Quality Assurance)',es:'Aseguramiento de Calidad',d:'Auditoría de los procesos preventivos mientras el producto se está desarrollando.',dm:'Calidad'},
-  {en:'QC (Quality Control)',es:'Control de Calidad',d:'Inspección técnica del producto final para detectar defectos y verificar entregables.',dm:'Calidad'},
-  {en:'Lessons Learned',es:'Lecciones Aprendidas',d:'Conocimiento adquirido durante el proyecto que muestra cómo se abordaron los eventos. Se integran a las OPAs.',dm:'Integración'}
-];
-
-const PAGES=['home','l1','l2','l3','l4','l5','l6','agil','form','mnem','glos','flash','quiz'];
-function go(id){
-  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
-  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
-  document.getElementById('p-'+id).classList.add('on');
-  const i=PAGES.indexOf(id);
-  if(i>=0&&document.querySelectorAll('.nb')[i]) document.querySelectorAll('.nb')[i].classList.add('on');
-  window.scrollTo({top:0,behavior:'smooth'});
-  if(id==='glos'&&!gB) buildGl();
-  if(id==='flash'&&!fB) buildFl();
-}
-
-// FUNCIONES GLOSARIO Y FLASHCARDS
-let gB=false;
-function buildGl(){gB=true;renderGl(T);}
-function renderGl(items){
-  const c={Proceso:'var(--blue-d)',Personas:'var(--teal-d)',Ágil:'var(--purple-d)',Entorno:'var(--amber-d)',Alcance:'var(--cyan)',Tiempo:'var(--pink)',Costes:'var(--green)'};
-  document.getElementById('gl').innerHTML=`<div class="tw"><table><thead><tr><th>🇬🇧 Inglés / Término</th><th>🇪🇸 Español</th><th>Definición PMP</th></tr></thead><tbody>${
-    items.map(i=>`<tr><td><strong style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--blue-d);">${i.en}</strong></td><td style="color:var(--teal-d);font-weight:700;font-size:0.8rem;">${i.es}</td><td style="font-size:0.78rem;">${i.d} <span style="display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:8px;background:var(--g1);color:${c[i.dm]||'var(--ink3)'};">${i.dm}</span></td></tr>`).join('')
-  }</tbody></table></div>`;
-}
-function filt(){
-  const q=document.getElementById('si').value.toLowerCase();
-  renderGl(T.filter(i=>i.en.toLowerCase().includes(q)||i.es.toLowerCase().includes(q)||i.d.toLowerCase().includes(q)));
-}
-
-let fB=false,fI=0,fF=false,fD=[];
-function buildFl(){fB=true;fD=[...T];renderFc();}
-function renderFc(){
-  const t=fD[fI];
-  document.getElementById('fp').textContent=`${fI+1} / ${fD.length}`;
-  document.getElementById('fcf').innerHTML=`<div class="fc-en">${t.en}</div><div class="fc-es">${t.es}</div><div class="fc-dom">${t.dm}</div>`;
-  document.getElementById('fcb').innerHTML=`<div class="fc-def">${t.d}</div>`;
-  document.getElementById('fcc').classList.remove('fl');
-  fF=false;
-}
-function flip(){fF=!fF;document.getElementById('fcc').classList.toggle('fl',fF);}
-function next(){fI=(fI+1)%fD.length;renderFc();}
-function prev(){fI=(fI-1+fD.length)%fD.length;renderFc();}
-function shuf(){fD=[...T].sort(()=>Math.random()-0.5);fI=0;renderFc();}
-
-// ═══════════════════════════════════════
-// ALGORITMO FISHER-YATES REAL
-// ═══════════════════════════════════════
-function sh(array) {
-  let currentIndex = array.length, randomIndex;
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-  return array;
-}
-
-// ═══════════════════════════════════════
-// BASE DE DATOS DE PREGUNTAS (SITUACIONAL PMBOK 7)
-// 160 Preguntas estructuradas
-// ═══════════════════════════════════════
-const Q = {
-l1:[
-{sc:"El CEO exige iniciar la ejecución de un proyecto estratégico de inmediato. El Business Case no ha sido aprobado.",q:"¿Qué debe hacer el PM primero?",o:["Empezar a planificar el cronograma","Explicar al CEO que sin Business Case no se justifica la inversión","Desarrollar el Project Charter","Ignorar al CEO y esperar a Finanzas"],ok:1,e:"El Business Case valida el valor. Sin él, un proyecto no debe arrancar."},
-{sc:"Durante la ejecución, una nueva ley ambiental entra en vigor, impactando directamente las métricas de éxito del proyecto.",q:"¿Qué debería hacer el PM?",o:["Ignorarla porque no estaba en el plan original","Revisar el marco de Cumplimiento (Compliance) y emitir una solicitud de cambio","Pedirle al equipo que trabaje horas extra","Archivar el proyecto"],ok:1,e:"El cumplimiento regulatorio (Compliance) es obligatorio y motiva un cambio formal."},
-{sc:"El PM está asignado a un proyecto para cumplir con una nueva normativa del RGPD (Legal). El NPV del proyecto es fuertemente negativo.",q:"¿Qué decisión tomará el Sponsor?",o:["Aprobar el proyecto porque el cumplimiento legal no es opcional","Cancelar el proyecto por NPV negativo","Pedir al PM que falsifique el NPV","Reducir el alcance legal"],ok:0,e:"Proyectos de cumplimiento normativo/legal se ejecutan independientemente del retorno financiero."},
-{sc:"El PM y su equipo operan en una estructura donde los jefes de departamento tienen control total del presupuesto y los recursos.",q:"¿Qué tipo de organización es esta?",o:["Matricial Fuerte","Proyectizada","Funcional","Ágil"],ok:2,e:"En organizaciones funcionales, el PM tiene poca o nula autoridad y el jefe funcional manda."},
-{sc:"Un proyecto tiene un Payback de 1 año y un IRR del 8%. Otro tiene un Payback de 4 años y un IRR del 20%. La empresa requiere un retorno rápido por problemas de liquidez.",q:"¿Cuál seleccionar?",o:["El del IRR 20% siempre","El de Payback 1 año, alinea con la estrategia de liquidez","Ambos en paralelo","Ninguno"],ok:1,e:"El alineamiento estratégico (liquidez rápida) prioriza el Payback corto."},
-{sc:"El PM nota que los beneficios del proyecto solo se medirán 6 meses después del cierre.",q:"¿En qué documento se define quién y cómo medirá esto?",o:["WBS","Benefits Management Plan","Stakeholder Register","Risk Register"],ok:1,e:"El Plan de Gestión de Beneficios define la realización post-proyecto."},
-{sc:"El Sponsor te transfiere 50k€ de la Reserva de Gestión (Management Reserve) a la Reserva de Contingencia.",q:"¿Por qué haría esto?",o:["Para premiar al equipo","Un riesgo desconocido se ha identificado y formalizado como conocido","Para gastarlo en dietas","Porque el proyecto va adelantado"],ok:1,e:"Los riesgos desconocidos que pasan a ser identificados se gestionan moviendo fondos a Contingencia."},
-{sc:"Para implementar un nuevo CRM, el PM se da cuenta de que los empleados odian el nuevo sistema y se resisten a usarlo.",q:"¿Qué modelo o marco debería aplicar?",o:["Ciclo de vida predictivo","EVM (Earned Value)","Gestión del Cambio Organizacional (ej. ADKAR)","Tuckman"],ok:2,e:"Transición, adopción y resistencia son elementos de la Gestión del Cambio (Change Management)."},
-{sc:"Una PMO define estrictamente las metodologías, audita los proyectos y tiene un grado de control medio sobre ellos.",q:"¿Qué tipo de PMO es?",o:["De soporte","De control","Directiva","Funcional"],ok:1,e:"La PMO de Control exige cumplimiento de estándares (control moderado)."},
-{sc:"El proyecto va bien, pero la estrategia de la compañía ha cambiado radicalmente, haciendo que el proyecto deje de aportar valor.",q:"¿Qué debe hacer el PM?",o:["Terminarlo porque ya está empezado","Ocultar el cambio al equipo","Hablar con el Sponsor para evaluar la terminación anticipada del proyecto","Reducir el presupuesto a la mitad"],ok:2,e:"Si el alineamiento estratégico se pierde, el proyecto debe cancelarse o pivotar."},
-{sc:"Estás gestionando el desarrollo de software. Un módulo externo cambia su API repentinamente, rompiendo tu código.",q:"Esto es un ejemplo de...",o:["OPA (Activos de Procesos)","EEF (Factores Ambientales de la Empresa) Externo","Requisito del Sponsor","Scope Creep"],ok:1,e:"Factores ambientales (EEF) son condiciones que escapan al control del equipo."},
-{sc:"Un PM utiliza plantillas de riesgos de un proyecto cerrado con éxito el año pasado.",q:"¿Qué está utilizando?",o:["EEF","Sponsor support","OPA (Organizational Process Assets)","Scrum artifacts"],ok:2,e:"Los procesos, plantillas y conocimiento corporativo son OPAs."},
-{sc:"Te piden calcular el ROI de un proyecto que costó 100k y generó 120k.",q:"¿Cuál es la respuesta correcta?",o:["20%","120%","10%","200%"],ok:0,e:"ROI = ((Beneficio - Inversión) / Inversión) x 100 -> (120-100)/100 = 20%."},
-{sc:"Una empresa lanza un producto y configura un equipo de soporte técnico continuo para atender dudas de clientes.",q:"¿El soporte técnico es un proyecto?",o:["Sí, es la fase final","No, es una operación continua sin fin definido","Sí, si tiene presupuesto","Depende del PM"],ok:1,e:"Las operaciones mantienen el negocio funcionando; los proyectos son esfuerzos temporales."},
-{sc:"El comité de dirección evalúa proyectos utilizando múltiples criterios: rentabilidad, riesgo y alineación estratégica.",q:"¿Qué herramienta están usando?",o:["Juicio de expertos únicamente","Modelo de puntuación ponderada (Weighted Scoring Model)","WBS","EVM"],ok:1,e:"El Scoring Model permite evaluar proyectos comparativamente usando múltiples variables."},
-{sc:"Un gerente funcional se niega a liberar a un experto clave prometido para tu proyecto matricial fuerte.",q:"¿Qué debe hacer el PM primero?",o:["Escalar al Sponsor inmediatamente","Revisar el Project Charter y negociar basándose en su autoridad formal","Rendirse y contratar un externo","Gritarle al gerente funcional"],ok:1,e:"En una matriz fuerte, el Charter ampara la autoridad del PM. Negociar es el primer paso."},
-{sc:"Se requiere que el proyecto siga normativas ISO-9001 rigurosas.",q:"¿A qué categoría de entorno afecta esto principalmente?",o:["Calidad y Cumplimiento (Compliance)","Presupuesto y Costes","Comunicaciones","Recursos Humanos"],ok:0,e:"ISO es un estándar que impone Cumplimiento de procesos de Calidad."},
-{sc:"Un programa se define como...",q:"¿Qué opción es correcta?",o:["Un proyecto muy grande y largo","Un grupo de proyectos relacionados gestionados de forma coordinada","Todo el portafolio de IT","Las operaciones diarias"],ok:1,e:"Programa = conjunto de proyectos relacionados con beneficios conjuntos."},
-{sc:"El CEO quiere que apliques metodologías predictivas para un proyecto de innovación en I+D donde el mercado cambia semanalmente.",q:"¿Qué aconsejas?",o:["Aceptar, el CEO manda","Sugerir un enfoque Ágil dado el alto grado de incertidumbre y cambio","Renunciar al proyecto","Usar Kanban sin decírselo"],ok:1,e:"Alto grado de cambio e incertidumbre requiere enfoques adaptativos/ágiles."},
-{sc:"Se identifica una multa de 50.000€ si no se cumple una ley. La probabilidad es del 10%.",q:"¿Cuál es el valor monetario a reservar?",o:["50.000€","10.000€","5.000€ (EMV)","0€"],ok:2,e:"EMV = 50.000 * 0.10 = 5.000€."}
-],
-l2:[
-{sc:"Durante el inicio de un proyecto de software, un departamento clave se opone firmemente al nuevo sistema.",q:"¿Qué debe hacer el PM PRIMERO?",o:["Ignorarlos si no tienen poder","Registrarlos en el Stakeholder Register y planificar una reunión para entender sus preocupaciones","Elevar el problema al Sponsor","Exigirles sumisión por correo"],ok:1,e:"Primero siempre se identifica, documenta y se busca entender (empatía)."},
-{sc:"El Sponsor firma el Project Charter pero no asigna presupuesto específico aún.",q:"¿Es válido el Charter?",o:["Sí, el Charter puede tener estimaciones de alto nivel","No, sin línea base de costes no hay Charter","Solo si el PM lo aprueba","No es válido sin la WBS"],ok:0,e:"El Charter es un documento de alto nivel. Los detalles presupuestarios precisos van en el PM Plan."},
-{sc:"El PM asume el cargo y descubre que los stakeholders clave tienen expectativas totalmente diferentes sobre el alcance.",q:"¿Qué debe usar el PM para alinearlos?",o:["El Issue Log","La reunión de Kick-off y el Project Charter","Un proceso de control de cambios","EVM"],ok:1,e:"El Kick-off alinea expectativas usando el Charter y la visión del proyecto."},
-{sc:"Un equipo ágil acaba de formarse. Tienen muchas discusiones técnicas agresivas y no logran avanzar.",q:"¿En qué fase de Tuckman están?",o:["Forming","Norming","Storming","Performing"],ok:2,e:"Discusiones, conflictos y competencia por roles = Storming."},
-{sc:"El PM realiza el registro de interesados. Descubre al gerente de un edificio que tiene alto poder de veto pero bajo interés en los detalles técnicos.",q:"¿Estrategia de comunicación?",o:["Mantener Satisfecho","Gestionar de cerca","Mantener Informado","Monitorizar"],ok:0,e:"Matriz de poder/interés: Alto Poder + Bajo Interés = Mantener Satisfecho."},
-{sc:"El cliente quiere entregas funcionales cada mes, pero el contrato requiere firmar el alcance completo de antemano.",q:"¿Qué ciclo de vida es más adecuado?",o:["Predictivo puro","Ágil puro","Híbrido (Alcance predictivo, ejecución iterativa)","Operacional"],ok:2,e:"Mezcla de requisitos fijos con entregas frecuentes = Híbrido."},
-{sc:"Se identifica un stakeholder crítico en la fase de ejecución que no fue considerado en el inicio.",q:"¿Qué impacto tiene esto?",o:["Ninguno, es tarde","Puede requerir cambios mayores en el alcance para satisfacer sus requisitos","Se le ignora hasta el cierre","Se cancela el proyecto automáticamente"],ok:1,e:"Stakeholders tardíos suelen causar retrabajos y cambios masivos de alcance."},
-{sc:"¿Cuál de los siguientes NO es un elemento típico del Project Charter?",q:"Selecciona la opción incorrecta",o:["Resumen de hitos","Línea base de costes detallada y WBS","Criterios de éxito","Nivel de autoridad del PM"],ok:1,e:"La WBS detallada se hace en la fase de Planificación, no en el inicio."},
-{sc:"Un nuevo recurso se incorpora a un equipo que lleva meses operando en 'Performing'.",q:"¿Qué es lo más probable que ocurra?",o:["El equipo mantiene Performing sin pestañear","El equipo retrocede a Storming/Forming temporalmente","El nuevo recurso renuncia","El PM debe despedir a alguien"],ok:1,e:"La dinámica de Tuckman se reinicia (parcialmente) cuando hay cambios de personal."},
-{sc:"El Sponsor te presiona para empezar la fase de diseño técnico y comprar servidores, pero el Project Charter aún está en borrador.",q:"¿Qué debes responder?",o:["Comenzar las compras para ahorrar tiempo","Insistir en firmar el Charter primero porque autoriza formalmente los recursos","Hacerlo sin decírselo al equipo","Empezar la Planificación pero no la Ejecución"],ok:1,e:"El PM no tiene autoridad formal para comprometer fondos de la empresa sin el Charter firmado."},
-{sc:"Clasificas a los stakeholders por su nivel de compromiso: Desconocedor, Resistente, Neutral, Favorable, Líder.",q:"¿Qué documento usas para esto?",o:["Stakeholder Engagement Assessment Matrix","RACI","Risk Register","Issue Log"],ok:0,e:"La Matriz de Evaluación del Compromiso mide el estado actual vs deseado."},
-{sc:"En un proyecto gubernamental muy regulado, un stakeholder de 'Bajo Poder y Bajo Interés' exige reuniones semanales exclusivas.",q:"¿Qué debe hacer el PM?",o:["Aceptar, el cliente siempre manda","Rechazar y usar la estrategia 'Monitorizar', explicando cortésmente los canales de comunicación estándar","Ignorarlo completamente","Darle el rol de Sponsor"],ok:1,e:"Invertir exceso de tiempo en Bajo/Bajo es ineficiente; se aplican canales estándar."},
-{sc:"Enfoque de gestión donde el equipo auto-organizado determina el cómo, y el trabajo se divide en iteraciones cortas.",q:"¿De qué enfoque hablamos?",o:["Cascada (Waterfall)","Ágil (Adaptativo)","Seis Sigma","Lean Six Sigma"],ok:1,e:"Auto-organización e iteraciones cortas definen los entornos ágiles/Scrum."},
-{sc:"Un stakeholder externo (la comunidad local) protesta contra la construcción del proyecto.",q:"¿Qué fallo de inicio hubo?",o:["Mala estimación de costes","No identificar y gestionar adecuadamente las expectativas de los interesados","Falta de WBS","Usar Scrum en construcción"],ok:1,e:"Los vecinos son stakeholders. Ignorarlos genera resistencia externa."},
-{sc:"El PM nota que el equipo ha superado sus conflictos iniciales y ha empezado a establecer reglas de convivencia (Ground Rules).",q:"¿Fase de Tuckman?",o:["Performing","Norming","Storming","Adjourning"],ok:1,e:"Crear normas y cohesión caracteriza la etapa Norming."},
-{sc:"El equipo debate fuertemente sobre la arquitectura del software. El PM decide no intervenir para que lleguen a un consenso técnico por sí mismos.",q:"¿El equipo está demostrando características de...?",o:["Laissez-faire destructivo","Auto-organización en un marco Ágil/Servant Leadership","Mala gestión del PM","Evitación de conflictos"],ok:1,e:"El Servant Leader confía en que el equipo técnico resuelva el 'cómo'."},
-{sc:"El cliente no tiene claro el producto final. Solo conoce el objetivo de negocio.",q:"¿Qué ciclo de vida debes seleccionar?",o:["Predictivo estricto","Ágil, porque permite elaboración progresiva y feedback rápido","Kanban de operaciones puras","Cualquiera sirve igual"],ok:1,e:"La alta incertidumbre en requisitos exige un ciclo de vida Ágil para iterar."},
-{sc:"El Sponsor quiere cerrar el proyecto, pero los usuarios clave se resisten a usar el producto.",q:"¿Qué proceso falló en el inicio?",o:["No definir criterios de éxito compartidos ni el alineamiento del usuario","No documentar la calidad","No hacer estimaciones PERT","No cerrar los contratos a tiempo"],ok:0,e:"Criterios de éxito y aceptación deben ser acordados con los usuarios desde el inicio."},
-{sc:"El Assumption Log (Registro de Supuestos) recoge que la tasa de cambio de divisa no fluctuará más de un 2%.",q:"¿Qué pasa si fluctúa un 10% durante el inicio?",o:["El PM asume el coste","Se invalida el supuesto y debe registrarse como un Riesgo (Risk Register) para planificar respuesta","Se demanda al banco","No pasa nada, es solo un supuesto"],ok:1,e:"Los supuestos validados como falsos o volátiles se convierten en Riesgos."},
-{sc:"¿Cuál es la salida principal del proceso 'Desarrollar el Acta de Constitución'?",q:"Identifica el documento.",o:["El Cronograma base","El Risk Register","El Project Charter y el Assumption Log","El Presupuesto aprobado final"],ok:2,e:"Las salidas clave del inicio son el Charter y el Registro de Supuestos."}
-],
-l3:[
-{sc:"Durante la validación de alcance, el cliente pide añadir un 'pequeño botón extra' que no estaba en los requisitos originales.",q:"¿Qué debe hacer el PM primero?",o:["Añadirlo porque es pequeño (Gold Plating)","Rechazarlo por sistema","Evaluar el impacto en tiempo/coste y procesarlo por el Control Integrado de Cambios","Añadirlo para hacer Scope Creep"],ok:2,e:"Cualquier cambio de alcance, por mínimo que sea, debe evaluarse formalmente."},
-{sc:"Tu proyecto tiene un SPI de 0.85 y un CPI de 1.15.",q:"¿Cuál es la situación real del proyecto?",o:["Retrasado pero por debajo del presupuesto (ahorrando)","Adelantado y ahorrando","Retrasado y gastando de más","Adelantado pero gastando de más"],ok:0,e:"SPI < 1 = Retrasado. CPI > 1 = Ahorrando dinero."},
-{sc:"Una tarea en la ruta crítica tiene una duración optimista de 4, pesimista de 14, y más probable de 6.",q:"¿Cuál es su duración estimada por PERT?",o:["7","6","8","7.5"],ok:0,e:"PERT = (O + 4M + P) / 6 = (4 + 24 + 14) / 6 = 42 / 6 = 7."},
-{sc:"El equipo de desarrollo agrega características visuales avanzadas que el cliente no pidió 'para que se vea más moderno'.",q:"¿Qué término describe esto?",o:["Scope Creep","Mejora Continua","Gold Plating (Dorado)","Value Engineering"],ok:2,e:"Gold Plating es trabajo extra añadido por el equipo no solicitado por el cliente. Es una mala práctica."},
-{sc:"Para recuperar tiempo en un cronograma retrasado, el PM decide ejecutar tareas secuenciales en paralelo, aumentando el riesgo sin añadir presupuesto.",q:"¿Qué técnica aplicó?",o:["Crashing","Resource Leveling","Fast Tracking","Scope Reduction"],ok:2,e:"Fast tracking es solapar tareas. Crashing es añadir recursos (cuesta dinero)."},
-{sc:"Tienes un EAC de 50.000€ y un AC de 30.000€. Te preguntan cuánto dinero más necesitas para terminar.",q:"¿Qué fórmula aplicas?",o:["EAC - AC (ETC = 20.000€)","BAC - EAC","EV - AC","AC / CPI"],ok:0,e:"Estimate to Complete (ETC) = EAC - AC. Necesitas 20k más."},
-{sc:"Identificas un riesgo: una tormenta fuerte paralizará las obras exteriores. Decides contratar un seguro de paralización de obras.",q:"¿Qué estrategia de respuesta al riesgo usaste?",o:["Mitigar","Evitar","Aceptar","Transferir"],ok:3,e:"Contratar seguros es Transferir el impacto financiero a un tercero."},
-{sc:"Identificas una oportunidad: si el proveedor entrega antes, podrás recibir un bono por finalización temprana. Decides asignar a tu mejor gestor para coordinarse con el proveedor y asegurar la entrega.",q:"¿Estrategia aplicada?",o:["Explotar","Mejorar","Compartir","Aceptar"],ok:0,e:"Explotar busca garantizar (100% probabilidad) que la oportunidad ocurra."},
-{sc:"La WBS se ha completado. Al sumar todos los paquetes de trabajo, notas que faltan los entregables de gestión del proyecto.",q:"¿Qué regla se ha roto?",o:["Regla de las 8/80 horas","Regla del 100%","Regla de la Cadena Crítica","Gold Plating"],ok:1,e:"La Regla del 100% exige que la WBS contenga absolutamente todo el trabajo del proyecto, incluida la gestión."},
-{sc:"El cliente solicita un tipo de contrato donde el riesgo de sobrecostes lo asuma casi totalmente tu empresa (el vendedor).",q:"¿Qué contrato propondrá el cliente?",o:["Tiempo y Materiales (T&M)","Coste Reembolsable (CR)","Precio Fijo (Firm Fixed Price)","Retainer"],ok:2,e:"En el Precio Fijo, si cuesta más de lo estimado, el vendedor pierde dinero. El riesgo es del vendedor."},
-{sc:"El departamento de auditoría revisa tus procesos de instalación para verificar si se están siguiendo los estándares de la empresa.",q:"¿Estás en un proceso de...?",o:["Control de Calidad (QC)","Aseguramiento de la Calidad (QA)","Validación del Alcance","Auditoría Financiera"],ok:1,e:"QA (Quality Assurance) audita procesos. QC inspecciona entregables."},
-{sc:"La línea base del proyecto (Project Baseline) se compone de:",q:"Selecciona la tríada correcta:",o:["Scope Baseline, Schedule Baseline, Cost Baseline","Risk Baseline, Quality Baseline, Scope Baseline","Charter, PM Plan, WBS","Presupuesto, Riesgos, Recursos"],ok:0,e:"La Triple Restricción formalizada: Alcance, Cronograma y Coste."},
-{sc:"Un equipo ágil utiliza puntos de historia (Story Points) para estimar las tareas.",q:"¿Qué miden los Story Points?",o:["Horas precisas de reloj","Complejidad, esfuerzo e incertidumbre relativa","Días de calendario","Coste en dólares"],ok:1,e:"La estimación ágil es relativa y considera esfuerzo + riesgo + complejidad."},
-{sc:"Se identifica un riesgo grave de seguridad física en la obra. El PM decide cambiar el diseño arquitectónico para que la estructura problemática no se construya.",q:"¿Qué estrategia de mitigación de riesgo usó?",o:["Mitigar","Transferir","Aceptar","Evitar"],ok:3,e:"Evitar elimina la causa raíz del riesgo (cambiando el plan o diseño)."},
-{sc:"Un riesgo identificado se materializa y ocurre un derrumbe parcial controlado.",q:"¿Qué documento debe actualizar el PM inmediatamente?",o:["El Charter","El Risk Register, moviendo la entrada al Issue Log","La WBS","El RACI"],ok:1,e:"Un riesgo que se materializa se convierte en un Problema (Issue)."},
-{sc:"Tienes 5 tareas en ruta crítica con Holgura (Float) = 0. El cliente pide añadir una tarea extra a esa misma ruta.",q:"¿Cuál será el efecto inmediato?",o:["Ninguno","La ruta crítica se acortará","La duración del proyecto aumentará","Los costes bajarán"],ok:2,e:"Cualquier adición en la ruta crítica alarga automáticamente el proyecto completo."},
-{sc:"Tu proyecto tiene BAC = 100.000€. EV = 40.000€. AC = 50.000€. PV = 60.000€.",q:"¿Cuál es la Varianza de Coste (CV)?",o:["-10.000€ (Sobre presupuesto)","-20.000€ (Retrasado)","+10.000€ (Bajo presupuesto)","-50.000€"],ok:0,e:"CV = EV - AC = 40.000 - 50.000 = -10.000€."},
-{sc:"Utilizando los datos anteriores (BAC=100k, EV=40k, AC=50k).",q:"¿Cuál es tu estimación del coste final (EAC) si las condiciones actuales se mantienen?",o:["100.000€","125.000€","110.000€","150.000€"],ok:1,e:"CPI = EV/AC = 40/50 = 0.8. EAC = BAC / CPI = 100.000 / 0.8 = 125.000€."},
-{sc:"El cliente y el PM discuten por un requisito ambiguo. El PM se remite al documento que describe en detalle qué incluye y qué excluye el proyecto.",q:"¿Qué documento está consultando?",o:["WBS Dictionary","Project Scope Statement (Enunciado del alcance)","Business Case","RACI"],ok:1,e:"El Enunciado del Alcance define entregables, asunciones, y exclusiones (lo que NO se hará)."},
-{sc:"Decides usar la técnica de 'Crashing' para acelerar el cronograma.",q:"¿Qué métrica se verá más impactada negativamente?",o:["El Tiempo","El Coste (Aumentará)","El Alcance","La Calidad"],ok:1,e:"Crashing (añadir recursos) requiere más presupuesto (horas extras, más personal)."}
-],
-l4:[
-{sc:"Dos ingenieros discuten agresivamente sobre qué servidor usar. El PM los reúne, les pide que olviden sus diferencias temporalmente y se enfoquen en terminar la tarea porque hay urgencia.",q:"¿Qué técnica de resolución de conflictos usó?",o:["Colaborar/Resolver el problema","Suavizar/Acomodar","Forzar/Dirigir","Evitar/Retirarse"],ok:1,e:"Suavizar (Smoothing) enfatiza áreas de acuerdo o minimiza el problema para avanzar a corto plazo."},
-{sc:"El equipo ágil de 7 personas no logra decidir la arquitectura. El Scrum Master/PM decide dejar que ellos lo discutan y decidan sin imponer su opinión técnica.",q:"¿Qué principio de Liderazgo Servicial está aplicando?",o:["Laissez-faire negligente","Empoderamiento y Auto-organización","Falta de visión","Transaccional"],ok:1,e:"El Servant Leader confía y empodera al equipo técnico para que decidan el 'cómo'."},
-{sc:"En la matriz RACI del proyecto, notas que una tarea crítica tiene a tres personas asignadas con la letra 'A' (Accountable).",q:"¿Cuál es el riesgo principal?",o:["Que se haga muy rápido","Que nadie asuma la responsabilidad final si algo falla","Que cueste más barato","Ninguno, es una buena práctica"],ok:1,e:"Solo puede haber UN responsable último (Accountable) por tarea. Si hay 3, la responsabilidad se diluye."},
-{sc:"Un miembro junior comete un error grave en producción. El PM lo convoca a una reunión privada 1 a 1.",q:"¿Cuál debe ser el enfoque del PM usando Inteligencia Emocional?",o:["Amonestarlo severamente para sentar precedente","Entender la causa raíz, mostrar empatía y buscar oportunidades de formación (Mentoring)","Despedirlo de inmediato","Ignorar el fallo"],ok:1,e:"El PMP enfatiza resolver problemas constructivamente y fomentar el desarrollo del equipo."},
-{sc:"El Sponsor quiere informes diarios, un gerente funcional exige reportes semanales en formato tabla, y el cliente solo quiere un dashboard en vivo.",q:"¿Cómo gestiona el PM estas demandas?",o:["Envía lo mismo a todos para ahorrar tiempo","Actualiza el Plan de Gestión de las Comunicaciones para satisfacer las necesidades de cada stakeholder","Ignora al gerente funcional","Se queja a RRHH"],ok:1,e:"La comunicación debe adaptarse al formato, frecuencia y necesidad de cada interesado clave."},
-{sc:"El equipo pasa de 5 a 10 miembros debido a una fusión de áreas.",q:"¿Cómo afecta esto a los canales de comunicación?",o:["Suben de 10 a 45","Suben de 5 a 10","Suben de 20 a 100","Suben de 10 a 25"],ok:0,e:"Fórmula: N(N-1)/2. Inicial: 5*4/2 = 10. Nuevo: 10*9/2 = 45 canales."},
-{sc:"Un técnico estrella de tu equipo rinde excepcionalmente, pero trata mal a sus compañeros y genera un ambiente tóxico.",q:"¿Qué debe priorizar el PM?",o:["Ignorarlo porque es el mejor técnicamente","Proteger la salud del equipo interviniendo con feedback constructivo y estableciendo Ground Rules","Promocionarlo","Asignarle más trabajo aislado"],ok:1,e:"El PM es responsable del bienestar y rendimiento del equipo como unidad. La toxicidad destruye la fase 'Performing'."},
-{sc:"Te reúnes con el cliente para negociar un cambio de alcance. Ambas partes ceden en algunos puntos para llegar a un acuerdo rápido, aunque ninguno consigue exactamente lo que quería.",q:"¿Qué técnica de negociación se usó?",o:["Colaborar (Win-Win)","Comprometer / Negociar (Lose-Lose parcial)","Forzar (Win-Lose)","Evitar"],ok:1,e:"Comprometerse (Compromise) implica que ambas partes ceden algo (solución parcial)."},
-{sc:"A la mitad de un sprint, el equipo se queja de que una herramienta de software es muy lenta e impide avanzar.",q:"¿A quién corresponde resolver este bloqueo en un marco Scrum/Ágil?",o:["Al Product Owner","Al propio equipo","Al Scrum Master (Servant Leader)","Al cliente"],ok:2,e:"Remover impedimentos (Remove obstacles) es la función principal del Scrum Master/Servant Leader."},
-{sc:"El equipo está desmotivado. Según la Teoría de Herzberg, el PM se asegura de que el entorno de trabajo sea seguro, limpio y el salario pague a tiempo.",q:"¿Qué factores está cubriendo?",o:["Factores Motivacionales","Factores Higiénicos (Previenen insatisfacción)","Teoría X","Pirámide completa de Maslow"],ok:1,e:"En Herzberg, el salario y condiciones son higiénicos (si faltan hay queja, si están no motivan extra)."},
-{sc:"Un PM asume que todos los empleados son perezosos, evitan responsabilidades y necesitan ser micro-gestionados.",q:"¿Bajo qué teoría opera este PM?",o:["Teoría Y de McGregor","Teoría X de McGregor","Teoría de Expectativas","Liderazgo Transformacional"],ok:1,e:"La Teoría X es un estilo directivo anticuado. PMP y metodologías ágiles promueven la Teoría Y."},
-{sc:"Tu equipo está distribuido en 4 países con distintas zonas horarias. Hay malentendidos constantes en los emails.",q:"¿Qué herramienta es la más eficaz para mejorar esto?",o:["Enviar más emails con letras rojas","Crear un Team Charter (Ground Rules) definiendo normas de comunicación asíncrona","Sustituir a los miembros lejanos","Llamadas diarias de 4 horas"],ok:1,e:"El Team Charter establece expectativas claras de comportamiento y comunicación en equipos virtuales."},
-{sc:"Un interesado de gran influencia exige un reporte en un formato muy complejo que te toma 5 horas semanales armar.",q:"¿Qué haces primero?",o:["Lo haces sin quejarte","Te reúnes con él para entender el propósito de los datos y negociar un formato más automatizado/eficiente","Le dices que no tienes tiempo","Lo escalas al CEO"],ok:1,e:"Entender el 'por qué' detrás del requisito (empatía/resolución) permite negociar soluciones eficientes."},
-{sc:"En una reunión, dos directores se gritan. El PM detiene la reunión y dice: 'Analizaremos los datos de rendimiento que sustentan ambas posturas mañana a primera hora'.",q:"¿Qué técnica de conflicto usó?",o:["Suavizar","Evitar / Retirarse temporalmente","Forzar","Colaborar"],ok:1,e:"Pausar o posponer para calmar ánimos o recopilar información es Evitar/Retirarse (Withdraw/Avoid)."},
-{sc:"El PM provee visión, inspira al equipo con el propósito final del producto y fomenta la innovación intelectual.",q:"¿Qué estilo de liderazgo exhibe?",o:["Transaccional","Transformacional","Laissez-faire","Dictatorial"],ok:1,e:"El líder transformacional motiva a través de la visión y el estímulo intelectual."},
-{sc:"Un técnico no sabe usar la nueva herramienta de tickets. El PM se sienta con él y le enseña paso a paso usando su propia experiencia.",q:"¿El PM está actuando como...?",o:["Coach","Mentor","Sponsor","Auditor"],ok:1,e:"El Mentoring transfiere conocimiento experto. El Coaching hace preguntas para que la persona descubra la respuesta."},
-{sc:"Un interesado importante no asiste a las revisiones del proyecto y se queja de no estar informado.",q:"¿Qué debe hacer el PM?",o:["Enviarle burocracia por correo certificado","Evaluar su engagement actual, revisar el Plan de Comunicaciones y ajustar el canal a sus preferencias reales","Ignorarlo porque es su culpa por no asistir","Asignarle la culpa en el Issue Log"],ok:1,e:"El PM debe ser proactivo y adaptar la estrategia de comunicación para recuperar el engagement."},
-{sc:"El equipo se queja de que hay demasiadas reuniones. El Scrum Master responde: 'Eliminemos la reunión de estatus semanal de los martes y usemos el tablero Kanban como radiador de información'.",q:"¿Qué rol está ejerciendo?",o:["Gestor de riesgos","Servant Leader removiendo desperdicio (Lean/Agile)","Dictador funcional","Product Owner"],ok:1,e:"Eliminar trabajo sin valor y optimizar procesos es clave en el Servant Leadership."},
-{sc:"En RACI, el rol 'Consulted' significa que...",q:"Selecciona la correcta:",o:["Se le informa después de que el trabajo termina","Se debe solicitar su opinión ANTES de tomar la decisión o hacer el trabajo","Es el que ejecuta la tarea con las manos","Aprueba con su firma"],ok:1,e:"Consulted (C) requiere comunicación bidireccional previa. Informed (I) es unidireccional posterior."},
-{sc:"Un PM organiza una cena de celebración por alcanzar un hito mayor, reconociendo el esfuerzo público del equipo.",q:"¿Qué nivel de Maslow está intentando satisfacer principalmente?",o:["Seguridad","Fisiológico","Estima / Reconocimiento","Supervivencia"],ok:2,e:"Reconocimiento público apela a la Estima en la jerarquía de Maslow."}
-],
-l5:[
-{sc:"El cliente solicita una modificación urgente en el módulo de pagos. El Sponsor presiona por correo para que lo hagas ya.",q:"¿Qué debe hacer el PM primero?",o:["Implementarlo porque el Sponsor manda","Rechazarlo por ser un cambio tardío","Evaluar el impacto en alcance, tiempo, coste y riesgos, y documentar la solicitud (REACCI)","Pedir al equipo que trabaje el fin de semana"],ok:2,e:"Paso 2 del Control de Cambios: Evaluar impacto. NUNCA se implementa a ciegas."},
-{sc:"Tras evaluar un cambio, descubres que retrasará el proyecto 3 semanas.",q:"¿Quién aprueba o rechaza el cambio formalmente?",o:["El Project Manager en solitario","El Scrum Master","El Comité de Control de Cambios (CCB) / Sponsor según el plan de gobernanza","El equipo de desarrollo"],ok:2,e:"El CCB o el ente autorizado en la gobernanza debe aprobar los cambios tras evaluar el impacto."},
-{sc:"Estás revisando un gráfico de control de calidad. 7 puntos consecutivos caen por debajo de la media, pero dentro de los límites de control.",q:"¿Qué debes hacer según la Regla de los 7?",o:["Nada, están dentro de los límites","Investigar el proceso, porque hay una causa especial de variación (tendencia no aleatoria)","Despedir al operario","Ajustar los límites de control"],ok:1,e:"La 'Regla de los 7' indica que 7 puntos seguidos de un lado de la media muestran un proceso fuera de control no aleatorio."},
-{sc:"Durante un Sprint, un servidor crítico falla, bloqueando el trabajo del equipo. El Scrum Master registra el evento.",q:"¿Dónde lo registra?",o:["En el Risk Register (Riesgo)","En el Impediment Log / Issue Log (Problema actual)","En el Product Backlog","En el Project Charter"],ok:1,e:"Si ya está ocurriendo y bloqueando, es un Impedimento/Issue, no un riesgo (que es futuro)."},
-{sc:"Descubres que un error de software escapó al cliente (defecto externo). El equipo corrige el error.",q:"¿Qué debes aplicar a continuación basándote en la Mejora Continua?",o:["El ciclo PDCA: analizar por qué falló el proceso de pruebas y modificarlo para que no vuelva a ocurrir","Ignorarlo, ya está arreglado","Castigar al tester","Contratar un seguro"],ok:0,e:"Corregir el defecto no basta. Hay que corregir el PROCESO (Deming/PDCA)."},
-{sc:"Un miembro del equipo descubre un atajo técnico que ahorra 5 días de trabajo. Lo implementa inmediatamente sin documentarlo.",q:"¿Por qué esto es un problema en PMP?",o:["No es un problema, ahorró tiempo","Falla en la transparencia y transferencia de conocimiento institucional (OPAs)","Aumenta el coste","Viola el RACI"],ok:1,e:"La falta de documentación impide la mejora continua y genera deuda técnica y factor autobús."},
-{sc:"El CPI de tu proyecto cae a 0.82. En la reunión con el Sponsor debes reportar el estado.",q:"¿Cuál es la mejor forma de comunicarlo?",o:["'Estamos en rojo, no sé por qué'","Ocultarlo hasta el mes que viene","'Tenemos un CPI de 0.82 causado por el coste extra del material X. Propongo hacer crashing con la contingencia o renegociar el alcance'","Culpar al proveedor exclusivamente"],ok:2,e:"Siempre reportar: Datos + Causa Raíz + Opciones de Resolución."},
-{sc:"En un proyecto híbrido, el Product Owner pide insertar una nueva User Story crítica en mitad del Sprint actual de 2 semanas.",q:"¿Qué acción es la más correcta?",o:["El equipo abandona todo y la hace","El Scrum Master protege al equipo y le pide al PO que la priorice en el Backlog para el SIGUIENTE sprint","El PM invoca al CCB predictivo","Se alarga el Sprint 1 semana"],ok:1,e:"En Scrum, el Sprint Backlog está protegido. No se inserta trabajo que altere el objetivo del Sprint en curso."},
-{sc:"Un problema técnico no tiene solución clara. El PM organiza un equipo multidisciplinar y usan un Diagrama de Ishikawa (Espina de Pescado).",q:"¿Qué están buscando?",o:["Los síntomas del problema","A quién culpar","La causa raíz del defecto","Nuevos riesgos"],ok:2,e:"Ishikawa / Diagrama de Causa-Efecto se usa para análisis de causa raíz (Root Cause Analysis)."},
-{sc:"El proyecto ha generado demasiados cambios aprobados y la línea base original ya no sirve para medir el desempeño real.",q:"¿Qué acción es apropiada?",o:["Cancelar el proyecto","Crear un nuevo Business Case","Re-baselining (Rehacer la línea base) para reflejar los cambios masivos aprobados","Usar el índice TCPI sin cambiar la base"],ok:2,e:"Cuando los cambios aprobados hacen irreconocible el plan original, se actualiza la línea base (Re-baseline)."},
-{sc:"Un riesgo identificado se materializa. Tú tenías una reserva de contingencia aprobada para este riesgo.",q:"¿Quién tiene autoridad para usar esta reserva?",o:["El equipo libremente","El Project Manager, sin pedir permiso adicional al Sponsor","Solo el Sponsor","El Cliente"],ok:1,e:"La Reserva de Contingencia es gestionada por el PM para riesgos conocidos."},
-{sc:"Aparece un riesgo DESCONOCIDO (un desastre natural no mapeado) que destruye equipos. Se necesita dinero urgente.",q:"¿De dónde sale el dinero?",o:["De la Reserva de Contingencia del PM","De la Reserva de Gestión (Management Reserve), con aprobación del Sponsor","Del bolsillo del PM","Se detiene el proyecto"],ok:1,e:"Riesgos desconocidos afectan a la Management Reserve, controlada por la dirección/Sponsor."},
-{sc:"Un interesado de ventas quiere añadir campos extra a una pantalla. El equipo de desarrollo dice 'es solo 1 hora de código' y lo hace sin decirle al PM.",q:"¿Qué concepto viola esta acción?",o:["Fast Tracking","Gold Plating","Control Integrado de Cambios (Change Control)","Agile Manifesto"],ok:2,e:"Toda petición del cliente (Scope Creep) debe ser formalizada y evaluada. Saltarse el proceso rompe el control."},
-{sc:"El cliente revisa un entregable y encuentra que no cumple con el estándar de calidad acordado en las métricas.",q:"¿A qué proceso PMP corresponde este hallazgo?",o:["Control de Calidad (QC)","Aseguramiento (QA)","Validación de Alcance","Gestión de Riesgos"],ok:0,e:"La inspección técnica del producto respecto a métricas ocurre en Control de Calidad."},
-{sc:"Tras aplicar un parche de seguridad, el rendimiento del sistema cae un 30%.",q:"¿Qué faltó hacer en el control de cambios?",o:["Aprobar el presupuesto","Identificar riesgos secundarios durante la evaluación del cambio","Llamar al Sponsor","Actualizar la WBS"],ok:1,e:"Evaluar un cambio implica prever riesgos secundarios (el impacto del propio cambio)."},
-{sc:"En un tablero Kanban de operaciones técnicas, hay 15 tarjetas en 'En progreso' y ninguna avanza a 'Terminado'.",q:"¿Qué regla clave del rendimiento Lean falta?",o:["WIP Limit (Límite de Trabajo en Curso)","Sprints de 2 semanas","Product Owner","Daily Standup"],ok:0,e:"Kanban requiere limitar el WIP para evitar cuellos de botella y forzar el cierre de tareas."},
-{sc:"Un equipo ágil entrega un incremento. Al hacer la demostración, el cliente dice 'No es lo que quería'.",q:"¿Qué debe hacer el equipo?",o:["Decirle que él aprobó las historias de usuario","Registrar el feedback, actualizar el Product Backlog e iterar en el próximo sprint","Llamar a los abogados","Renunciar"],ok:1,e:"En metodologías ágiles, el producto se adapta mediante feedback constante. El cambio es bienvenido."},
-{sc:"Durante la ejecución, el PM se da cuenta de que el TCPI es 1.45.",q:"¿Qué significa para el proyecto?",o:["Va excelente, con 45% de ahorro","El equipo deberá trabajar con una eficiencia del 145% para terminar dentro del presupuesto (Casi imposible)","Que se completará antes de tiempo","Es el SPI invertido"],ok:1,e:"TCPI > 1 significa que el presupuesto está apretado y debes rendir de manera casi irreal para cumplir."},
-{sc:"El equipo documenta un 'Workaround' (respuesta no planificada a un riesgo no identificado que ya ocurrió).",q:"¿Dónde lo documentan?",o:["Risk Register","Issue Log y Lessons Learned","WBS","Project Charter"],ok:1,e:"El workaround gestiona un problema actual (Issue Log) y debe generar lecciones de cara al futuro."},
-{sc:"¿Cuál es la diferencia fundamental entre el Control de Calidad (QC) y la Validación del Alcance?",q:"Identifica la diferencia:",o:["Son exactamente lo mismo","QC lo hace el equipo para verificar corrección técnica; la Validación la hace el cliente para dar aceptación formal","QC es del cliente, Validación del equipo","QC se hace al inicio, Validación al final"],ok:1,e:"QC = Inspección técnica interna. Validación = Firma comercial/aceptación del cliente."}
-],
-l6:[
-{sc:"El proyecto ha completado todas las instalaciones y los sistemas están en verde. El cliente está muy contento en las reuniones.",q:"¿Está el proyecto cerrado formalmente?",o:["Sí, si todo funciona","No, falta la firma formal del Acta de Aceptación por parte del cliente","Sí, si el equipo ya no trabaja","Sí, si se gastó el presupuesto"],ok:1,e:"El cierre contractual y de proyecto exige la Aceptación Formal (firma) del cliente y/o Sponsor."},
-{sc:"Al cerrar el proyecto de 1 año, el PM le pide al equipo que redacte las lecciones aprendidas la última tarde.",q:"¿Qué error cometió el PM?",o:["Ninguno, es el procedimiento","Las lecciones aprendidas deben capturarse continuamente durante todo el ciclo de vida del proyecto, no solo al final","Ese trabajo es de la PMO","Debe redactarlas el Sponsor"],ok:1,e:"Dejar el 'Lessons Learned' para el final produce pérdida de datos reales (la gente olvida). Debe ser iterativo."},
-{sc:"El Business Case prometió reducir el tiempo de atención telefónica en un 30%. El sistema se instala hoy.",q:"¿Cómo y cuándo se evalúa si esto se cumplió?",o:["Mañana en la reunión de cierre","Durante las pruebas de usuario","A través del 'Benefits Realization Review' meses después del cierre del proyecto, por parte del negocio","No se evalúa, es solo un papel"],ok:2,e:"Los beneficios comerciales estratégicos suelen requerir tiempo de operación post-proyecto para medirse."},
-{sc:"El proyecto se cancela súbitamente por falta de fondos a la mitad de su ejecución.",q:"¿Debe el PM ejecutar el proceso de Cierre del Proyecto?",o:["No, simplemente todos se van","Sí, debe documentar lo entregado, archivar información y formalizar la cancelación","Solo si lo pide auditoría","No, porque no hay entregable final"],ok:1,e:"Los proyectos cancelados, pausados o fallidos también DEBEN cerrarse formalmente para conservar el histórico y activos."},
-{sc:"Al intentar cerrar un contrato con el proveedor de cableado, el PM nota que falta un informe de certificación que figuraba en los requisitos del contrato.",q:"¿Qué hace el PM?",o:["Cierra el contrato y le perdona el informe","Retiene el pago final hasta que el proveedor entregue todos los elementos estipulados en el contrato","Lo hace él mismo","Emite un control de cambios"],ok:1,e:"El cierre de adquisiciones requiere la satisfacción del 100% de las cláusulas contractuales."},
-{sc:"El PM está liberando a los miembros del equipo al final del proyecto.",q:"¿Qué paso debe incluir esta liberación para garantizar un buen trato y cierre?",o:["Solo quitarles el acceso al servidor","Hacer una evaluación de desempeño y comunicar formalmente su disponibilidad a los gerentes funcionales","Ignorarlos","Prometerles bonus falsos"],ok:1,e:"Las evaluaciones de desempeño y la comunicación formal a RRHH/Gerentes son parte del cierre administrativo de recursos."},
-{sc:"El Lessons Learned Register del proyecto finalizado indica que el proveedor X tiene graves problemas logísticos.",q:"¿Qué debe hacer el PM con este documento?",o:["Tirarlo a la basura por confidencialidad","Archivarlo en los Activos de los Procesos de la Organización (OPAs) para que futuros proyectos lo eviten","Enviárselo al proveedor como insulto","Vender la información"],ok:1,e:"Las lecciones pasan al repositorio histórico (OPAs) para mejorar el desempeño de futuros proyectos."},
-{sc:"Un proyecto ágil consta de 10 Sprints. ¿Cuándo ocurren las actividades de cierre?",o:["Solo en el Sprint 10","Nunca","Se cierra administrativamente al final, pero se hacen Retrospectivas (Lecciones) en cada Sprint","Solo si se acaba el dinero"],ok:2,e:"Ágil distribuye la mejora (Retrospectivas) iterativamente, aunque hay un cierre contractual al finalizar el producto."},
-{sc:"El Sponsor quiere firmar el cierre, pero el equipo de Operaciones dice que no saben cómo mantener el nuevo software.",q:"¿Qué falló en el proceso de Cierre/Transición?",o:["El código estaba mal hecho","Faltó ejecutar la Transición Formal del Conocimiento y formación (Handover) a Operaciones","El Sponsor se precipitó","Es culpa del cliente"],ok:1,e:"Una parte crítica del cierre es la Transferencia (Handover): manuales, capacitación y paso a soporte/operaciones."},
-{sc:"¿Cuál de estas actividades NO pertenece a la fase de Cierre?",o:["Archivar documentación técnica","Medir el CPI y aplicar Crashing","Liberar al equipo del proyecto","Obtener aceptación formal"],ok:1,e:"Medir CPI y Crashing son actividades de Monitoreo y Control/Ejecución, no de Cierre."},
-{sc:"El cliente te envía un correo electrónico diciendo: 'Se ve bien, buen trabajo'.",q:"¿Es esto suficiente para cerrar administrativamente el proyecto?",o:["Sí, un correo electrónico es válido","No, se requiere el Acta de Aceptación Formal según lo dictado por el Plan de Gestión y la Gobernanza","Depende de si te pagan","Sí en España, no en EEUU"],ok:1,e:"El correo es indicio, pero los proyectos exigen documentación formalizada y firmada por representantes autorizados."},
-{sc:"Estás revisando el repositorio final de archivos.",q:"¿Por qué es obligatorio archivar los registros financieros y técnicos según el PMP?",o:["Por si PMI hace una auditoría del PM","Para cumplir requisitos Legales/Regulatorios, defensa en auditorías e histórico de conocimiento","Porque sobra espacio en la nube","Para molestar al equipo"],ok:1,e:"El archivo protege a la organización legalmente y preserva el conocimiento institucional."},
-{sc:"Al revisar los riesgos, descubres que sobraron 15.000€ de la Reserva de Contingencia.",q:"¿Qué se hace con ese dinero al cierre?",o:["El equipo se lo reparte como bonus","Se gasta en Gold Plating de última hora","Se devuelve al fondo general de la organización (o al Sponsor) documentándolo en el cierre","Se usa para el siguiente proyecto automáticamente"],ok:2,e:"Los fondos no gastados se devuelven al negocio. El Gold Plating está prohibido."},
-{sc:"En la reunión de cierre (Post-Mortem), un desarrollador culpa agresivamente a un tester por retrasar el proyecto.",q:"¿Cuál es la función del PM aquí?",o:["Dejar que discutan","Facilitar la reunión para enfocarla en 'qué falló en el proceso' y no en 'quién tiene la culpa' (Blame-free)","Apoyar al desarrollador","Cancelar la reunión"],ok:1,e:"Las revisiones post-mortem eficaces atacan a los problemas de proceso, no a las personas (cultura sin culpa)."},
-{sc:"Un proyecto entregó un centro de datos funcional, pero su objetivo comercial era conseguir 100 clientes nuevos en un año.",q:"¿Cómo encaja el PM en este objetivo?",o:["El PM consigue los 100 clientes","El PM es responsable de entregar el centro de datos y planificar cómo el negocio medirá los 100 clientes (Benefits Realization)","El PM ignora la métrica comercial","Esa métrica debe ser ignorada"],ok:1,e:"El PM entrega el alcance que posibilita el beneficio comercial, y asegura que el negocio tenga el plan para medirlo a posteriori."},
-{sc:"El contrato dice 'Soporte gratuito de 1 mes post-cierre'. Hoy firmas el acta final.",q:"¿Tu rol como PM ha terminado completamente?",o:["Sí, te vas inmediatamente","No, el contrato implica mantener obligaciones menores que podrían retrasar la disolución de tu figura o equipo","Sí, eso es problema de operaciones","Solo si no te han pagado"],ok:1,e:"Garantías y soporte de transición pueden mantener actividades administrativas abiertas tras la firma de aceptación del producto."},
-{sc:"¿Qué significa la 'A' en la mnemotecnia VACARE del cierre?",o:["Acelerar y Aprobar","Aceptación firmada y Archivar documentación","Adjudicar contratos","Asignar recursos"],ok:1,e:"VACARE: Validar, Aceptación, Contratos, Archivar, Recursos, Elencia (Lecciones)."},
-{sc:"El proyecto generó mucha propiedad intelectual y patentes.",q:"¿En qué paso del cierre aseguras esto?",o:["Aceptación","Liberación de equipo","Actualización de OPAs / Archivo de documentos legales","Lecciones aprendidas"],ok:2,e:"Las patentes, contratos y NDAs deben indexarse de forma segura en los repositorios organizacionales (OPAs)."},
-{sc:"Un gerente funcional te pide que su analista siga trabajando 'solo dos semanas más' en tareas operativas con presupuesto del proyecto cerrado.",q:"¿Qué le dices?",o:["Que sí, para mantener buena relación","Que no, el proyecto está cerrado y sus fondos no pueden usarse para financiar operaciones diarias","Que sí, si no lo sabe el Sponsor","Que se lo pida al cliente"],ok:1,e:"Los fondos del proyecto son exclusivos del alcance del proyecto. Financiar operaciones es fraude corporativo interno."},
-{sc:"El PM prepara el Informe Final del Proyecto.",q:"¿Qué incluye este informe?",o:["Detalle de tareas diarias","Resumen del alcance, coste final, métricas de calidad y consecución de los objetivos de negocio iniciales","Las quejas del equipo","El código fuente"],ok:1,e:"El Informe Final consolida la métrica real vs el plan y el grado de éxito del Business Case."}
-],
-agil:[
-{sc:"El equipo ágil debate sobre quién debe priorizar la lista de requerimientos técnicos frente a nuevas funcionalidades.",q:"¿De quién es esta responsabilidad exclusiva?",o:["Scrum Master","El cliente técnico","El Product Owner (PO)","El equipo completo"],ok:2,e:"El PO es el único dueño del Product Backlog y su priorización (maximizar valor)."},
-{sc:"Durante la Daily Standup, un desarrollador empieza a explicar técnicamente en detalle cómo resolverá un problema de base de datos, consumiendo 10 minutos.",q:"¿Qué debe hacer el Scrum Master?",o:["Anotar la solución técnica","Interrumpir amablemente para aparcar la discusión técnica ('parking lot') tras la Daily y mantener el timebox de 15 min","Castigarle","Dejarle hablar para empoderarlo"],ok:1,e:"La Daily es de sincronización, no de resolución de problemas profundos. Timebox: 15 min."},
-{sc:"El cliente ve el incremento de producto en la Sprint Review y se da cuenta de que el mercado necesita una interfaz diferente.",q:"¿Qué reacción es ágil?",o:["Lamentar que el contrato ya esté firmado","Decirle que debe pagar una penalización del 50%","Dar la bienvenida al cambio, el PO añadirá la nueva interfaz al Backlog y la priorizará para futuros Sprints","Ignorar su comentario"],ok:2,e:"En ágil, los cambios son bienvenidos porque aportan mayor valor al cliente en base a feedback real."},
-{sc:"La Definition of Done (DoD) estipula que todo código debe estar testeado. Un desarrollador dice que terminó su historia de usuario pero no tuvo tiempo de testearla.",q:"¿Qué ocurre?",o:["Se presenta igual en la Sprint Review","La historia NO está terminada, no se incluye en el incremento ni se ganan sus Story Points","Se marca como 90% terminada","El QA la testeará en el siguiente Sprint"],ok:1,e:"La DoD es binaria. Si no cumple TODO el criterio, no está terminada, punto."},
-{sc:"El equipo ágil lleva 3 Sprints con una Velocity de 40 puntos. Para el Sprint 4, el PO pide meter 60 puntos porque 'hay mucha prisa comercial'.",q:"¿Qué debe responder el equipo/SM?",o:["Aceptar y hacer horas extra para cumplir","El SM protege al equipo explicando que empíricamente su capacidad es de ~40, meter más compromete la calidad o la entrega","Hacer los 60 pero con menor calidad","Despedir al PO"],ok:1,e:"La Velocidad es una métrica empírica de capacidad. Empujar exceso de trabajo genera fracaso seguro."},
-{sc:"En la Retrospectiva del Sprint, el equipo acuerda automatizar los despliegues para ahorrar tiempo.",q:"¿Qué paso del ciclo PDCA (Deming) representa esta decisión?",o:["Act (Ajustar y estandarizar) / Plan (Nuevo experimento)","Do (Ejecutar)","Solo Check","Ninguno"],ok:0,e:"Acordar una mejora de proceso e implementarla es el corazón del Plan-Do-Check-Act integrándose iterativamente."},
-{sc:"El Product Owner falta a todas las reuniones de refinamiento (Backlog Refinement) y las dudas quedan sin resolver.",q:"¿Cuál será el efecto primario?",o:["El proyecto irá más rápido","El equipo desarrollará asumiendo requerimientos y probablemente fracase el próximo Sprint (desperdicio)","El Scrum Master asumirá rol de PO","El cliente pagará menos"],ok:1,e:"Sin el PO refinando y aclarando el 'Qué', el equipo entra ciego al Sprint, generando retrabajo y riesgo."},
-{sc:"Estás escalando el proyecto ágil de Segurma, combinando ejecución técnica predictiva para la obra civil e iterativa para el software de alarmas.",q:"¿Qué ciclo estás usando?",o:["Ágil Puro","Híbrido","Kanban","Waterfall IT"],ok:1,e:"Combinar elementos predictivos (obra civil) con adaptativos (software) se denomina Enfoque Híbrido."},
-{sc:"Un equipo Kanban tiene 10 personas. Tienen un WIP Limit de 3 en la columna 'Testing', y ya hay 3 tarjetas ahí.",q:"¿Qué hace un tester si recibe otra historia para probar?",o:["Pone 4 tarjetas y sigue","Ignora el límite, Kanban es flexible","Detiene la entrada de nuevas tarjetas y el equipo colabora para despejar el cuello de botella en Testing","Pasa la tarjeta a 'Done' sin testear"],ok:2,e:"Los WIP Limits son estrictos para forzar la resolución de bloqueos y mantener el flujo continuo."},
-{sc:"Tu equipo usa Scrum, pero el sponsor te pide un cronograma tipo Gantt detallado a 12 meses vista.",q:"¿Cómo lo gestionas (Servant Leader)?",o:["Haces un Gantt falso","Le explicas que Ágil no usa Gantt sino un Roadmap y release plans iterativos adaptables a la incertidumbre","Obligas al equipo a planificar a 12 meses","Renuncias"],ok:1,e:"El PM/SM educa a los stakeholders en los marcos ágiles, traduciendo radiadores de información al negocio."},
-{sc:"El manifiesto Ágil dice: 'Respuesta ante el cambio sobre...'",q:"Completa la frase:",o:["Seguir un plan","Procesos y herramientas","Documentación exhaustiva","Negociación de contratos"],ok:0,e:"Responder al cambio sobre seguir un plan (uno de los 4 valores clave)."},
-{sc:"En la Sprint Planning, ¿quién determina CUÁNTAS historias de usuario del Backlog pueden completarse en el Sprint?",o:["El Product Owner","El Scrum Master","Los Developers (Equipo de Desarrollo) evaluando su capacidad histórica (Velocity)","El Sponsor"],ok:2,e:"El equipo técnico decide el CUÁNTO y el CÓMO. El PO solo decide el QUÉ y en qué orden."},
-{sc:"Un proyecto ágil requiere cumplir regulaciones críticas (Compliance).",q:"¿Cómo garantizas que se cumplan en cada entrega?",o:["Se obvian, Ágil no permite Compliance","Se revisan al final de todo el proyecto en una fase predictiva","Se incluyen explícitamente en la Definition of Done (DoD) de cada historia de usuario","Se paga una multa"],ok:2,e:"Incorporar regulaciones al DoD garantiza que ningún incremento se libere sin el compliance normativo."},
-{sc:"El equipo debate entre aplicar Story Points en horas o en camisetas (T-shirt sizing).",q:"¿Cuál es la premisa principal de estimación ágil?",o:["Que debe ser exacta en minutos","Que es una estimación Relativa de esfuerzo y complejidad, no absoluta en tiempo","Que la hace solo el experto","Que no sirve de nada"],ok:1,e:"La estimación ágil usa unidades relativas para absorber la incertidumbre técnica y homogeneizar equipos mixtos."},
-{sc:"Una Épica (Epic) en el backlog de producto está a punto de entrar al siguiente Sprint.",q:"¿Qué acción previa falta?",o:["Borrarla","Programarla en código C++","Descomponerla (Refinamiento) en User Stories más pequeñas y estimables (criterio INVEST)","Aprobarla por el CEO"],ok:2,e:"Las épicas son demasiado grandes para caber en un Sprint; deben dividirse en historias accionables."},
-{sc:"Durante un Sprint de 2 semanas, el CEO te ordena añadir urgentemente un reporte directivo al software.",q:"¿Cómo actúas?",o:["Lo metes en el Sprint parando otra cosa","Hablas con el PO para que el CEO tramite la petición por él, protegiendo el Sprint Backlog actual","Lo ignoras","Desarrollas en tu tiempo libre"],ok:1,e:"Toda nueva petición se canaliza a través del Product Owner para el Product Backlog. El Sprint es inmutable."},
-{sc:"La Daily Standup tiene 3 preguntas clásicas. Identifica la INCORRECTA:",o:["¿Qué hice ayer?","¿Qué haré hoy?","¿Cuántas horas trabajé ayer exactamente?","¿Qué impedimentos me bloquean?"],ok:2,e:"Scrum se basa en compromisos de alcance iterativo, no en micromanagement de fichaje de horas en la Daily."},
-{sc:"¿Qué artefacto provee la mayor transparencia sobre el progreso diario del Sprint?",o:["El Project Charter","El Sprint Backlog / Tablero (Burndown Chart)","El EVM y el CPI","El acta de reunión de gerencia"],ok:1,e:"Los tableros físicos/digitales y los Burndown son 'Radiadores de Información' altamente transparentes."},
-{sc:"Se requiere lanzar un producto rápido para validar si el mercado lo comprará, aunque no tenga el 100% de funciones.",q:"¿Qué término define esto?",o:["Producto deficiente","Minimum Viable Product (MVP)","Prototipo Wireframe","Release Final"],ok:1,e:"El MVP entrega suficiente valor temprano para testear la viabilidad comercial y recopilar feedback real."},
-{sc:"¿Qué ceremonia marca el final formal y real de un Sprint en Scrum?",o:["Sprint Review (Demo)","Sprint Retrospective","Sprint Planning","El paso a producción"],ok:1,e:"La retrospectiva es el último evento del Sprint, donde el equipo se inspecciona a sí mismo para mejorar."}
-],
-perfil:[
-{sc:"Para ser elegible al examen PMP con un título universitario de 4 años, el PMI exige...",q:"¿Cuántos meses de experiencia documentada?",o:["60 meses (5 años)","36 meses liderando proyectos","12 meses de programación","No exige experiencia"],ok:1,e:"Graduados: 36 meses (4.500 horas) de experiencia dirigiendo proyectos. FP/Bachillerato: 60 meses."},
-{sc:"Durante el examen descubres que un amigo tiene acceso a un 'volcado' real (brain-dump) de las preguntas del examen.",q:"¿Qué te dicta el Código de Ética y Conducta Profesional del PMI?",o:["Usarlo solo para repasar","Ignorarlo y hacer tu examen","Denunciar el hecho al PMI, ya que usar volcados viola el acuerdo de certificación y la ética profesional","Venderlo"],ok:2,e:"El uso, posesión o difusión de preguntas reales robadas es una violación grave que revoca la certificación."},
-{sc:"El ECO (Exam Content Outline) divide el examen en tres dominios clave.",q:"¿Cuáles son y qué peso tienen?",o:["Alcance 50%, Tiempo 30%, Coste 20%","Personas (42%), Procesos (50%), Entorno de Negocio (8%)","Agile (50%), Predictivo (50%), Híbrido (0%)","Inicio, Planificación y Cierre"],ok:1,e:"Esta es la estructura exacta del examen PMP desde su versión 2021."},
-{sc:"Un proveedor de la empresa en tu proyecto te ofrece entradas VIP para la Champions League si apruebas su hito sin la inspección de calidad.",q:"¿Cómo actúas según el Código Ético?",o:["Aceptas pero haces la inspección igual","Rechazas la oferta, documentas el intento de soborno/conflicto de interés y lo reportas a tu empresa","Aceptas solo si tu jefe te deja","Negocias más entradas"],ok:1,e:"El PMI tiene tolerancia cero con sobornos y conflictos de intereses no declarados."},
-{sc:"En la entrevista del CNTG te preguntan: '¿Alguna vez has gestionado proyectos si tu título es de Soporte L3?'",q:"¿Qué respondes asumiendo mentalidad PMP?",o:["'No, solo opero tickets'","'Sí, coordino implementaciones técnicas en clientes, gestiono cronogramas, defino alcances y escalo riesgos, lo cual es pura dirección de proyectos'","'Solo hago lo que me dicen'","'Los proyectos son de mi jefe'"],ok:1,e:"Para el PMI, la función prevalece sobre el título nominal del cargo."},
-{sc:"Un Project Manager PMP certificado renueva su certificación cada 3 años.",q:"¿Qué requisito debe cumplir en ese ciclo?",o:["Pagar 1.000 euros","Completar 60 PDUs (Professional Development Units) de educación continua y/o retribución a la profesión","Volver a examinarse","Hacer un máster de 2 años"],ok:1,e:"60 PDUs son obligatorios cada 3 años para mantener el estatus Activo del PMP."},
-{sc:"Estás gestionando un proyecto en un país donde 'acelerar' un trámite gubernamental pagando una pequeña cuota a un funcionario es común y culturalmente aceptado.",q:"¿Qué haces según el PMI?",o:["Lo pagas porque allá es normal ('where in Rome...')","Te niegas a pagarlo, ya que los pagos de facilitación violan las leyes anticorrupción internacionales y el código del PMI","Lo camuflas como dieta de comida","Pides al cliente que lo pague él"],ok:1,e:"El código de conducta exige respeto a las leyes y prohíbe sobornos (incluso facilitadores) sin importar la cultura local."},
-{sc:"Tienes un conflicto de interés: tu hermano es dueño de la empresa que está compitiendo en la licitación que tú evalúas.",q:"¿Qué acción es mandatoria?",o:["Ocultarlo, eres objetivo","Favorecerlo para que la empresa pague menos","Revelar proactivamente el conflicto de interés al Sponsor/Dirección y apartarte del proceso de selección","Contarlo solo si te preguntan"],ok:2,e:"La transparencia y la divulgación proactiva son obligaciones éticas fundamentales."},
-{sc:"El curso de preparación PMP del CNTG exige asistencia presencial obligatoria.",q:"¿Para qué sirven las horas de este curso frente al PMI?",o:["Para convalidar una carrera universitaria","Para obtener las 35 horas obligatorias de 'Project Management Education' (Contact Hours) necesarias para auditarse","Para nada, solo aprender","Para renovar los 60 PDUs"],ok:1,e:"Todo candidato PMP necesita demostrar 35 horas de formación formal. El curso de Santiago aporta exactamente esto."},
-{sc:"En el examen PMP, el PMI te selecciona para una 'Auditoría Aleatoria' al enviar tu solicitud.",q:"¿Qué debes hacer?",o:["Cancelar el examen y rendirte","Proporcionar firmas de tus exjefes validando tus proyectos y copia de tu título universitario y las 35 horas","Pagar una multa","Cambiar tu perfil en LinkedIn"],ok:1,e:"La auditoría requiere validar documentalmente la experiencia declarada y la formación."},
-{sc:"Descubres que en un informe de estado de proyecto, el equipo de ventas alteró el cálculo del ROI de 10% a 50% para impresionar al cliente.",q:"¿Responsabilidad ética del PM?",o:["Apoyar a la empresa frente al cliente","Corregir el informe emitiendo datos verdaderos y precisos, enfrentando la conversación difícil","Callarse y evitar el conflicto","Borrar el informe"],ok:1,e:"El valor de 'Honestidad' del PMI exige reportar la verdad, aunque perjudique comercialmente a corto plazo."},
-{sc:"¿Qué formato tienen las preguntas situacionales del examen PMP actual?",o:["Concepto de diccionario: ¿Qué es X?","Problema matemático complejo de 3 páginas","Escenario complejo híbrido + '¿Qué debe hacer el PM a continuación?' evaluando la actitud empática y de proceso","Fechas históricas del PMI"],ok:2,e:"El PMP es situacional. Evalúa cómo aplicarías el proceso y liderazgo servicial en situaciones reales complicadas."},
-{sc:"El curso CNTG de PMP es un grupo reducido de solo 20 plazas en toda Galicia.",q:"En términos de gestión del entorno, ¿qué factor clave evalúa el CNTG en la entrevista?",o:["Tu nivel de inglés nativo","Tu experiencia real liderando equipos o componentes, potencial técnico e interés en certificarte realmente","Tu capacidad económica","Tu título de bachillerato"],ok:1,e:"El CNTG invierte dinero público. Buscan candidatos viables y motivados que no abandonen la certificación final."},
-{sc:"Cometes un error de estimación en tu proyecto que le costará a tu empresa 10.000€.",q:"¿Cómo aplicas el código ético?",o:["Ocultarlo en otro centro de costes","Culpar al software de estimación","Asumir la responsabilidad (Accountability), reportar el error inmediatamente, analizar la causa y proponer un plan de choque","Culpar al equipo comercial"],ok:2,e:"Responsabilidad (Responsibility) implica adueñarse de los errores, reportarlos y arreglarlos."},
-{sc:"Alguien de tu equipo copia y pega código de una licencia propietaria no autorizada (Copyright).",q:"¿Qué dictamina el PMI?",o:["Si funciona, está bien","Proteger la Propiedad Intelectual es obligatorio. Se debe retirar el código y respetar los derechos de autor de terceros","Pagárselo al autor en secreto","Esperar a que les demanden"],ok:1,e:"Respeto a la propiedad intelectual es un estándar estricto de cumplimiento ético."},
-{sc:"Te han asignado a un proyecto de infraestructuras críticas sin tener experiencia previa en este tipo de ingeniería.",q:"¿Qué dice el PMI sobre las asignaciones?",o:["Rechazar el proyecto inmediatamente","Aceptar asumiendo el riesgo en silencio","Informar al Sponsor de tu falta de experiencia técnica específica y sugerir apoyo de expertos para poder gestionar el proyecto","Estudiar por la noche en Wikipedia"],ok:2,e:"El PM debe comunicar honestamente sus limitaciones (Honestidad) y solicitar apoyo o formación adecuada."},
-{sc:"Estás revisando los currículums para tu equipo. Un candidato que es excelente técnicamente incluyó en su CV una certificación PMP falsa.",q:"¿Qué haces?",o:["Lo contratas por su técnica","Lo reportas al PMI por usar indebidamente la marca registrada y falsificar credenciales","Lo ignoras y contratas","Lo felicitas por su astucia"],ok:1,e:"Es deber ético reportar violaciones de credenciales u otras irregularidades que afecten al PMI."},
-{sc:"La empresa te promete un bonus de 20.000€ si entregas el proyecto 2 meses antes, obligándote a ocultar problemas críticos de calidad al cliente.",q:"¿Qué valor PMP estás a punto de quebrar?",o:["Respeto","Justicia","Honestidad","Equidad"],ok:2,e:"La honestidad exige reportar la información del proyecto de manera veraz. Ocultar defectos para lucro personal es inaceptable."},
-{sc:"¿Cuál de los siguientes NO es un valor del Código Ético del PMI?",o:["Responsabilidad (Responsibility)","Respeto (Respect)","Rentabilidad (Profitability)","Equidad (Fairness)"],ok:2,e:"Los 4 pilares éticos son: Responsabilidad, Respeto, Equidad y Honestidad."},
-{sc:"En el examen te preguntan sobre métodos ágiles. ¿Qué porcentaje del examen PMP real se centra en enfoques adaptativos/ágiles?",o:["10%","25%","50%","90%"],ok:2,e:"El PMP actual es 50% Predictivo y 50% Ágil/Híbrido. Esto requiere una fuerte mentalidad de Servant Leader."}
-]
-};
-
-// ═══════════════════════════════════════
-// MOTOR DE EXÁMENES Y GENERADOR PROPORCIONAL
-// ═══════════════════════════════════════
-let qC=0, qS=0, qA=false, qK='', qQ=[];
-
-function startMixedQuiz(total) {
-  const keys = ['l1','l2','l3','l4','l5','l6','agil','perfil'];
-  let mixed = [];
-  
-  // Proporción base: repartimos equitativamente y el resto lo ajustamos
-  const perCategory = Math.floor(total / keys.length);
-  let remainder = total % keys.length;
-
-  keys.forEach(k => {
-    let count = perCategory + (remainder > 0 ? 1 : 0);
-    if (remainder > 0) remainder--;
-    
-    // Extraemos aleatoriamente 'count' preguntas de cada categoría
-    let shuffledCat = sh([...(Q[k] || [])]);
-    mixed = mixed.concat(shuffledCat.slice(0, count));
-  });
-
-  // Mezclamos el pool total usando Fisher-Yates
-  qK = '🎲 Simulacro ' + total + 'p';
-  qQ = sh(mixed); 
-  
-  qC = 0; qS = 0; qA = false;
-  
-  document.getElementById('qa').style.display='block';
-  document.getElementById('bbk').style.display='inline-block';
-  document.getElementById('qsel').style.display='none';
-  renderQQ();
-}
-
-function startQ(k){
-  qK=k;
-  qQ=sh([...(Q[k]||[])]); 
-  qC=0; qS=0; qA=false;
-  
-  document.getElementById('qa').style.display='block';
-  document.getElementById('bbk').style.display='inline-block';
-  document.getElementById('qsel').style.display='none';
-  renderQQ();
-}
-
-function bkQ(){
-  // Limpieza de estado al salir
-  document.getElementById('qa').style.display='none';
-  document.getElementById('bbk').style.display='none';
-  document.getElementById('qsel').style.display='block';
-  qQ = []; qC = 0; qS = 0; qA = false; // Reset pool
-  renderH();
-}
-
-function renderQQ(){
-  const a=document.getElementById('qa');
-  if(qC>=qQ.length){renderRes(a);return;}
-  const q=qQ[qC];
-  const p=Math.round(qC/qQ.length*100);
-  
-  a.innerHTML=`<div class="qbox">
-    <div class="qn">Pregunta ${qC+1} de ${qQ.length}</div>
-    <div class="qpb"><div class="qpf" style="width:${p}%"></div></div>
-    <div class="qsc">${q.sc}</div>
-    <div class="qt">${q.q}</div>
-    <div id="qo">${q.o.map((o,i)=>`<button class="op" id="qo${i}" onclick="ans(${i})">${String.fromCharCode(65+i)}) ${o}</button>`).join('')}</div>
-    <div class="qe" id="qe"></div>
-    <div style="display:flex;justify-content:flex-end;margin-top:10px;"><button class="btn btn-p" id="qnx" style="display:none;" onclick="nxQ()">Siguiente →</button></div>
-  </div>`;
-}
-
-function ans(i){
-  if(qA)return; 
-  qA=true;
-  const q=qQ[qC];
-  const ok = (i===q.ok);
-  if(ok) qS++;
-  
-  for(let j=0; j<q.o.length; j++){
-    const b=document.getElementById('qo'+j);
-    b.disabled=true;
-    if(j===q.ok) b.classList.add(ok&&j===i?'ok':'rv');
-    else if(j===i&&!ok) b.classList.add('ko');
-  }
-  
-  if(ok){
-    document.getElementById('qo'+i).classList.remove('rv');
-    document.getElementById('qo'+i).classList.add('ok');
-  }
-  
-  const e=document.getElementById('qe');
-  e.className='qe on '+(ok?'qe-ok':'qe-ko');
-  e.innerHTML=(ok?'✅ ':'❌ ')+q.e;
-  document.getElementById('qnx').style.display='inline-block';
-}
-
-function nxQ(){
-  qA=false;
-  qC++;
-  renderQQ();
-}
-
-function renderRes(a){
-  const p=Math.round(qS/qQ.length*100);
-  const pass=p>=61; // 61% es la media aprox de pase del PMP
-  
-  svH(qK,qS,qQ.length,p);
-  
-  a.innerHTML=`<div class="qbox" style="text-align:center;">
-    <div class="sr" style="background:${pass?'var(--teal-bg)':'var(--red-bg)'};color:${pass?'var(--teal-d)':'var(--red-d)'};">${p}%</div>
-    <div style="font-family:'Merriweather',serif;font-size:1.1rem;font-weight:700;margin-bottom:4px;">${pass?'¡Certificación PMP a la vista!':'Se requiere más entrenamiento'}</div>
-    <div style="font-size:0.85rem;color:var(--ink3);margin-bottom:14px;">${qS} de ${qQ.length} correctas</div>
-    <div class="ib ${pass?'ib-t':'ib-r'}" style="text-align:left;">
-      <strong>${pass?'✅ Enfoque PMP Dominado':'⚠️ Revisa la mentalidad del PM'}</strong><br>
-      ${pass?'Tu mentalidad de Servant Leader, gestión de impacto y ética está alineada con el PMBOK 7. ¡Estás listo para el CNTG!':'Recuerda: El PM SIEMPRE evalúa impacto antes de actuar, sirve al equipo y fomenta el valor de negocio. Vuelve a revisar las lecciones ampliadas.'}
-    </div>
-    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
-      <button class="btn btn-p" onclick="bkQ()">← Volver al menú</button>
-    </div>
-  </div>`;
-}
-
-// ═══════════════════════════════════════
-// HISTORIAL Y ESTADÍSTICAS
-// ═══════════════════════════════════════
-let H=[];
-function svH(l,c,t,p){
-  H.unshift({l,c,t,p,d:new Date().toLocaleString('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})});
-  if(H.length>30) H=H.slice(0,30);
-}
-
-function renderH(){
-  const s=document.getElementById('hstats');
-  const li=document.getElementById('hlist');
-  if(!H.length){
-    s.innerHTML='';
-    li.innerHTML='<p style="font-size:0.82rem;color:var(--ink3);text-align:center;padding:16px;">Aún no has ejecutado simulacros.</p>';
-    return;
-  }
-  const avg=Math.round(H.reduce((a,h)=>a+h.p,0)/H.length);
-  const best=Math.max(...H.map(h=>h.p));
-  
-  s.innerHTML=`
-    <div class="stat"><div class="stat-n" style="color:var(--blue);">${H.length}</div><div class="stat-l">Intentos</div></div>
-    <div class="stat"><div class="stat-n" style="color:var(--amber);">${avg}%</div><div class="stat-l">Media global</div></div>
-    <div class="stat"><div class="stat-n" style="color:var(--teal);">${best}%</div><div class="stat-l">Mejor nota</div></div>`;
-    
-  li.innerHTML=H.slice(0,10).map(h=>`
-    <div style="background:#fff;border:1px solid var(--g2);border-radius:var(--rs);padding:10px 12px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
-      <div><div style="font-size:0.82rem;font-weight:700;">${h.l}</div><div style="font-size:0.7rem;color:var(--ink3);">${h.d} · ${h.c}/${h.t}</div></div>
-      <div style="font-family:'JetBrains Mono',monospace;font-weight:900;padding:3px 8px;border-radius:6px;background:${h.p>=61?'var(--teal-bg)':'var(--red-bg)'};color:${h.p>=61?'var(--teal-d)':'var(--red-d)'};">${h.p}%</div>
-    </div>`).join('');
-}
-</script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

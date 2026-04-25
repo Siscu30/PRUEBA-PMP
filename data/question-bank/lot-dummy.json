@@ -1,0 +1,71 @@
+{
+  "lotId": "lot-dummy",
+  "questions": [
+    {
+      "id": "PMP-DUMMY-001",
+      "question": "[Bloque 1] Un stakeholder clave rechaza un entregable. ¿Qué debe hacer el PM primero?",
+      "options": [
+        {"id": "A", "text": "Revisar el plan de gestión de calidad."},
+        {"id": "B", "text": "Revisar los criterios de aceptación en el alcance."},
+        {"id": "C", "text": "Escalar al sponsor inmediatamente."},
+        {"id": "D", "text": "Emitir una solicitud de cambio."}
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "PMP-DUMMY-002",
+      "question": "[Bloque 1] El equipo híbrido tiene un conflicto en la daily. ¿Acción del PM?",
+      "options": [
+        {"id": "A", "text": "Resolverlo por ellos."},
+        {"id": "B", "text": "Facilitar que el equipo lo resuelva."},
+        {"id": "C", "text": "Llevarlo a RRHH."},
+        {"id": "D", "text": "Ignorarlo."}
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "PMP-DUMMY-003",
+      "question": "[Bloque 1] Nueva ley regulatoria afecta el proyecto. ¿Qué hacer?",
+      "options": [
+        {"id": "A", "text": "Actualizar registro de riesgos."},
+        {"id": "B", "text": "Parar el proyecto."},
+        {"id": "C", "text": "Avisar al cliente que será más caro."},
+        {"id": "D", "text": "Cambiar el alcance sin permiso."}
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "PMP-DUMMY-004",
+      "question": "[Bloque 2] Pregunta 1 del bloque 2.",
+      "options": [
+        {"id": "A", "text": "Opción A"},
+        {"id": "B", "text": "Opción B"},
+        {"id": "C", "text": "Opción C"},
+        {"id": "D", "text": "Opción D"}
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "PMP-DUMMY-005",
+      "question": "[Bloque 2] Pregunta 2 del bloque 2.",
+      "options": [
+        {"id": "A", "text": "Opción A"},
+        {"id": "B", "text": "Opción B"},
+        {"id": "C", "text": "Opción C"},
+        {"id": "D", "text": "Opción D"}
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "PMP-DUMMY-006",
+      "question": "[Bloque 3] Pregunta única del bloque 3.",
+      "options": [
+        {"id": "A", "text": "Opción A"},
+        {"id": "B", "text": "Opción B"},
+        {"id": "C", "text": "Opción C"},
+        {"id": "D", "text": "Opción D"}
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}

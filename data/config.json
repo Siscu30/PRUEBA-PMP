@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "appName": "PMP Prep Pro",
+  "examConfig": {
+    "totalQuestions": 180,
+    "blocks": 3,
+    "questionsPerBlock": 60,
+    "timeLimitMinutes": 230,
+    "breakMinutes": 10
+  },
+  "ecoWeights": {
+    "People": 0.42,
+    "Process": 0.50,
+    "BusinessEnvironment": 0.08
+  }
+}
