@@ -1,203 +1,200 @@
 {
   "domains": [
     {
-      "id": "domain-1",
-      "name": "People",
-      "weight": "42%",
+      "id": "block-1",
+      "name": "PMBOK 7 - The 12 Principles",
+      "weight": "20%",
       "tasks": [
         {
-          "taskId": "p-1",
-          "taskTitle": "Task 1: Manage Conflict (Gestionar Conflictos)",
+          "taskId": "p7-prin-1",
+          "taskTitle": "Fundamentos y Comportamiento",
           "topics": [
             {
-              "topicId": "t-p1-1",
-              "title": "Técnicas de Resolución de Conflictos",
-              "explanation": "El conflicto es inevitable. El Project Manager (Director de Proyecto) debe abordar el problema en etapas tempranas. Las técnicas principales son: Collaborate/Problem Solve (Colaborar/Resolver el problema) que es Win-Win y busca la causa raíz (Root Cause). Compromise/Reconcile (Comprometer/Conciliar) es Lose-Lose parcial. Smooth/Accommodate (Suavizar/Acomodar) mantiene la armonía temporalmente. Force/Direct (Forzar/Dirigir) es Win-Lose, solo para emergencias.",
-              "keyConcepts": ["Collaborate/Problem Solve", "Compromise/Reconcile", "Root Cause", "Win-Win"],
-              "examSignals": ["Exam Pattern: Si la respuesta dice 'Analizar juntos para encontrar la causa', es Collaborate/Problem Solve.", "Exam Pattern: Si es una emergencia crítica, usa Force/Direct (Forzar/Dirigir)."],
-              "commonTraps": ["Escalar el problema (Escalate) inmediatamente al Sponsor (Patrocinador). Rita dice: ¡Resuélvelo tú mismo primero!", "Withdraw/Avoid (Retirarse/Evitar) casi nunca es la respuesta correcta porque no resuelve nada."]
+              "topicId": "t-prin-1",
+              "title": "Stewardship & Team (Administración Cuidadosa y Equipo)",
+              "explanation": "Stewardship (Administración Cuidadosa): Ser respetuoso, transparente y ético con los recursos y el Business Value (Valor de Negocio). Team (Equipo): Crear un entorno colaborativo basado en la diversidad y la confianza, aplicando el Servant Leadership (Liderazgo de Servicio).",
+              "keyConcepts": ["Stewardship (Administración Cuidadosa)", "Servant Leadership (Liderazgo de Servicio)"],
+              "examSignals": ["Si un proveedor regala algo al Project Manager: Rechazarlo por ética (Stewardship).", "Las decisiones del equipo se basan en colaboración, no en la orden del PM."],
+              "commonTraps": ["Actuar de forma autoritaria 'por el bien del proyecto'."],
+              "predictiveNotes": ["El PM tiene más autoridad formal, pero sigue debiendo ser ético."],
+              "agileNotes": ["El equipo es 100% auto-organizado."],
+              "hybridNotes": ["Se protege la autonomía técnica mientras se rinde cuentas al negocio."]
+            },
+            {
+              "topicId": "t-prin-2",
+              "title": "Stakeholders & Value (Interesados y Valor)",
+              "explanation": "Involucrar activamente a los Stakeholders (Interesados) para comprender sus necesidades. Enfocarse implacablemente en el Value (Valor): todo esfuerzo debe justificar el Business Case (Caso de Negocio).",
+              "keyConcepts": ["Stakeholder Engagement (Involucramiento de Interesados)", "Business Value (Valor de Negocio)"],
+              "examSignals": ["El éxito no es terminar a tiempo, es entregar el Benefit (Beneficio) esperado."],
+              "commonTraps": ["Terminar la Scope Baseline (Línea Base del Alcance) si el producto ya no tiene valor en el mercado."]
             }
           ]
         },
         {
-          "taskId": "p-2",
-          "taskTitle": "Task 2 & 3: Lead a Team & Support Performance (Liderar al Equipo y Apoyar el Rendimiento)",
+          "taskId": "p7-prin-2",
+          "taskTitle": "Sistemas, Riesgos y Adaptación",
           "topics": [
             {
-              "topicId": "t-p2-1",
-              "title": "Servant Leadership (Liderazgo de Servicio) y Ciclo de Vida del Equipo",
-              "explanation": "El Servant Leadership (Liderazgo de Servicio) se basa en eliminar impedimentos, empoderar (Empower) al equipo y protegerlos (Shield) de interrupciones externas. El equipo pasa por el modelo de Tuckman: Forming (Formación), Storming (Conflicto), Norming (Normalización), Performing (Desempeño) y Adjourning (Disolución).",
-              "keyConcepts": ["Servant Leadership", "Empowerment", "Shielding", "Tuckman Ladder"],
-              "examSignals": ["Fast Elimination Rule: Las respuestas que castigan, culpan (Blame) o microgestionan al equipo casi siempre son INCORRECTAS.", "Si añades a un miembro nuevo, el equipo regresa a Forming/Storming temporalmente."],
-              "commonTraps": ["Un Project Manager tradicional diciendo al equipo Agile CÓMO hacer su trabajo técnico (eso lo decide el equipo auto-organizado)."]
-            }
-          ]
-        },
-        {
-          "taskId": "p-3",
-          "taskTitle": "Task 11 & 12: Engage Virtual Teams & Ground Rules (Equipos Virtuales y Reglas Básicas)",
-          "topics": [
+              "topicId": "t-prin-3",
+              "title": "Systems Thinking & Tailoring (Pensamiento Sistémico y Adaptación)",
+              "explanation": "Systems Thinking (Pensamiento Sistémico): Reconocer cómo las partes del proyecto interactúan con toda la organización. Tailoring (Adaptación): No hay una metodología única; adapta el enfoque (Predictivo o Ágil) al contexto específico.",
+              "keyConcepts": ["Systems Thinking (Pensamiento Sistémico)", "Tailoring (Adaptación)"],
+              "examSignals": ["Si la empresa es muy regulada pero el software es innovador: usa un enfoque híbrido (Tailoring)."],
+              "commonTraps": ["Aplicar las metodologías 'by the book' (al pie de la letra) sin adaptarlas a la cultura de la empresa."]
+            },
             {
-              "topicId": "t-p3-1",
-              "title": "Team Charter (Acta de Constitución del Equipo) y Comunicación",
-              "explanation": "El Team Charter (Acta de Constitución del Equipo) establece las Ground Rules (Reglas Básicas), normas de comportamiento y cómo se tomarán las decisiones. Es fundamental para Virtual Teams (Equipos Virtuales) distribuidos en zonas horarias.",
-              "keyConcepts": ["Team Charter", "Ground Rules", "Virtual Teams"],
-              "examSignals": ["Best-Answer Pattern: Ante malentendidos de comportamiento entre el equipo, la acción es revisar o actualizar el Team Charter (Acta de Constitución del Equipo)."],
-              "commonTraps": ["Obligar a todo el equipo global a conectarse a las 3 AM para la Daily Standup (Reunión Diaria) en lugar de adaptar métodos asíncronos."]
+              "topicId": "t-prin-4",
+              "title": "Complexity & Risk (Complejidad y Riesgo)",
+              "explanation": "Navegar la Complexity (Complejidad) mediante iteraciones cortas. Optimizar la gestión de Risk (Riesgo) diferenciando entre amenazas (Threats) y oportunidades (Opportunities).",
+              "keyConcepts": ["Complexity (Complejidad)", "Risk Responses (Respuestas al Riesgo)"],
+              "examSignals": ["Ante alta complejidad o requisitos borrosos: acortar los bucles de feedback (Sprints)."],
+              "commonTraps": ["Intentar planificar a 3 años vista en un entorno de extrema complejidad técnica."]
             }
           ]
         }
       ]
     },
     {
-      "id": "domain-2",
-      "name": "Process",
-      "weight": "50%",
+      "id": "block-2",
+      "name": "Process Groups 2023",
+      "weight": "30%",
       "tasks": [
         {
-          "taskId": "pr-1",
-          "taskTitle": "Task 1 & 13: Delivery Models & Value (Modelos de Entrega y Valor)",
+          "taskId": "pg-1",
+          "taskTitle": "Initiating & Planning (Inicio y Planificación)",
           "topics": [
             {
-              "topicId": "t-pr1-1",
-              "title": "Predictive vs Agile vs Hybrid (Predictivo vs Ágil vs Híbrido)",
-              "explanation": "Predictive (Predictivo/Cascada): Requisitos estables, plan fijo, el Business Value (Valor de Negocio) se entrega al final. Agile (Ágil): Requisitos cambiantes (Evolving requirements), entregas incrementales (Incremental value), feedback constante. Hybrid (Híbrido): Combina ambos (ej. hardware predictivo, software ágil).",
-              "keyConcepts": ["Predictive Approach", "Agile Approach", "Incremental Value", "Minimum Viable Product - MVP (Producto Mínimo Viable)"],
-              "examSignals": ["Exam Cue: Si el cliente quiere ver retorno rápido de inversión, escoge Agile o entregas incrementales.", "Si las regulaciones de Compliance (Cumplimiento) son altísimas y no admiten fallo, escoge Predictive."],
-              "commonTraps": ["Creer que Agile (Ágil) significa cero planificación o caos. Agile planea, pero a corto plazo (Sprints)."]
+              "topicId": "t-pg-1",
+              "title": "Initiating Process Group (Grupo de Procesos de Inicio)",
+              "explanation": "Se aprueba el proyecto oficialmente y se identifica a la gente. Outputs principales: Project Charter (Acta de Constitución del Proyecto) que da autoridad al PM, y el Stakeholder Register (Registro de Interesados).",
+              "keyConcepts": ["Project Charter (Acta de Constitución)", "Stakeholder Register (Registro de Interesados)"],
+              "examSignals": ["Sin Project Charter firmado, el PM no puede gastar fondos de la empresa.", "Lo primero que se hace siempre es identificar a los interesados."],
+              "commonTraps": ["Empezar a desarrollar la WBS (Estructura de Desglose del Trabajo) en la fase de inicio."]
+            },
+            {
+              "topicId": "t-pg-2",
+              "title": "Planning Process Group (Grupo de Procesos de Planificación)",
+              "explanation": "Define el alcance total y establece baselines (líneas base). Core artifacts: Project Management Plan (Plan para la Dirección del Proyecto), Work Breakdown Structure - WBS (Estructura de Desglose del Trabajo).",
+              "keyConcepts": ["Scope Baseline (Línea Base del Alcance)", "Schedule Baseline (Línea Base del Cronograma)", "Risk Register (Registro de Riesgos)"],
+              "examSignals": ["Pressure is not a reason to skip planning (La presión no es excusa para no planificar)."],
+              "commonTraps": ["Empezar a ejecutar código/trabajo solo porque 'el cliente tiene prisa'."]
             }
           ]
         },
         {
-          "taskId": "pr-2",
-          "taskTitle": "Task 8: Plan and Manage Scope (Planificar y Gestionar el Alcance)",
+          "taskId": "pg-2",
+          "taskTitle": "Executing, M&C and Closing (Ejecución, Control y Cierre)",
           "topics": [
             {
-              "topicId": "t-pr2-1",
-              "title": "Control del Alcance y Validación",
-              "explanation": "La Work Breakdown Structure - WBS (Estructura de Desglose del Trabajo) incluye TODO el trabajo. Evitar el Scope Creep (Corrupción del Alcance) que son cambios no autorizados por el cliente, y el Gold Plating (Bañado en Oro) que son funciones añadidas gratis por el equipo técnico. Validate Scope (Validar el Alcance) es la aceptación formal del cliente.",
-              "keyConcepts": ["Work Breakdown Structure - WBS", "Scope Creep", "Gold Plating", "Validate Scope"],
-              "examSignals": ["Validate Scope (Validar el Alcance) = Formal Acceptance (Aceptación Formal) por el cliente.", "Cualquier trabajo que no esté en la WBS no existe en el proyecto."],
-              "commonTraps": ["Aceptar cambios de alcance sin analizar su impacto en el cronograma/coste.", "El equipo añadiendo 'mejoras' no pedidas (Gold Plating)."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-3",
-          "taskTitle": "Task 6: Plan and Manage Schedule (Planificar y Gestionar el Cronograma)",
-          "topics": [
+              "topicId": "t-pg-3",
+              "title": "Executing Process Group (Grupo de Procesos de Ejecución)",
+              "explanation": "Se completa el trabajo, se gestiona la calidad (Quality Assurance) y se implementan las respuestas a los riesgos. Entregable clave: Deliverables (Entregables) y Work Performance Data (Datos de Desempeño del Trabajo).",
+              "keyConcepts": ["Manage Quality (Gestionar la Calidad / QA)", "Issue Log (Registro de Problemas)"],
+              "examSignals": ["Si estás auditando que se sigan las reglas de la empresa, estás en Ejecución (Manage Quality)."],
+              "commonTraps": ["Confundir el aseguramiento de procesos con la inspección del producto final (Control)."]
+            },
             {
-              "topicId": "t-pr3-1",
-              "title": "Compresión del Cronograma (Schedule Compression)",
-              "explanation": "Critical Path (Ruta Crítica) es el camino más largo sin holgura (Float = 0). Si hay retraso, aplicamos Schedule Compression (Compresión del Cronograma): Fast Tracking (Ejecución Rápida) hace tareas en paralelo pero aumenta el Risk (Riesgo). Crashing (Intensificación) añade recursos pero aumenta el Cost (Coste).",
-              "keyConcepts": ["Critical Path", "Fast Tracking", "Crashing", "Float/Slack (Holgura)"],
-              "examSignals": ["Exam Cue: Si el Sponsor no da más presupuesto, tu única opción es Fast Tracking (Ejecución Rápida)."],
-              "commonTraps": ["Aplicar Crashing o Fast Tracking a tareas que NO están en la Critical Path (Ruta Crítica). No acortarán el proyecto absoluto."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-4",
-          "taskTitle": "Task 5: Plan and Manage Budget (Planificar Presupuesto y EVM)",
-          "topics": [
+              "topicId": "t-pg-4",
+              "title": "Monitoring & Controlling (Monitoreo y Control)",
+              "explanation": "Compara el plan vs lo real. Se revisan los Change Requests (Solicitudes de Cambio) mediante el Integrated Change Control (Control Integrado de Cambios). En esta fase ocurre Validate Scope (Validar el Alcance) donde el cliente acepta el producto.",
+              "keyConcepts": ["Change Control Board - CCB (Comité de Control de Cambios)", "Validate Scope (Validar el Alcance)"],
+              "examSignals": ["Cualquier desviación requiere un Impact Analysis (Análisis de Impacto).", "Validate Scope = Aceptación formal por el cliente."],
+              "commonTraps": ["Aprobar cambios libremente sin actualizar el Project Management Plan (Plan para la Dirección del Proyecto)."]
+            },
             {
-              "topicId": "t-pr4-1",
-              "title": "Earned Value Management - EVM (Gestión del Valor Ganado)",
-              "explanation": "Fórmulas vitales: Cost Variance - CV = EV - AC. Schedule Variance - SV = EV - PV. Cost Performance Index - CPI = EV / AC. Schedule Performance Index - SPI = EV / PV. Estimate at Completion - EAC = BAC / CPI.",
-              "keyConcepts": ["Earned Value - EV (Valor Ganado)", "Actual Cost - AC (Costo Real)", "Planned Value - PV (Valor Planificado)", "Estimate at Completion - EAC (Estimación a la Conclusión)"],
-              "examSignals": ["Memory Cue: CPI < 1 = Over budget (Sobre presupuesto). CPI > 1 = Under budget (Ahorrando dinero).", "Memory Cue: SPI < 1 = Behind schedule (Retrasado). SPI > 1 = Ahead of schedule (Adelantado)."],
-              "commonTraps": ["Confundir Varianzas (restas, dan dinero/días) con Índices (divisiones, dan ratios).", "Calcular el EVM sin actualizar primero el progreso real del trabajo completado."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-5",
-          "taskTitle": "Task 7: Plan and Manage Quality (Planificar y Gestionar la Calidad)",
-          "topics": [
-            {
-              "topicId": "t-pr5-1",
-              "title": "Quality Assurance vs Quality Control (Aseguramiento vs Control de Calidad)",
-              "explanation": "Manage Quality / Quality Assurance (Gestionar la Calidad / Aseguramiento) = Prevent defects (Prevenir defectos) auditando los procesos. Control Quality (Controlar la Calidad) = Inspect deliverables (Inspeccionar entregables) para encontrar defectos ya hechos.",
-              "keyConcepts": ["Manage Quality", "Control Quality", "Cost of Quality (Costo de la Calidad)"],
-              "examSignals": ["Bad quality thinking: 'Testing at the end will ensure quality.' La calidad se planifica e integra (Built-in) desde el principio.", "Mejor opción: Auditorías, revisiones de pares (Peer reviews) y prevención de defectos."],
-              "commonTraps": ["Pensar que el Control Quality (Control de la Calidad) previene los errores. Solo los descubre antes de dárselos al cliente."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-6",
-          "taskTitle": "Task 3 & 15: Manage Risks & Issues (Gestionar Riesgos y Problemas)",
-          "topics": [
-            {
-              "topicId": "t-pr6-1",
-              "title": "Risk vs Issue (Riesgo vs Problema)",
-              "explanation": "Risk (Riesgo) = Evento futuro incierto (May happen). Issue (Problema) = Evento actual que ya está ocurriendo (Happening now). Los riesgos conocidos tienen Contingency Reserve (Reserva de Contingencia). Los desconocidos usan Management Reserve (Reserva de Gestión).",
-              "keyConcepts": ["Risk Register (Registro de Riesgos)", "Issue Log (Registro de Problemas)", "Contingency Reserve", "Management Reserve"],
-              "examSignals": ["Risk Responses (Respuestas al Riesgo Negativo): Avoid (Evitar), Mitigate (Mitigar), Transfer (Transferir), Accept (Aceptar), Escalate (Escalar).", "Si te dicen que una tormenta destruyó el servidor, eso va al Issue Log (Registro de Problemas), no al de Riesgos."],
-              "commonTraps": ["Confundir Mitigate (Mitigar = reducir impacto) con Avoid (Evitar = eliminar causa raíz).", "No actualizar el Risk Register (Registro de Riesgos) cuando se identifica una nueva amenaza."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-7",
-          "taskTitle": "Task 10: Manage Project Changes (Gestionar Cambios)",
-          "topics": [
-            {
-              "topicId": "t-pr7-1",
-              "title": "Integrated Change Control (Control Integrado de Cambios)",
-              "explanation": "Rita's Best-Answer Pattern: 1. Assess (Evaluar el problema) -> 2. Analyze Impact (Analizar impacto en baselines) -> 3. Use Change Control Board - CCB (Comité de Control de Cambios) si afecta baselines -> 4. Update Plans (Actualizar planes) -> 5. Communicate (Comunicar).",
-              "keyConcepts": ["Change Request (Solicitud de Cambio)", "Change Control Board - CCB (Comité de Control de Cambios)", "Impact Analysis (Análisis de Impacto)"],
-              "examSignals": ["Fast Elimination Rule: NUNCA apruebes, rechaces o implementes un cambio sin antes hacer un Impact Analysis (Análisis de Impacto).", "Si el cliente pide algo informalmente, dile que debe emitir un Change Request formal."],
-              "commonTraps": ["El Project Manager autorizando cambios que alteran la Schedule Baseline (Línea Base del Cronograma) sin pasar por el CCB."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-8",
-          "taskTitle": "Task 2 & 4: Communications & Stakeholders (Comunicaciones e Interesados)",
-          "topics": [
-            {
-              "topicId": "t-pr8-1",
-              "title": "Gestión de la Comunicación e Interesados",
-              "explanation": "Communications Channels (Canales de Comunicación) = n(n-1)/2. Stakeholder Engagement (Involucramiento de Interesados) usa la matriz Poder/Interés. High Power/High Interest (Alto Poder/Alto Interés): Manage closely (Gestionar de cerca).",
-              "keyConcepts": ["Stakeholder Register (Registro de Interesados)", "Communications Management Plan (Plan de Gestión de Comunicaciones)", "Manage Closely"],
-              "examSignals": ["PMP Trap: Enviar un mensaje (Sending a message) NO es lo mismo que comunicación exitosa (Successful communication). Hay que confirmar el entendimiento.", "Si ignoras a un stakeholder, se convertirá en un problema futuro."],
-              "commonTraps": ["Tratar a todos los Stakeholders por igual en vez de adaptar (Tailor) el involucramiento."]
-            }
-          ]
-        },
-        {
-          "taskId": "pr-9",
-          "taskTitle": "Task 11: Plan and Manage Procurement (Adquisiciones)",
-          "topics": [
-            {
-              "topicId": "t-pr9-1",
-              "title": "Tipos de Contratos y Adquisiciones",
-              "explanation": "Firm Fixed Price - FFP (Precio Fijo Cerrado): Riesgo para el vendedor (Seller). Time & Materials - T&M (Tiempo y Materiales): Ideal para agilidad o trabajo indefinido, riesgo para comprador (Buyer). Cost Reimbursable (Costes Reembolsables): Riesgo para comprador.",
-              "keyConcepts": ["Make-or-Buy Analysis (Análisis de Hacer o Comprar)", "Firm Fixed Price - FFP", "Time & Materials - T&M"],
-              "examSignals": ["Si el alcance está perfectamente definido: usar FFP (Precio Fijo).", "Si necesitas arrancar mañana sin tener claro el alcance final: usar T&M."],
-              "commonTraps": ["Permitir que el vendedor (Seller) cambie el Scope (Alcance) sin un Change Request (Solicitud de Cambio) formal."]
+              "topicId": "t-pg-5",
+              "title": "Closing Process Group (Grupo de Procesos de Cierre)",
+              "explanation": "Finalización formal. Entregables: Final Report (Informe Final), Lessons Learned (Lecciones Aprendidas) archivadas en las OPAs, y transición del producto a Operations (Operaciones).",
+              "keyConcepts": ["Lessons Learned Repository (Repositorio de Lecciones Aprendidas)", "Handover (Transferencia)"],
+              "examSignals": ["El proyecto no termina hasta que los recursos son liberados formalmente y se archiva el aprendizaje."],
+              "commonTraps": ["Terminar el producto y marcharse sin transicionar el conocimiento a Soporte Técnico."]
             }
           ]
         }
       ]
     },
     {
-      "id": "domain-3",
-      "name": "Business Environment",
-      "weight": "8%",
+      "id": "block-3",
+      "name": "PMBOK 7 - Performance Domains",
+      "weight": "25%",
       "tasks": [
         {
-          "taskId": "be-1",
-          "taskTitle": "Task 1 & 2: Compliance & Business Value (Cumplimiento y Valor de Negocio)",
+          "taskId": "pd-1",
+          "taskTitle": "Measurement & Uncertainty (Medición e Incertidumbre)",
           "topics": [
             {
-              "topicId": "t-be1-1",
-              "title": "Compliance (Cumplimiento) y Beneficios",
-              "explanation": "Compliance (Cumplimiento legal y normativo) es estricto e innegociable. El proyecto busca entregar Business Value (Valor de Negocio). Output (Salida) = lo entregado. Outcome (Resultado) = lo que cambió por ello. Benefit (Beneficio) = por qué a la empresa le importa.",
-              "keyConcepts": ["Compliance (Cumplimiento)", "Business Case (Caso de Negocio)", "Benefits Realization (Realización de Beneficios)"],
-              "examSignals": ["Ethics Rule: PMP favorece la honestidad, transparencia y responsabilidad (Responsibility). Nunca ocultes información.", "PMP Trap: Un proyecto puede entregar todos los Outputs a tiempo y fracasar porque no se lograron los Benefits (Beneficios)."],
-              "commonTraps": ["Ignorar regulaciones gubernamentales para poder terminar el proyecto a tiempo.", "El Project Manager asumiendo que él evalúa los beneficios 5 años después (lo hace Operaciones)."]
+              "topicId": "t-pd-1",
+              "title": "Measurement Domain (Dominio de Medición)",
+              "explanation": "Evalúa el desempeño. Incluye KPIs, Lead/Lag indicators y Earned Value Management - EVM (Gestión del Valor Ganado). Schedule Performance Index - SPI (Índice de Desempeño del Cronograma) y Cost Performance Index - CPI (Índice de Desempeño del Costo).",
+              "keyConcepts": ["Earned Value - EV (Valor Ganado)", "CPI (Índice Costo)", "SPI (Índice Cronograma)"],
+              "examSignals": ["CPI < 1 = Over Budget (Sobre Presupuesto). SPI < 1 = Behind Schedule (Retrasado)."],
+              "commonTraps": ["Creer que la varianza de coste te dice el tiempo de retraso."]
+            },
+            {
+              "topicId": "t-pd-2",
+              "title": "Uncertainty Domain (Dominio de Incertidumbre)",
+              "explanation": "Gestión de Risks (Riesgos). Contingency Reserve (Reserva de Contingencia) para riesgos conocidos. Management Reserve (Reserva de Gestión) para desconocidos (Unknown-Unknowns).",
+              "keyConcepts": ["Contingency Reserve", "Management Reserve", "Risk Responses (Respuestas al Riesgo)"],
+              "examSignals": ["Evitar (Avoid) elimina la amenaza. Mitigar (Mitigate) reduce su probabilidad. Transferir (Transfer) se lo pasa a un seguro."],
+              "commonTraps": ["Tratar de Mitigar un riesgo después de que ya haya ocurrido (ahora es un Issue)."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-4",
+      "name": "Agile Practice Guide",
+      "weight": "15%",
+      "tasks": [
+        {
+          "taskId": "ag-1",
+          "taskTitle": "Agile Roles, Artifacts & Events",
+          "topics": [
+            {
+              "topicId": "t-ag-1",
+              "title": "Roles Ágiles (Scrum)",
+              "explanation": "Product Owner - PO (Dueño del Producto): Prioriza el Product Backlog (Pila de Producto) basándose en Business Value. Scrum Master - SM: Elimina Impediments (Impedimentos). Developers (Desarrolladores): Estiman y ejecutan.",
+              "keyConcepts": ["Product Owner", "Scrum Master", "Self-organizing Team (Equipo Auto-organizado)"],
+              "examSignals": ["El PO decide QUÉ se hace. El Equipo decide CÓMO y CUÁNTO pueden hacer en un Sprint."],
+              "commonTraps": ["El Scrum Master actuando como dictador técnico o aprobando características."]
+            },
+            {
+              "topicId": "t-ag-2",
+              "title": "Eventos y Artefactos (Events & Artifacts)",
+              "explanation": "Sprint Planning (Planificación): Se crea el Sprint Backlog. Daily Standup (Reunión Diaria): Sincronización para buscar bloqueos, no para resolverlos ahí. Sprint Review (Revisión): Demostración al cliente. Retrospective (Retrospectiva): Mejora del proceso.",
+              "keyConcepts": ["Sprint Review (Revisión)", "Sprint Retrospective (Retrospectiva)", "Definition of Done - DoD (Definición de Hecho)"],
+              "examSignals": ["Las lecciones aprendidas ágiles ocurren en la Retrospectiva, no al final del proyecto."],
+              "commonTraps": ["Aceptar en la Review un ítem que está al 90%. O es Done (100% cumple la DoD) o no lo es."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-5",
+      "name": "Cheat Sheets & Fast Traps",
+      "weight": "10%",
+      "tasks": [
+        {
+          "taskId": "cs-1",
+          "taskTitle": "PMP Elimination Rules & Formulas",
+          "topics": [
+            {
+              "topicId": "t-cs-1",
+              "title": "Fast Elimination Rules (Reglas de Eliminación Rápida)",
+              "explanation": "Basado en tu simulador de 540 preguntas: El PMP castiga la impulsividad. El Default Answer Pattern (Patrón de Respuesta por Defecto) es: 1. Assess (Evaluar/Diagnosticar) -> 2. Analyze (Analizar impacto) -> 3. Review Plan (Revisar el Plan) -> 4. Collaborate (Colaborar) -> 5. Act (Actuar).",
+              "keyConcepts": ["Assess before acting (Evaluar antes de actuar)", "Root Cause (Causa Raíz)"],
+              "examSignals": ["Busca siempre la respuesta que investiga el por qué antes de despedir o escalar."],
+              "commonTraps": ["Escalar al Sponsor inmediatamente.", "Ignorar un proceso porque es urgente.", "Aceptar Scope Creep en silencio."]
+            },
+            {
+              "topicId": "t-cs-2",
+              "title": "Formula Card (Fórmulas Esenciales)",
+              "explanation": "Communications Channels (Canales): n(n-1)/2. PERT Beta (Estimación de 3 puntos): (O + 4M + P)/6. EAC (Estimación a la conclusión): BAC/CPI. EMV (Valor Monetario Esperado): Probabilidad % x Impacto monetario.",
+              "keyConcepts": ["PERT", "EAC", "EMV"],
+              "examSignals": ["Si añades 2 personas nuevas a un equipo de 5, calcula los canales primero con 5 y luego con 7 para ver la diferencia."],
+              "commonTraps": ["Calcular el PERT dividiendo entre 3 (esa es la distribución Triangular, no la Beta PMP)."]
             }
           ]
         }

@@ -20,16 +20,16 @@
         {"id": "D", "text": "Separar a los miembros asignándoles tareas en componentes distintos para evitar más fricción."}
       ],
       "correctAnswer": "C",
-      "explanation": "En un entorno ágil o híbrido, el equipo es autoorganizado y responsable de las decisiones técnicas. El rol del PM/Scrum Master es facilitar la colaboración y eliminar impedimentos, no imponer soluciones ni evadir el conflicto. Facilitar una reunión ayuda al equipo a resolver el problema (collaborate/problem solve) manteniendo su empoderamiento.",
+      "explanation": "En un entorno ágil o híbrido, el equipo es autoorganizado. El rol del PM es facilitar la colaboración y eliminar impedimentos, no imponer soluciones ni evadir el conflicto. Facilitar una reunión ayuda al equipo a resolver el problema (collaborate/problem solve).",
       "whyOthersAreWrong": {
         "A": "Imponer una decisión (Force/Direct) destruye la autoorganización del equipo técnico.",
-        "B": "Escalar es prematuro y demuestra incapacidad para gestionar el conflicto a nivel de equipo.",
-        "C": "Es la correcta porque fomenta la colaboración y la solución ganar-ganar.",
-        "D": "Evadir o retirarse (Withdraw/Avoid) no resuelve el conflicto subyacente y perjudica la integración del proyecto."
+        "B": "Escalar es prematuro y demuestra incapacidad para gestionar el conflicto.",
+        "C": "Correcta: fomenta la colaboración (Win-Win).",
+        "D": "Evadir (Withdraw/Avoid) no resuelve el conflicto subyacente."
       },
       "keywords": ["conflict", "team", "hybrid", "facilitation"],
       "sourceType": "simulación didáctica no oficial",
-      "uniquenessNotes": "Enfocado en autoorganización frente a directrices rígidas de arquitectura."
+      "uniquenessNotes": "Enfocado en autoorganización frente a directrices rígidas."
     },
     {
       "id": "PMP-0002",
@@ -50,16 +50,256 @@
         {"id": "D", "text": "Ayudar al Product Owner a repriorizar el backlog basándose en el valor de negocio de las nuevas funcionalidades frente a las existentes."}
       ],
       "correctAnswer": "D",
-      "explanation": "En enfoques ágiles, el cambio es bienvenido incluso tarde en el desarrollo. Sin embargo, dado que la capacidad es fija, el Product Owner debe priorizar el backlog. El rol del equipo/PM es asistir al PO para estimar y repriorizar en función del mayor valor (Business Value).",
+      "explanation": "En enfoques ágiles, el cambio es bienvenido. Sin embargo, dado que la capacidad es fija, el Product Owner debe priorizar el backlog. El rol del equipo es asistir al PO para estimar y repriorizar en función del mayor valor (Business Value).",
       "whyOthersAreWrong": {
-        "A": "Rechazar cambios viola los principios ágiles de adaptación y entrega de valor continuo.",
-        "B": "Añadir recursos rompe la dinámica del equipo (Ley de Brooks) y no garantiza velocidad a corto plazo.",
+        "A": "Rechazar cambios viola los principios ágiles de adaptación.",
+        "B": "Añadir recursos rompe la dinámica del equipo (Ley de Brooks).",
         "C": "Trabajar horas extras de forma sostenida viola el principio ágil de 'ritmo sostenible'.",
-        "D": "Es la correcta. La repriorización es el mecanismo ágil estándar para absorber cambios de alto valor."
+        "D": "Correcta. La repriorización es el mecanismo ágil estándar."
       },
-      "keywords": ["value", "agile", "prioritization", "product owner", "backlog"],
+      "keywords": ["value", "agile", "prioritization", "product owner"],
       "sourceType": "simulación didáctica no oficial",
-      "uniquenessNotes": "Se centra en la mecánica de repriorización ante oportunidades de mercado, no en la resistencia al cambio."
+      "uniquenessNotes": "Repriorización ante oportunidades de mercado."
+    },
+    {
+      "id": "PMP-0003",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "medium",
+      "topic": "EVM",
+      "subtopic": "Performance interpretation",
+      "learningObjective": "Interpret EVM metrics to assess project health",
+      "scenarioType": "situational",
+      "question": "Durante la revisión del estado del proyecto, el director del proyecto calcula un SPI (Schedule Performance Index) de 0.85 y un CPI (Cost Performance Index) de 1.15. ¿Cuál es el estado real del proyecto?",
+      "options": [
+        {"id": "A", "text": "El proyecto va adelantado al cronograma y está por debajo del presupuesto."},
+        {"id": "B", "text": "El proyecto va retrasado respecto al cronograma y está gastando más de lo presupuestado."},
+        {"id": "C", "text": "El proyecto va retrasado respecto al cronograma, pero está por debajo del presupuesto."},
+        {"id": "D", "text": "El proyecto va adelantado al cronograma, pero está gastando más de lo presupuestado."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "Un SPI menor que 1.0 (0.85) indica que el proyecto está retrasado (Behind schedule). Un CPI mayor que 1.0 (1.15) indica que el proyecto está costando menos de lo planeado (Under budget).",
+      "whyOthersAreWrong": {
+        "A": "Incorrecto porque el SPI es menor a 1.",
+        "B": "Incorrecto porque el CPI es mayor a 1.",
+        "C": "Correcto según las fórmulas EVM.",
+        "D": "Totalmente inverso a la realidad de los índices."
+      },
+      "keywords": ["EVM", "SPI", "CPI", "performance"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Lectura directa de EVM."
+    },
+    {
+      "id": "PMP-0004",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Risk vs Issue",
+      "subtopic": "Issue management",
+      "learningObjective": "Differentiate between a risk and an issue and apply the correct management tool",
+      "scenarioType": "situational",
+      "question": "Una tormenta severa, que no estaba contemplada en el registro de riesgos, inunda el almacén principal del proyecto destruyendo los materiales críticos. ¿Qué documento debe actualizar el director del proyecto inmediatamente?",
+      "options": [
+        {"id": "A", "text": "El Registro de Riesgos (Risk Register), añadiendo la tormenta como un nuevo riesgo."},
+        {"id": "B", "text": "El Registro de Problemas (Issue Log), documentando el evento y su impacto actual."},
+        {"id": "C", "text": "El Plan de Gestión de Riesgos, para mejorar los procesos de identificación en el futuro."},
+        {"id": "D", "text": "El Registro de Interesados, para informarles del retraso."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "Un evento que ya ha ocurrido es un Problema (Issue), no un Riesgo (Risk). Como la tormenta ya destruyó los materiales, es un problema actual y debe registrarse inmediatamente en el Issue Log antes de tomar acciones correctivas (como solicitar reservas de gestión).",
+      "whyOthersAreWrong": {
+        "A": "Ya no es incierto; ya ocurrió, por tanto no es un riesgo.",
+        "B": "Correcto. Es un hecho materializado (Happening now).",
+        "C": "Actualizar el plan es una acción correctiva a largo plazo, no inmediata.",
+        "D": "La comunicación viene después de documentar y evaluar el problema (Assess)."
+      },
+      "keywords": ["risk", "issue", "issue log", "storm"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Trampa clásica de confundir riesgo con problema."
+    },
+    {
+      "id": "PMP-0005",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Business Environment",
+      "approach": "Predictive",
+      "difficulty": "medium",
+      "topic": "Compliance",
+      "subtopic": "Regulatory change",
+      "learningObjective": "Address mandatory compliance changes correctly",
+      "scenarioType": "situational",
+      "question": "A falta de dos meses para finalizar un proyecto gubernamental, se aprueba una nueva ley medioambiental que prohíbe el uso de un material clave que el proyecto está utilizando. Cumplir con esta ley retrasará el proyecto tres meses. ¿Qué debe hacer el director del proyecto?",
+      "options": [
+        {"id": "A", "text": "Continuar con el material actual porque la ley se aprobó después de haber firmado el Project Charter."},
+        {"id": "B", "text": "Solicitar una exención al gobierno debido al impacto masivo en el cronograma."},
+        {"id": "C", "text": "Revisar el impacto de la ley y emitir una Solicitud de Cambio (Change Request) para modificar los materiales."},
+        {"id": "D", "text": "Reemplazar los materiales inmediatamente para evitar multas legales."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "El cumplimiento normativo (Compliance) es innegociable. Sin embargo, el PM no puede alterar la línea base del proyecto unilateralmente. La regla de oro PMP es: Evaluar el impacto (Assess) y someter una Solicitud de Cambio formal (Change Request) al CCB o Sponsor.",
+      "whyOthersAreWrong": {
+        "A": "Ignorar la ley (Non-compliance) es una violación ética y legal.",
+        "B": "Pedir exenciones no resuelve el problema inmediato en el proyecto.",
+        "C": "Correcto. Sigue el proceso formal de Control Integrado de Cambios.",
+        "D": "Actuar inmediatamente sin pasar por el control de cambios (CCB) viola la gobernanza predictiva."
+      },
+      "keywords": ["compliance", "change request", "law", "impact"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Trampa de actuar antes de evaluar o saltarse el CCB."
+    },
+    {
+      "id": "PMP-0006",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Agile",
+      "difficulty": "hard",
+      "topic": "Build a team",
+      "subtopic": "Performance tracking",
+      "learningObjective": "Apply servant leadership to underperforming team members",
+      "scenarioType": "situational",
+      "question": "Un desarrollador senior acaba de unirse a un equipo ágil de alto rendimiento. En los últimos dos Sprints, no ha completado las historias de usuario que se autoasignó, afectando la velocidad del equipo. ¿Cómo debería actuar el Scrum Master?",
+      "options": [
+        {"id": "A", "text": "Asignarle tareas más fáciles en el próximo Sprint hasta que se adapte al ritmo."},
+        {"id": "B", "text": "Reunirse en privado con el desarrollador para entender la causa raíz de su bajo rendimiento y ofrecer apoyo."},
+        {"id": "C", "text": "Exponer el problema en la Retrospectiva del Sprint para que el equipo presione al desarrollador."},
+        {"id": "D", "text": "Informar a Recursos Humanos para que evalúen su despido por incompetencia."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "El Liderazgo de Servicio (Servant Leadership) prioriza el apoyo y la eliminación de impedimentos. El SM debe investigar la causa raíz en privado (Assess/Root Cause) antes de tomar medidas públicas o punitivas. En Ágil, el equipo autoorganizado asigna las tareas, no el SM.",
+      "whyOthersAreWrong": {
+        "A": "El SM no asigna tareas en Ágil; el equipo se auto-organiza.",
+        "B": "Correcto. Fomenta la empatía y busca la causa raíz sin humillar.",
+        "C": "Exponerlo públicamente daña la confianza y viola el entorno seguro de la retrospectiva.",
+        "D": "Despedir (Fire/Replace) es el último recurso extremo, y saltarse la evaluación es un error grave."
+      },
+      "keywords": ["scrum master", "servant leadership", "performance", "agile"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Evitar la trampa de castigar o reasignar tareas unilateralmente."
+    },
+    {
+      "id": "PMP-0007",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "medium",
+      "topic": "Quality",
+      "subtopic": "QA vs QC",
+      "learningObjective": "Distinguish between quality assurance and quality control",
+      "scenarioType": "situational",
+      "question": "Durante la inspección final de un componente de software, el equipo descubre múltiples defectos críticos. El cliente está furioso porque esto retrasará el lanzamiento. El director del proyecto concluye que las pruebas al final no son suficientes. ¿Qué proceso falló principalmente?",
+      "options": [
+        {"id": "A", "text": "Controlar la Calidad (Control Quality)."},
+        {"id": "B", "text": "Gestionar la Calidad (Manage Quality / QA)."},
+        {"id": "C", "text": "Validar el Alcance (Validate Scope)."},
+        {"id": "D", "text": "Planificar el Involucramiento de Interesados (Plan Stakeholder Engagement)."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "Gestionar la Calidad (QA) se centra en mejorar los procesos para PREVENIR defectos. Si se asume que 'probar al final' es suficiente, falló el aseguramiento del proceso a lo largo de la ejecución. El Control de Calidad (QC) funcionó porque *encontró* los defectos, pero el QA falló en *prevenirlos*.",
+      "whyOthersAreWrong": {
+        "A": "El Control de Calidad hizo su trabajo: detectó los errores en la inspección.",
+        "B": "Correcto. Faltaron auditorías y procesos preventivos durante el desarrollo.",
+        "C": "Validate Scope es la aceptación del cliente, que lógicamente no ocurrirá por los defectos.",
+        "D": "No es un problema de comunicación, es un problema técnico de procesos."
+      },
+      "keywords": ["QA", "QC", "quality", "defects"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Trampa clásica de confundir inspección (QC) con prevención (QA)."
+    },
+    {
+      "id": "PMP-0008",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Hybrid",
+      "difficulty": "hard",
+      "topic": "Stakeholder engagement",
+      "subtopic": "Communication breakdown",
+      "learningObjective": "Choose the proactive approach to resolve stakeholder communication gaps",
+      "scenarioType": "situational",
+      "question": "Un interesado clave de alto poder e interés se queja formalmente al patrocinador de que no fue informado sobre un cambio reciente en la arquitectura. El director del proyecto revisa los registros y confirma que envió un correo electrónico detallado a este interesado hace dos semanas. ¿Cuál fue el error del director del proyecto?",
+      "options": [
+        {"id": "A", "text": "No escaló la falta de respuesta del interesado al patrocinador."},
+        {"id": "B", "text": "No solicitó un acuse de recibo de lectura en el correo electrónico enviado."},
+        {"id": "C", "text": "Asumió que enviar un mensaje es equivalente a una comunicación exitosa."},
+        {"id": "D", "text": "No actualizó el Plan de Gestión de las Comunicaciones antes de enviar el correo."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "Una regla de oro del PMI es que 'enviar un mensaje NO es comunicar'. El emisor (PM) es responsable de confirmar que el receptor ha recibido, entendido y asimilado el mensaje, especialmente con interesados de alto poder/alto interés que requieren gestión cercana (Manage closely).",
+      "whyOthersAreWrong": {
+        "A": "Escalar es evadir la responsabilidad de gestión del PM.",
+        "B": "Un acuse de recibo técnico no confirma la comprensión del mensaje.",
+        "C": "Correcto. Es una trampa clásica de comunicación interactiva.",
+        "D": "El plan puede estar bien, falló la ejecución interactiva de la comunicación."
+      },
+      "keywords": ["stakeholder", "communication", "high power", "message"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Concepto crítico de la transmisión efectiva del mensaje."
+    },
+    {
+      "id": "PMP-0009",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Manage scope",
+      "subtopic": "Gold plating",
+      "learningObjective": "Identify and reject unauthorized scope additions",
+      "scenarioType": "situational",
+      "question": "Durante una revisión de código, el líder técnico informa al director del proyecto que los desarrolladores han añadido una función de exportación a PDF que el cliente no solicitó, argumentando que 'les tomó muy poco tiempo y al cliente le encantará'. ¿Qué debe hacer el director del proyecto?",
+      "options": [
+        {"id": "A", "text": "Felicitar al equipo por exceder las expectativas del cliente y mejorar el producto."},
+        {"id": "B", "text": "Rechazar el trabajo, solicitar que se elimine la función y recordar al equipo las reglas del alcance."},
+        {"id": "C", "text": "Presentar la nueva función al cliente como un valor añadido sin coste extra."},
+        {"id": "D", "text": "Emitir una solicitud de cambio retroactiva para incluir la función en la Línea Base del Alcance."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "Añadir funcionalidad no solicitada se conoce como 'Gold Plating' (Bañado en Oro) y está estrictamente prohibido en la dirección de proyectos del PMI. Aumenta los riesgos, el mantenimiento futuro y los costes de pruebas sin aprobación. Todo lo que no está en la WBS no existe.",
+      "whyOthersAreWrong": {
+        "A": "Felicitar el Gold Plating fomenta la indisciplina técnica.",
+        "C": "Presentarlo al cliente sienta un precedente peligroso de expectativas.",
+        "D": "Las solicitudes de cambio no deben hacerse a posteriori para justificar un trabajo no autorizado.",
+        "B": "Correcto. El alcance debe respetarse al 100%."
+      },
+      "keywords": ["gold plating", "scope", "WBS", "unauthorized"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Diferenciación entre calidad y extras prohibidos."
+    },
+    {
+      "id": "PMP-0010",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Business Environment",
+      "approach": "Agile",
+      "difficulty": "medium",
+      "topic": "Business value",
+      "subtopic": "Project viability",
+      "learningObjective": "Recommend project closure when business value is lost",
+      "scenarioType": "situational",
+      "question": "El equipo ágil lleva 6 meses desarrollando un nuevo software de reservas. De repente, un competidor lanza una aplicación gratuita que hace exactamente lo mismo pero con mejor tecnología. El Product Owner y el Sponsor determinan que el caso de negocio (Business Case) ya no es viable. ¿Qué debe hacer el Project Manager/Scrum Master?",
+      "options": [
+        {"id": "A", "text": "Motivar al equipo para que trabaje más rápido y supere la aplicación de la competencia."},
+        {"id": "B", "text": "Iniciar el procedimiento de cierre formal del proyecto ya que no entregará valor de negocio."},
+        {"id": "C", "text": "Pausar el proyecto temporalmente hasta que el competidor cometa un error."},
+        {"id": "D", "text": "Completar los Sprints restantes porque ya están financiados y aprobados."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "El valor de negocio (Business Value) manda. Si el Business Case deja de ser viable o pierde su justificación (como por un evento disruptivo del mercado), la única acción ética y responsable es cancelar o cerrar el proyecto anticipadamente para no malgastar recursos de la organización.",
+      "whyOthersAreWrong": {
+        "A": "Trabajar más rápido no arregla un caso de negocio fallido.",
+        "C": "Pausar consume recursos y no aborda la inviabilidad estructural.",
+        "D": "Gastar dinero solo porque está aprobado es el efecto de 'costes hundidos' y es una mala práctica.",
+        "B": "Correcto. Proteger los activos de la organización cerrando proyectos inviables."
+      },
+      "keywords": ["business case", "value", "cancellation", "competitor"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Reconocer cuándo un proyecto debe morir."
     }
   ]
 }

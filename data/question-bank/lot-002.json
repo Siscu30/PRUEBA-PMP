@@ -1,0 +1,305 @@
+{
+  "lotId": "lot-002",
+  "questions": [
+    {
+      "id": "PMP-0011",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Agile",
+      "difficulty": "medium",
+      "topic": "Continuous improvement",
+      "subtopic": "Retrospective",
+      "learningObjective": "Identify the correct forum for process improvement in Agile",
+      "scenarioType": "situational",
+      "question": "Al finalizar un Sprint, el equipo ágil se da cuenta de que las pruebas de integración tardaron el doble de lo planeado, causando que dos historias de usuario no cumplieran la Definition of Done (DoD). El Product Owner está frustrado. ¿En qué evento debe el equipo analizar este problema para evitar que se repita?",
+      "options": [
+        {"id": "A", "text": "En el Sprint Review, para explicarle al cliente por qué fallaron."},
+        {"id": "B", "text": "En la Sprint Retrospective, para inspeccionar el proceso y adaptar el trabajo futuro."},
+        {"id": "C", "text": "En el próximo Daily Standup, asignando más desarrolladores a las pruebas."},
+        {"id": "D", "text": "En la siguiente Sprint Planning, aumentando la estimación de puntos de historia para las pruebas."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "La Retrospectiva (Sprint Retrospective) es el evento diseñado exclusivamente para inspeccionar CÓMO trabajó el equipo (personas, procesos, herramientas) y crear un plan de mejoras. El Review es para mostrar el producto, no para lavar los trapos sucios del proceso.",
+      "whyOthersAreWrong": {
+        "A": "El Review es para demostrar valor al cliente (el QUÉ), no para debatir fallos internos del proceso (el CÓMO).",
+        "B": "Correcto. Es el pilar de la mejora continua.",
+        "C": "El Daily es para sincronización diaria, no para análisis de causa raíz a fondo.",
+        "D": "Aumentar los puntos no soluciona el problema real (por qué las pruebas son ineficientes)."
+      },
+      "keywords": ["retrospective", "agile", "improvement", "DoD"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Diferenciación estricta entre Review y Retrospectiva."
+    },
+    {
+      "id": "PMP-0012",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Procurement",
+      "subtopic": "Contract types",
+      "learningObjective": "Select the appropriate contract type based on risk and scope clarity",
+      "scenarioType": "situational",
+      "question": "Una organización gubernamental necesita contratar a un proveedor externo para desarrollar un sistema de ciberseguridad. Los requisitos exactos no se conocerán hasta dentro de tres meses, pero el trabajo debe comenzar mañana debido a una amenaza inminente. ¿Qué tipo de contrato es el más apropiado?",
+      "options": [
+        {"id": "A", "text": "Firm Fixed Price (FFP) - Precio Fijo Cerrado."},
+        {"id": "B", "text": "Time & Materials (T&M) - Tiempo y Materiales."},
+        {"id": "C", "text": "Fixed Price Incentive Fee (FPIF) - Precio Fijo con Honorarios de Incentivo."},
+        {"id": "D", "text": "Cost Plus Fixed Fee (CPFF) - Coste Más Honorarios Fijos."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "El contrato de Tiempo y Materiales (T&M) es ideal cuando el alcance no está definido o es dinámico y se requiere que el trabajo comience inmediatamente. Permite contratar recursos por hora/día sin cerrar un alcance monolítico. Los contratos de precio fijo (FFP) exigen un alcance perfecto.",
+      "whyOthersAreWrong": {
+        "A": "FFP exige un alcance 100% definido, de lo contrario los proveedores inflarán el precio por el riesgo.",
+        "C": "Sigue siendo de precio fijo, inútil sin alcance definido.",
+        "D": "CPFF es mejor para investigación y desarrollo, pero T&M es el estándar para arrancar rápido sin alcance claro.",
+        "B": "Correcto. Permite agilidad de inicio."
+      },
+      "keywords": ["procurement", "contract", "T&M", "scope"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Contratación ágil en entornos de incertidumbre."
+    },
+    {
+      "id": "PMP-0013",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Hybrid",
+      "difficulty": "medium",
+      "topic": "Integration",
+      "subtopic": "Hybrid alignment",
+      "learningObjective": "Resolve friction between predictive and agile components",
+      "scenarioType": "situational",
+      "question": "En un proyecto de construcción de un hospital (híbrido), la construcción física (predictiva) avanza según el plan. Sin embargo, el equipo que desarrolla el software de los quirófanos (ágil) está pivotando los requisitos tras cada Sprint. El jefe de obra se queja de que no puede instalar los cables si el software cambia la ubicación de los servidores. ¿Qué debe hacer el Project Manager?",
+      "options": [
+        {"id": "A", "text": "Obligar al equipo de software a adoptar un enfoque predictivo para alinearse con la construcción."},
+        {"id": "B", "text": "Facilitar una reunión conjunta para definir hitos de integración (Integration Milestones) rígidos donde ambos equipos se sincronicen."},
+        {"id": "C", "text": "Retrasar el cableado de la construcción física hasta que el equipo ágil termine todo el software."},
+        {"id": "D", "text": "Dejar que el equipo ágil siga iterando y asumir el coste de recablear al final del proyecto."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "En un proyecto híbrido, la clave es la integración en puntos de contacto. No puedes obligar a software a ser predictivo si necesita iterar, ni puedes rehacer un edificio físico. La solución es establecer Hitos de Integración conjuntos donde las dependencias duras se bloqueen formalmente.",
+      "whyOthersAreWrong": {
+        "A": "Destruye el valor de usar agilidad en el desarrollo de software.",
+        "B": "Correcto. Es la esencia de la integración híbrida (Hybrid Alignment).",
+        "C": "Retrasaría masivamente la ruta crítica del proyecto físico.",
+        "D": "El retrabajo físico (recablear un hospital) tiene un coste inaceptable y rompe el Business Case."
+      },
+      "keywords": ["hybrid", "integration", "milestones", "conflict"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Gestión de fronteras en metodologías híbridas."
+    },
+    {
+      "id": "PMP-0014",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Schedule management",
+      "subtopic": "Schedule compression",
+      "learningObjective": "Apply the correct schedule compression technique",
+      "scenarioType": "situational",
+      "question": "El patrocinador informa al PM de que el producto debe lanzarse al mercado un mes antes de lo previsto para ganar a la competencia. No hay presupuesto adicional disponible, pero el equipo está dispuesto a reorganizar el trabajo. ¿Qué técnica debería aplicar el PM?",
+      "options": [
+        {"id": "A", "text": "Crashing (Intensificación) en la Ruta Crítica."},
+        {"id": "B", "text": "Fast Tracking (Ejecución Rápida) en la Ruta Crítica."},
+        {"id": "C", "text": "Reducir el alcance eliminando funcionalidades de la WBS."},
+        {"id": "D", "text": "Resource Leveling (Nivelación de Recursos)."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "El patrocinador exige acortar tiempo pero NO da más dinero. Fast Tracking (realizar tareas secuenciales en paralelo) es la única técnica de compresión que no añade coste directo (aunque sí añade riesgo de retrabajo). Crashing añade coste porque requiere pagar horas extra o nuevos recursos.",
+      "whyOthersAreWrong": {
+        "A": "Crashing siempre cuesta dinero extra (el cual no hay).",
+        "C": "Reducir el alcance no es una técnica de compresión de cronograma, es un cambio masivo de alcance que requeriría reevaluar el proyecto entero.",
+        "D": "Resource Leveling generalmente alarga el cronograma, no lo acorta.",
+        "B": "Correcto. Paralelizar tareas sin coste extra, asumiendo más riesgo."
+      },
+      "keywords": ["schedule", "compression", "fast tracking", "budget"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Limitación de presupuesto fuerza la técnica a utilizar."
+    },
+    {
+      "id": "PMP-0015",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Predictive",
+      "difficulty": "medium",
+      "topic": "Stakeholder engagement",
+      "subtopic": "Late identification",
+      "learningObjective": "Manage stakeholders identified late in the project lifecycle",
+      "scenarioType": "situational",
+      "question": "Durante la fase de ejecución, un jefe de departamento regulatorio que no había sido identificado previamente se pone en contacto contigo exigiendo auditorías de cumplimiento inmediatas que detendrían el trabajo. ¿Qué debe hacer el PM a continuación?",
+      "options": [
+        {"id": "A", "text": "Rechazar su solicitud porque no fue identificado en la fase de iniciación."},
+        {"id": "B", "text": "Detener el proyecto inmediatamente e implementar sus auditorías para evitar multas."},
+        {"id": "C", "text": "Añadir al interesado al Registro de Interesados (Stakeholder Register) y evaluar el impacto de sus requerimientos."},
+        {"id": "D", "text": "Pedirle al patrocinador que use su autoridad para bloquear las exigencias de este nuevo interesado."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "El Registro de Interesados es un documento vivo. Si aparece un nuevo interesado en cualquier fase, el primer paso es documentarlo (añadirlo al registro), entender su nivel de poder/interés y luego evaluar (Assess) el impacto de sus peticiones antes de actuar o alterar el plan.",
+      "whyOthersAreWrong": {
+        "A": "Ignorar a un interesado clave es una garantía de fracaso futuro (PMP Trap).",
+        "B": "Detener el proyecto sin evaluar el impacto en las líneas base es una reacción impulsiva incorrecta.",
+        "D": "Escalar inmediatamente sin evaluar el impacto es una evasión de responsabilidad.",
+        "C": "Correcto. Seguir el patrón: Documentar -> Evaluar Impacto."
+      },
+      "keywords": ["stakeholder", "identification", "late", "impact"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Manejo proactivo de omisiones iniciales."
+    },
+    {
+      "id": "PMP-0016",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Resource management",
+      "subtopic": "Matrix organization",
+      "learningObjective": "Resolve resource conflicts in a matrix environment",
+      "scenarioType": "situational",
+      "question": "En una organización matricial fuerte, un gerente funcional reasigna a tu programador líder a un proyecto de operaciones, justo en la semana crítica de entregas. ¿Qué debe hacer el Project Manager primero?",
+      "options": [
+        {"id": "A", "text": "Quejarse al patrocinador para que recupere al programador mediante poder ejecutivo."},
+        {"id": "B", "text": "Revisar el Plan de Gestión de Recursos y negociar directamente con el gerente funcional."},
+        {"id": "C", "text": "Contratar a un programador externo inmediatamente usando la reserva de gestión."},
+        {"id": "D", "text": "Aceptar la pérdida y actualizar el cronograma para reflejar el inevitable retraso."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "En organizaciones matriciales, los PMs negocian por los recursos. Ante un conflicto de asignación, el PM debe consultar el plan y tratar de resolver el problema directamente negociando con el gerente funcional (Collaborate/Problem Solve) antes de escalar a ejecutivos.",
+      "whyOthersAreWrong": {
+        "A": "Escalar a ejecutivos (Sponsor) sin haber intentado negociar primero es prematuro.",
+        "B": "Correcto. Negociación directa y revisión de las reglas establecidas.",
+        "C": "Usar reservas sin autorización y sin intentar solucionar el conflicto raíz es una mala práctica.",
+        "D": "Rendirse y afectar el proyecto sin luchar (Avoid) va contra el rol del PM."
+      },
+      "keywords": ["matrix", "resources", "negotiation", "functional manager"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Dinámicas de poder en estructuras matriciales."
+    },
+    {
+      "id": "PMP-0017",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "medium",
+      "topic": "Quality",
+      "subtopic": "Control charts",
+      "learningObjective": "Interpret statistical control charts correctly",
+      "scenarioType": "situational",
+      "question": "El equipo de control de calidad revisa una Gráfica de Control (Control Chart) del proceso de manufactura. Observan que los últimos 8 puntos de datos están dentro de los límites de control aceptables, pero todos caen consecutivamente por encima de la media central. ¿Qué significa esto?",
+      "options": [
+        {"id": "A", "text": "El proceso está bajo control perfecto y no requiere ninguna acción."},
+        {"id": "B", "text": "El proceso está fuera de control debido a la 'Regla de los Siete' y debe investigarse."},
+        {"id": "C", "text": "El equipo debe actualizar la línea media para que se ajuste a los nuevos datos."},
+        {"id": "D", "text": "El producto será rechazado por el cliente en el Validate Scope."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "Según la heurística estadística del PMI (Regla de los Siete - Rule of Seven), si siete o más puntos consecutivos caen del mismo lado de la media (aunque estén dentro de los límites de control), el proceso se considera fuera de control por causas asignables y el PM debe investigar.",
+      "whyOthersAreWrong": {
+        "A": "Falso. La tendencia consecutiva indica un error sistémico oculto.",
+        "C": "Modificar la media oculta el error y corrompe los datos de calidad.",
+        "D": "No podemos saber si el cliente lo rechazará; pero sí sabemos que el proceso de fabricación está fallando en su estabilidad.",
+        "B": "Correcto. Aplica la heurística de los Gráficos de Control."
+      },
+      "keywords": ["quality", "control chart", "rule of seven", "process"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Métrica estadística técnica de calidad."
+    },
+    {
+      "id": "PMP-0018",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "People",
+      "approach": "Hybrid",
+      "difficulty": "medium",
+      "topic": "Build a team",
+      "subtopic": "Virtual teams",
+      "learningObjective": "Mitigate cultural conflicts in virtual global teams",
+      "scenarioType": "situational",
+      "question": "Diriges un equipo virtual distribuido entre Japón, España y Estados Unidos. Notas que en las reuniones online los miembros de Japón nunca cuestionan el diseño, pero luego envían correos expresando preocupación de forma indirecta. ¿Qué documento debes revisar o crear para abordar esto?",
+      "options": [
+        {"id": "A", "text": "El Plan de Gestión de Recursos Humanos, para sancionar la falta de comunicación verbal."},
+        {"id": "B", "text": "El Registro de Problemas (Issue Log), documentando su resistencia pasiva."},
+        {"id": "C", "text": "El Team Charter (Acta de Constitución del Equipo), para establecer reglas de comunicación culturalmente seguras."},
+        {"id": "D", "text": "El Plan de Gestión de Interesados, para aislar al equipo japonés del resto."}
+      ],
+      "correctAnswer": "C",
+      "explanation": "El comportamiento en equipos multiculturales varía drásticamente (ej. evitar confrontación pública en culturas asiáticas). El Team Charter incluye las Ground Rules (reglas básicas) y directrices de comunicación interna para crear un entorno seguro adaptado a todas las culturas del equipo virtual.",
+      "whyOthersAreWrong": {
+        "A": "Sancionar una diferencia cultural destruye la confianza.",
+        "B": "No es una resistencia maliciosa, es una barrera cultural de comunicación.",
+        "D": "Aislar al equipo destruye la cohesión del proyecto.",
+        "C": "Correcto. El Charter establece cómo interactúa la gente del proyecto internamente."
+      },
+      "keywords": ["virtual team", "culture", "team charter", "communication"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Inteligencia Emocional y diversidad en proyectos globales."
+    },
+    {
+      "id": "PMP-0019",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Predictive",
+      "difficulty": "hard",
+      "topic": "Manage scope",
+      "subtopic": "WBS Dictionary",
+      "learningObjective": "Recognize the purpose of the WBS Dictionary for work clarity",
+      "scenarioType": "situational",
+      "question": "El equipo de desarrollo ha entregado un paquete de trabajo a tiempo, pero el equipo de control de calidad lo rechaza porque no cumple con los criterios técnicos específicos esperados. Los desarrolladores afirman que la WBS solo decía 'Módulo de Login'. ¿Qué faltó en la planificación del alcance?",
+      "options": [
+        {"id": "A", "text": "El Diccionario de la WBS (WBS Dictionary), que detalla los requisitos técnicos y criterios de aceptación."},
+        {"id": "B", "text": "El Enunciado del Alcance del Proyecto (Project Scope Statement)."},
+        {"id": "C", "text": "La Matriz de Trazabilidad de Requisitos (Requirements Traceability Matrix)."},
+        {"id": "D", "text": "El Plan de Gestión de la Calidad."}
+      ],
+      "correctAnswer": "A",
+      "explanation": "La WBS es solo un desglose jerárquico visual (cajitas). El 'Diccionario de la WBS' es el documento complementario indispensable que contiene todos los detalles técnicos, instrucciones, responsables y criterios de aceptación específicos de cada paquete de trabajo.",
+      "whyOthersAreWrong": {
+        "B": "El Enunciado del Alcance es a muy alto nivel, no detalla tareas individuales.",
+        "C": "La matriz vincula requisitos con el valor del negocio, pero no da las especificaciones de trabajo del paquete.",
+        "D": "El plan de calidad dice CÓMO mediremos, pero el Diccionario de la WBS dice QUÉ incluye el paquete exactamente.",
+        "A": "Correcto. Es el manual de instrucciones del trabajo."
+      },
+      "keywords": ["scope", "WBS", "dictionary", "quality rejection"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Diferenciación de documentos de alcance base."
+    },
+    {
+      "id": "PMP-0020",
+      "examSet": "mock-001",
+      "block": 1,
+      "domain": "Process",
+      "approach": "Agile",
+      "difficulty": "medium",
+      "topic": "Planning",
+      "subtopic": "Backlog refinement",
+      "learningObjective": "Understand the purpose of Product Backlog Refinement",
+      "scenarioType": "situational",
+      "question": "Durante la Sprint Planning, el equipo se pasa más de 4 horas debatiendo sobre qué significan realmente las historias de usuario de mayor prioridad, dejando sin tiempo la asignación de tareas. ¿Qué ceremonia ágil se omitió o se hizo deficientemente en el Sprint anterior?",
+      "options": [
+        {"id": "A", "text": "El Daily Standup."},
+        {"id": "B", "text": "El Refinamiento del Product Backlog (Backlog Grooming/Refinement)."},
+        {"id": "C", "text": "La Sprint Retrospective."},
+        {"id": "D", "text": "La sesión de Planning Poker."}
+      ],
+      "correctAnswer": "B",
+      "explanation": "El Refinamiento del Backlog es el proceso continuo donde el PO y el equipo aclaran dudas, dividen historias grandes y estiman el trabajo a futuro. Si no se hace, el equipo llega a la Planning a ciegas, perdiendo horas intentando entender qué les están pidiendo construir.",
+      "whyOthersAreWrong": {
+        "A": "El Daily mira el corto plazo (24h), no historias futuras.",
+        "C": "La Retrospectiva revisa el proceso pasado, no limpia el backlog.",
+        "D": "Planning Poker es una técnica de estimación, pero sin entender las historias (refinamiento) no se puede usar.",
+        "B": "Correcto. Evita que la Sprint Planning se vuelva un caos."
+      },
+      "keywords": ["agile", "backlog", "refinement", "planning"],
+      "sourceType": "simulación didáctica no oficial",
+      "uniquenessNotes": "Eficiencia de las ceremonias ágiles preparatorias."
+    }
+  ]
+}

@@ -4,13 +4,21 @@
   "timeLimitMinutes": 230,
   "breakMinutes": 10,
   "blocks": [
-    { "block": 1, "questionIds": ["PMP-0001", "PMP-0002"] },
+    { 
+      "block": 1, 
+      "questionIds": [
+        "PMP-0001", "PMP-0002", "PMP-0003", "PMP-0004", "PMP-0005",
+        "PMP-0006", "PMP-0007", "PMP-0008", "PMP-0009", "PMP-0010",
+        "PMP-0011", "PMP-0012", "PMP-0013", "PMP-0014", "PMP-0015",
+        "PMP-0016", "PMP-0017", "PMP-0018", "PMP-0019", "PMP-0020"
+      ] 
+    },
     { "block": 2, "questionIds": [] },
     { "block": 3, "questionIds": [] }
   ],
   "coverageSummary": {
-    "People": 76,
-    "Process": 90,
-    "BusinessEnvironment": 14
+    "People": 42,
+    "Process": 50,
+    "BusinessEnvironment": 8
   }
 }

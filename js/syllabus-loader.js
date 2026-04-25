@@ -48,20 +48,23 @@ export class SyllabusLoader {
                             <div class="signals-traps">
                                 <div class="signals">
                                     <strong>🟢 Pistas de Examen:</strong>
-                                    <ul>${topic.examSignals.map(s => `<li>${s}</li>`).join('')}</ul>
+                                    <ul>${(topic.examSignals || []).map(s => `<li>${s}</li>`).join('')}</ul>
                                 </div>
                                 <div class="traps">
                                     <strong>🔴 Trampas Comunes:</strong>
-                                    <ul>${topic.commonTraps.map(s => `<li>${s}</li>`).join('')}</ul>
+                                    <ul>${(topic.commonTraps || []).map(s => `<li>${s}</li>`).join('')}</ul>
                                 </div>
-                            </div>
+                            </div>`;
 
-                            <div class="approach-notes">
-                                <div><strong>Predictivo:</strong> ${topic.predictiveNotes.join(' ')}</div>
-                                <div><strong>Ágil:</strong> ${topic.agileNotes.join(' ')}</div>
-                                <div><strong>Híbrido:</strong> ${topic.hybridNotes.join(' ')}</div>
-                            </div>
-                         </div>`;
+                if (topic.predictiveNotes || topic.agileNotes || topic.hybridNotes) {
+                    html += `<div class="approach-notes">
+                                <div><strong>Predictivo:</strong> ${(topic.predictiveNotes || []).join(' ')}</div>
+                                <div><strong>Ágil:</strong> ${(topic.agileNotes || []).join(' ')}</div>
+                                <div><strong>Híbrido:</strong> ${(topic.hybridNotes || []).join(' ')}</div>
+                            </div>`;
+                }
+
+                html += `</div>`;
             });
             html += `</div>`;
         });
